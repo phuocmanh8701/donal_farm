@@ -214,9 +214,9 @@ img {
 }
 
 p {
-  font-weight: 400;//change
-  font-size: 15px;
-  line-height: 25px;
+  font-weight: 400; //change
+  font-size: 16px;
+  line-height: 36px;
 }
 
 strong,
@@ -535,8 +535,8 @@ h6,
 
 h1,
 .h1 {
-  font-size: 60px;
-  line-height: 81px;
+  font-size: 90px; //
+  line-height: 100px; //
 }
 
 h2,
@@ -547,8 +547,8 @@ h2,
 
 h3,
 .h3 {
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 30px; //
+  line-height: 40px; //
 }
 
 h4,
@@ -562,7 +562,7 @@ h5,
   font-size: 18px;
   line-height: 30px;
 }
- 
+
 h6,
 .h6 {
   font-size: 16px;
@@ -573,12 +573,12 @@ h6,
 -------------------------------------------------------------- */
 a {
   text-decoration: none;
-  color: var(--Primary);
+  color: var(--Text-2);
   cursor: pointer;
   @include transition3;
   &:hover,
   &:focus {
-    color: var(--Secondary);//change
+    color: var(--Bg); //change
     outline: 0;
     @include transition3;
   }
@@ -587,7 +587,7 @@ a {
 /* tf-container
 -------------------------------------------------------------- */
 .tf-container {
-  position: relative;//change
+  position: relative; //change
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -604,6 +604,10 @@ a {
   }
   &.full {
     width: 100%;
+  }
+  &.w-1780 {
+    width: 100%;
+    max-width: 1810px;
   }
 }
 

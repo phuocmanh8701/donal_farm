@@ -1,0 +1,100 @@
+.topbar {
+    background-color: var(--Primary);
+    padding: 17px 0px;
+    .topbar-inner {
+        @include flex(center, space-between);
+        .topbar-left {
+            background-color: var(--Bg);
+            padding: 10px 20px;
+            border-radius: 18px;
+            span {
+                color: var(--White);
+                // font-family: $font-main4;
+                &:not(:last-child) {
+                    padding-right: 15px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        top: 50%;
+                        right: 3px;
+                        border-radius: 50%;
+                        background-color: var(--Secondary);
+                    }
+                }
+            }
+        }
+        .topbar-right {
+            @include d-flex();
+            gap: 55px;
+            .contact-list {
+                @include flex(center, center);
+                gap: 35px;
+                .item {
+                    @include flex(center, center);
+                    gap: 15px;
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        background-color: var(--Secondary);
+                        border-radius: 50%;
+                        @include flex(center, center);
+                        i {
+                            color: var(--Primary);
+                            font-size: 12px;
+                        }
+                    }
+                    a {
+                        color: var(--White);
+                        font-family: $font-main4;
+                        &:hover {
+                            color: var(--Third);
+                        }
+                    }
+                }
+            }
+            .social-list {
+                @include flex(center, center);
+                background-color: var(--Bg);
+                border-radius: 18px;
+                padding: 0px 20px;
+                gap: 20px;
+                a {
+                    color: var(--Third);
+                    &:hover {
+                        color: var(--White);
+                    }
+                    .icon-instagram2 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header {
+    .header-inner {
+        @include flex(center, space-between);
+        .header-left {
+            img {
+                max-width: 208px;
+            }
+        }
+        .header-center {
+            .nav-list {
+                @include flex(center, center);
+                gap: 45px;
+            }
+        }
+        .header-right {
+            @include flex(center, center);
+            gap: 42px;
+            .icon-wrap {
+                @include flex(center, center);
+            }
+        }
+    }
+}

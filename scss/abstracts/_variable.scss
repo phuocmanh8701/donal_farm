@@ -1,12 +1,19 @@
 // settings
-$font-main: "Ce", sans-serif; //change
-$font-main2: "Cardo", serif;
-$font-main3: "Outfit", serif;
+$font-main: "InterTight", sans-serif; //change
+$font-main2: "Farmhouse", sans-serif;
+$font-main3: "Sarabun", sans-serif;
+$font-main4: "Nunito", sans-serif;
+
 $fontIcon: "icomoon";
-$fontIcon2: "flaticon_upskill";
 
 :root {
     --Black: #000000;
     --White: #ffffff;
     --body-text: #666666;
+    --Primary: #0d401c;
+    --Secondary: #f8c32c;
+    --Third: #8a9b8e;
+    --Text: #6e7673;
+    --Text-2: #072010;
+    --Bg: #235130;
 }
