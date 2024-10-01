@@ -1,0 +1,14 @@
+/* greek-ext */
+@font-face {
+  font-family: 'CerebriSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(CerebriSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'CerebriSans';
+  font-style: italic;
+  font-weight: 700;
+  src: url(CerebriSans-BoldItalic.ttf);
+}

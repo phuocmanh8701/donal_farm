@@ -1,0 +1,17 @@
+sass scss/app.scss css/styles.css --watch
+
+cấu trúc file
+font: định nghĩa lại theo mẫu
+icon: trim svg rồi import vào icomoon, ko đc thì dùng svg lun
+img: nếu có parallax thì trim height 1,5x , nhỏ thì 2x , logo thì dùng svg, dung lượng dưới 200kb
+Design system : 
+ + thay đổi ở //change 
+ + Reset
+ + variable 
+code : header-footer-pagetilte
+       blog
+       blog-detail
+       code widget
+       ráp home-page inner
+       gắn link - animation
+js phải viết dạng Function và gọi function 
