@@ -4,14 +4,19 @@ cấu trúc file
 font: định nghĩa lại theo mẫu
 icon: trim svg rồi import vào icomoon, ko đc thì dùng svg lun
 img: nếu có parallax thì trim height 1,5x , nhỏ thì 2x , logo thì dùng svg, dung lượng dưới 200kb
-Design system : 
- + thay đổi ở //change 
+Design system :
+ + thay đổi ở //change
  + Reset
- + variable 
+ + variable
 code : header-footer-pagetilte
        blog
        blog-detail
        code widget
        ráp home-page inner
        gắn link - animation
-js phải viết dạng Function và gọi function 
+js phải viết dạng Function và gọi function
+
+/// img co class:lazyload va data-src
+
+blog-item 467 x 403: 1.5 = 700 604
+javascript:void(0)

@@ -29,47 +29,55 @@
     transform: translate(-50%, -50%);
 }
 @mixin center($x, $y) {
-    -webkit-transform: translate($x,$y);
-    -moz-transform: translate($x,$y);
-    -ms-transform: translate($x,$y);
-    -o-transform: translate($x,$y);
-    transform: translate($x,$y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
 }
 
 // --------------------------
 
-@mixin  transition1 (){
+@mixin transition1() {
     -webkit-transition: all 0.1s ease;
-    -moz-transition   : all 0.1s ease;
-    -ms-transition    : all 0.1s ease;
-    -o-transition     : all 0.1s ease;
-    transition        : all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 }
-@mixin  transition2 (){
+@mixin transition2() {
     -webkit-transition: all 0.2s ease;
-    -moz-transition   : all 0.2s ease;
-    -ms-transition    : all 0.2s ease;
-    -o-transition     : all 0.2s ease;
-    transition        : all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
-@mixin  transition3 (){
+@mixin transition3() {
     -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-@mixin  transition4 (){
+@mixin transition4() {
     -webkit-transition: all 0.4s ease;
-    -moz-transition   : all 0.4s ease;
-    -ms-transition    : all 0.4s ease;
-    -o-transition     : all 0.4s ease;
-    transition        : all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
-@mixin  transition5 (){
+@mixin transition5() {
     -webkit-transition: all 0.5s ease;
-    -moz-transition   : all 0.5s ease;
-    -ms-transition    : all 0.5s ease;
-    -o-transition     : all 0.5s ease;
-    transition        : all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+@mixin hidden() {
+    visibility: hidden;
+    opacity: 0;
+}
+@mixin visible() {
+    visibility: visible;
+    opacity: 1;
 }

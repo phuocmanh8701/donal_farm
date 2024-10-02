@@ -1,0 +1,23 @@
+.footer {
+    background-color: var(--Primary);
+    padding-top: 125px;
+    margin-top: 20px;
+    position: relative;
+    .img-item {
+        position: absolute;
+
+        &.item-1 {
+            bottom: 100%;
+            width: 100%;
+            left: 0;
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        &.item-2 {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.s-sub {
+    margin-bottom: 80px;
+}
+.s-filter-sorting {
+    margin-bottom: 50px;
+    .s-top {
+        @include flex(center, space-between);
+    }
+}

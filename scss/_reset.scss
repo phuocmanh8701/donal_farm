@@ -216,7 +216,7 @@ img {
 p {
   font-weight: 400; //change
   font-size: 16px;
-  line-height: 36px;
+  line-height: 26px;
 }
 
 strong,
@@ -527,7 +527,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: $font-main;
+  font-family: $font-main5;
   color: var(--Primary);
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -568,7 +568,33 @@ h6,
   font-size: 16px;
   line-height: 28px;
 }
-
+.font-intertight {
+  font-family: $font-main;
+}
+.font-farmhouse {
+  font-family: $font-main2;
+}
+.font-sarabun {
+  font-family: $font-main3;
+}
+.font-nunito {
+  font-family: $font-main4;
+}
+.font-worksans {
+  font-family: $font-main5 !important;
+}
+.font-snowfall {
+  font-family: $font-main6;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fw-5 {
+  font-weight: 500;
+}
 /* link style
 -------------------------------------------------------------- */
 a {
@@ -581,6 +607,11 @@ a {
     color: var(--Bg); //change
     outline: 0;
     @include transition3;
+  }
+  &.hover-text-secondary {
+    &:hover {
+      color: var(--Secondary) !important;
+    }
   }
 }
 
@@ -644,4 +675,11 @@ a {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
 }

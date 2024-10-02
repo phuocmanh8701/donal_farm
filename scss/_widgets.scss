@@ -1,3 +1,160 @@
 .icon-wheat-grains {
     color: var(--Secondary);
 }
+i {
+    // @include transition3;
+}
+
+/*tf-control-sorting
+------------------------------------------------------------------------*/
+.tf-control-sorting {
+    .tf-dropdown-sort {
+        @include transition3;
+        position: relative;
+        cursor: pointer;
+        z-index: 51;
+        width: max-content;
+        .tf-btn {
+            i,
+            span {
+                font-size: 15px;
+                @include transition3;
+            }
+            &:hover {
+                i,
+                span {
+                    color: var(--Main-color);
+                }
+            }
+        }
+        .dropdown-menu {
+            width: 100%;
+            margin-top: 14px !important;
+            background-color: var(--Bg);
+            border: 1px solid #191d3c;
+            border-radius: 16px;
+            padding: 20px 16px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                top: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid var(--Bg);
+            }
+            .select-item {
+                overflow-x: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            z-index: 10;
+        }
+        .select-item {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 645;
+            line-height: 18.52px;
+            color: var(--White);
+            width: 100%;
+            @include transition3();
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid var(--Border-3);
+            }
+            &.active,
+            &:hover {
+                color: var(--Secondary);
+            }
+        }
+    }
+}
+
+/*video-wrap
+------------------------------------------------------------------------*/
+.video-wrap {
+    position: relative;
+    width: max-content;
+    @include flex(center, center);
+    img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 425px;
+        border-radius: 20px;
+    }
+    .popup-youtube {
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        background-color: var(--White);
+        @include flex(center, center);
+        border-radius: 50%;
+        @include transition3;
+        z-index: 2;
+        &:hover {
+            // background-color: var(--Bg);
+            i {
+                // color: var(--White);
+            }
+        }
+        i {
+            color: var(--Bg);
+            font-size: 25px;
+
+            padding-left: 6px;
+            @include transition3;
+            position: relative;
+            z-index: 2;
+        }
+        .wave {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 109.04px;
+            height: 109.04px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            animation: ripple 1s infinite;
+        }
+        .wave-1 {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 132px;
+            height: 132px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 50%;
+            animation: ripple-1 1s infinite;
+        }
+    }
+}
+.blog-pagination {
+    ul {
+        @include flex(center, center);
+        gap: 11px;
+        li {
+            a {
+                @include flex(center, center);
+                width: 51px;
+                height: 51px;
+                border-radius: 50%;
+                background-color: var(--Bg-7);
+                &.active,
+                &:hover {
+                    color: var(--White);
+                    background-color: var(--Primary);
+                }
+            }
+        }
+    }
+}

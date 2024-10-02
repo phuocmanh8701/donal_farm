@@ -9,7 +9,6 @@
             border-radius: 18px;
             span {
                 color: var(--White);
-                // font-family: $font-main4;
                 &:not(:last-child) {
                     padding-right: 15px;
                     position: relative;
@@ -77,6 +76,7 @@
 
 .header {
     .header-inner {
+        padding-top: 30px;
         @include flex(center, space-between);
         .header-left {
             img {
@@ -87,6 +87,54 @@
             .nav-list {
                 @include flex(center, center);
                 gap: 45px;
+                .item {
+                    position: relative;
+                    a {
+                        font-family: $font-main5;
+                        font-weight: 500;
+                        line-height: 50px;
+                        display: block;
+                    }
+                    &::before {
+                        content: "\e9c2";
+                        font-family: "icomoon";
+                        position: absolute;
+                        left: -15px;
+                        padding-right: 5px;
+                        top: 0px;
+                        color: var(--Secondary);
+                        @include transition3;
+                        @include hidden;
+                    }
+                    &:hover {
+                        &::before {
+                            top: 17px;
+                            @include visible;
+                        }
+                        .sub-nav {
+                            @include visible;
+                            // position: absolute;
+                            transform: translateY(0px);
+                        }
+                    }
+                    &.current-menu {
+                        &::before {
+                            top: 17px;
+                            @include visible;
+                        }
+                    }
+                    .sub-nav {
+                        @include hidden;
+                        position: absolute;
+                        @include transition3;
+                        min-width: 200px;
+                        transform: translateY(-20px);
+                        z-index: 50;
+                        a {
+                            line-height: 20px;
+                        }
+                    }
+                }
             }
         }
         .header-right {
@@ -94,6 +142,45 @@
             gap: 42px;
             .icon-wrap {
                 @include flex(center, center);
+                gap: 10px;
+                .icon {
+                    @include flex(center, center);
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    border: 1px solid var(--Border);
+                    @include transition3;
+                    i {
+                        font-size: 18px;
+                        color: var(--Primary);
+                    }
+                    &:hover {
+                        background-color: var(--Bg-1);
+                        border-color: var(--Bg-1);
+                    }
+                }
+            }
+            .wg-welcome {
+                width: 59px;
+                height: 59px;
+                border-radius: 50%;
+                background-color: var(--Primary);
+                @include flex(center, center);
+                cursor: pointer;
+                @include transition3;
+
+                &:hover {
+                    background-color: var(--Secondary);
+                    i {
+                        color: var(--Primary);
+                    }
+                }
+                i {
+                    @include transition3;
+
+                    color: var(--White);
+                    font-size: 20px;
+                }
             }
         }
     }
