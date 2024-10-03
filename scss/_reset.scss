@@ -130,6 +130,9 @@ body {
   &::-webkit-scrollbar {
     width: 0px;
   }
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 article,
@@ -553,8 +556,8 @@ h3,
 
 h4,
 .h4 {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 23px; //
+  line-height: 33px; //
 }
 
 h5,
@@ -595,6 +598,25 @@ h6,
 .fw-5 {
   font-weight: 500;
 }
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+
 /* link style
 -------------------------------------------------------------- */
 a {
@@ -640,6 +662,10 @@ a {
     width: 100%;
     max-width: 1810px;
   }
+  &.w-1290 {
+    width: 100%;
+    max-width: 1320px;
+  }
 }
 
 /* Extra classes
@@ -682,4 +708,7 @@ a {
 
 .mb-35 {
   margin-bottom: 35px;
+}
+.lt-sp-01 {
+  letter-spacing: 0.1px;
 }

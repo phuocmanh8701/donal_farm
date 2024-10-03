@@ -10,15 +10,15 @@
             span {
                 color: var(--White);
                 &:not(:last-child) {
-                    padding-right: 15px;
+                    padding-right: 28px;
                     position: relative;
                     &::after {
                         content: "";
                         position: absolute;
                         width: 5px;
                         height: 5px;
-                        top: 50%;
-                        right: 3px;
+                        top: 45%;
+                        right: 8px;
                         border-radius: 50%;
                         background-color: var(--Secondary);
                     }
@@ -27,13 +27,13 @@
         }
         .topbar-right {
             @include d-flex();
-            gap: 55px;
+            gap: 59px;
             .contact-list {
                 @include flex(center, center);
-                gap: 35px;
+                gap: 36px;
                 .item {
                     @include flex(center, center);
-                    gap: 15px;
+                    gap: 14px;
                     .icon {
                         width: 30px;
                         height: 30px;
@@ -42,12 +42,14 @@
                         @include flex(center, center);
                         i {
                             color: var(--Primary);
-                            font-size: 12px;
+                            font-size: 13px;
                         }
                     }
                     a {
                         color: var(--White);
                         font-family: $font-main4;
+                        font-size: 14px;
+                        letter-spacing: 0.1px;
                         &:hover {
                             color: var(--Third);
                         }
@@ -58,8 +60,8 @@
                 @include flex(center, center);
                 background-color: var(--Bg);
                 border-radius: 18px;
-                padding: 0px 20px;
-                gap: 20px;
+                padding: 10px 29px 10px 24px;
+                gap: 21px;
                 a {
                     color: var(--Third);
                     &:hover {
@@ -79,14 +81,20 @@
         padding-top: 30px;
         @include flex(center, space-between);
         .header-left {
-            img {
-                max-width: 208px;
+            @include flex(center, center);
+
+            .logo-site {
+                padding-right: 108px;
+                padding-top: 6px;
+
+                img {
+                    max-width: 208px;
+                }
             }
-        }
-        .header-center {
             .nav-list {
                 @include flex(center, center);
                 gap: 45px;
+
                 .item {
                     position: relative;
                     a {
@@ -94,21 +102,24 @@
                         font-weight: 500;
                         line-height: 50px;
                         display: block;
+                        font-size: 18px;
                     }
                     &::before {
                         content: "\e9c2";
                         font-family: "icomoon";
                         position: absolute;
-                        left: -15px;
-                        padding-right: 5px;
+                        padding-right: 7px;
+                        left: -25px;
                         top: 0px;
+                        font-size: 24px;
                         color: var(--Secondary);
                         @include transition3;
                         @include hidden;
                     }
                     &:hover {
                         &::before {
-                            top: 17px;
+                            top: 13px;
+
                             @include visible;
                         }
                         .sub-nav {
@@ -119,19 +130,64 @@
                     }
                     &.current-menu {
                         &::before {
-                            top: 17px;
+                            top: 13px;
+
                             @include visible;
                         }
                     }
                     .sub-nav {
                         @include hidden;
-                        position: absolute;
                         @include transition3;
+                        // bottom: 0;
+                        position: absolute;
                         min-width: 200px;
-                        transform: translateY(-20px);
+                        transform: translateY(20px);
                         z-index: 50;
-                        a {
-                            line-height: 20px;
+                        background-color: var(--Bg);
+                        border-radius: 8px;
+                        padding: 10px 0px 10px 20px;
+                        li {
+                            &.current-item {
+                                a {
+                                    color: var(--Secondary);
+                                    span {
+                                        &::before {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                line-height: 40px;
+                                font-size: 15px;
+                                color: var(--White);
+                                width: 100%;
+                                span {
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        left: auto;
+                                        right: 0;
+                                        bottom: -2px;
+                                        height: 1px;
+                                        width: 0%;
+                                        background-color: var(--Secondary);
+                                        @include transition3;
+                                    }
+                                }
+                                &:hover {
+                                    color: var(--Secondary);
+                                    span {
+                                        &::before {
+                                            left: 0;
+                                            right: auto;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -139,7 +195,8 @@
         }
         .header-right {
             @include flex(center, center);
-            gap: 42px;
+            gap: 43px;
+            padding-right: 12px;
             .icon-wrap {
                 @include flex(center, center);
                 gap: 10px;
@@ -151,17 +208,37 @@
                     border: 1px solid var(--Border);
                     @include transition3;
                     i {
-                        font-size: 18px;
+                        // font-size: 18px;
                         color: var(--Primary);
                     }
                     &:hover {
                         background-color: var(--Bg-1);
                         border-color: var(--Bg-1);
                     }
+                    &.wg-bag {
+                        i {
+                            font-size: 24px;
+                        }
+                        position: relative;
+                        &::after {
+                            @include flex(center, center);
+                            content: "3";
+                            position: absolute;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            background-color: var(--Secondary);
+                            color: var(--Text-5);
+                            font-weight: 600;
+                            font-size: 14px;
+                            top: -9px;
+                            right: -7px;
+                        }
+                    }
                 }
             }
             .wg-welcome {
-                width: 59px;
+                width: 60px;
                 height: 59px;
                 border-radius: 50%;
                 background-color: var(--Primary);
@@ -177,9 +254,180 @@
                 }
                 i {
                     @include transition3;
-
                     color: var(--White);
-                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.mobile-button {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 12px;
+        background-color: var(--Primary);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        background-color: var(--Primary);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        background-color: var(--Primary);
+    }
+}
+.mobile-nav-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 300;
+    opacity: 0;
+    visibility: hidden;
+    @include transition3;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        .inner-mobile-nav {
+            left: 0 !important;
+        }
+    }
+    .overlay-mobile-nav {
+        z-index: 300;
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    .inner-mobile-nav {
+        z-index: 300;
+        position: fixed;
+        padding: 15px;
+        z-index: 1001;
+        height: 100%;
+        width: 320px;
+        background-color: var(--Primary);
+        left: -320px;
+        @include transition3;
+        .logo {
+            @include flex(center, center);
+            img {
+                max-width: 173px;
+            }
+            .mobile-nav-close {
+                top: 20px;
+                right: 20px;
+                position: absolute;
+                cursor: pointer;
+                @include transition3;
+                color: var(--White);
+                &:hover {
+                    color: var(--Secondary);
+                }
+            }
+            margin-bottom: 40px;
+        }
+        .mobile-main-nav {
+            #menu-mobile-menu {
+                padding-bottom: 30px;
+                .menu-item-has-children-mobile {
+                    a {
+                        font-family: $font-main5;
+                        font-weight: 500;
+                        color: var(--White);
+                    }
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    &.active {
+                        .item-menu-mobile {
+                            color: var(--Secondary);
+                        }
+                        i {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                    .item-menu-mobile {
+                        justify-content: space-between;
+                        display: flex;
+                        margin-bottom: 15px;
+                        position: relative;
+                        transition-timing-function: linear;
+                        font-size: 18px;
+                        &:hover {
+                            color: var(--Secondary);
+                            i {
+                                color: var(--Secondary);
+                            }
+                        }
+                        &.current {
+                            color: var(--Secondary);
+                        }
+                        i {
+                            @include transition3;
+                        }
+                    }
+                    .sub-menu-mobile {
+                        display: none;
+                        .menu-item {
+                            // padding: 15px 0px;
+                            a {
+                                padding-left: 15px;
+                                display: block;
+                                line-height: 40px;
+                                &::before {
+                                    content: "\e90e";
+                                    position: relative;
+                                    top: 2px;
+                                    left: -10px;
+                                    font-family: $fontIcon;
+                                    color: var(--Secondary);
+                                    @include hidden;
+                                    @include transition3;
+                                }
+                                &:hover {
+                                    color: var(--Secondary);
+
+                                    &::before {
+                                        left: -5px;
+                                        @include visible;
+                                    }
+                                }
+                            }
+
+                            &.current {
+                                a {
+                                    &::before {
+                                        left: -5px;
+                                        @include visible;
+                                    }
+                                    color: var(--Secondary);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

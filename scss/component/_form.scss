@@ -32,16 +32,17 @@ form {
         overflow: hidden;
         margin-bottom: 0;
         &::placeholder {
-            font-size: 14px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             line-height: 28px;
             color: var(--Soft-Text);
-            // font-family: $font-main4;
+            font-family: $font-main4;
         }
         &.style-1 {
             background-color: var(--Bg-4) !important;
             color: var(--White);
             font-weight: 400;
+            padding: 15px 19px 10px 19px;
             &::placeholder {
                 font-weight: 400;
             }
@@ -54,6 +55,8 @@ form {
             background-color: var(--Bg-5) !important;
             color: var(--White);
             font-weight: 400;
+            line-height: 25px;
+            padding: 14px 19px;
             &::placeholder {
                 font-weight: 400;
             }
@@ -85,8 +88,8 @@ form {
     position: relative;
     width: 100%;
     .btn-send {
-        width: 32px;
-        height: 32px;
+        width: 43px;
+        height: 43px;
         background: var(--Secondary);
         border-radius: 50%;
         position: absolute;
@@ -99,6 +102,18 @@ form {
             i {
                 color: var(--Primary);
             }
+        }
+    }
+    &.style-2 {
+        flex-wrap: wrap;
+        input {
+            padding: 16px 19px 12px 18px !important;
+        }
+        .email {
+            margin-bottom: 16px;
+        }
+        .tf-btn {
+            padding: 6px 7px 6px 33px;
         }
     }
 }

@@ -9,6 +9,8 @@
     z-index: 1;
     width: max-content;
     font-weight: 500;
+    font-size: 16px;
+    font-family: $font-main5;
     .icon {
         width: 43px;
         height: 43px;
@@ -23,9 +25,12 @@
             @include transition3;
             color: var(--Primary);
             font-size: 23px;
+            &.fs-14 {
+                font-size: 14px;
+            }
         }
         &::before {
-            content: "";
+            content: none;
             position: absolute;
             top: 0;
             left: 0;
@@ -57,8 +62,10 @@
         }
     }
     &:hover {
-        box-shadow: 200px 0px 2px 0px var(--Secondary) inset;
+        // box-shadow: 200px 0px 2px 0px var(--Secondary) inset;
         .icon {
+            background-color: var(--Primary);
+
             &::before {
                 width: 100%;
             }
@@ -79,9 +86,9 @@
         content: "";
         position: absolute;
         width: 0%;
-        height: 100%;
-        left: 0;
-        top: 0;
+        height: 0%;
+        right: 20px;
+        top: 50%;
         border-radius: 28px;
         @include transition3;
         z-index: -1;
@@ -89,5 +96,13 @@
     }
     &.full {
         width: 100%;
+        justify-content: space-between;
+    }
+    &.bg-white {
+        background-color: var(--White);
+        color: var(--Text-2);
+    }
+    &.gap-35 {
+        gap: 35px;
     }
 }

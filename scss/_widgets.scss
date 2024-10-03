@@ -15,10 +15,16 @@ i {
         z-index: 51;
         width: max-content;
         .tf-btn {
-            i,
+            gap: 10px;
+            padding: 17px 31px 17px 33px;
+            i {
+                font-size: 20px;
+            }
             span {
-                font-size: 15px;
                 @include transition3;
+                font-size: 16px;
+                font-family: $font-main5;
+                font-weight: 500;
             }
             &:hover {
                 i,
@@ -85,13 +91,13 @@ i {
     img {
         object-fit: cover;
         width: 100%;
-        max-width: 425px;
+        max-width: 467px;
         border-radius: 20px;
     }
     .popup-youtube {
         position: absolute;
-        height: 90px;
-        width: 90px;
+        height: 77px;
+        width: 77px;
         background-color: var(--White);
         @include flex(center, center);
         border-radius: 50%;
@@ -153,6 +159,28 @@ i {
                 &:hover {
                     color: var(--White);
                     background-color: var(--Primary);
+                }
+            }
+        }
+    }
+}
+.wg-social {
+    .list {
+        @include flex(center, center);
+        gap: 11px;
+        li {
+            a {
+                @include flex(center, center);
+                width: 49px;
+                height: 49px;
+                background-color: var(--Secondary);
+                border-radius: 50%;
+                i {
+                    color: var(--Bg-6);
+                    
+                }
+                &:hover {
+                    background-color: var(--White);
                 }
             }
         }

@@ -1,9 +1,13 @@
 .s-sub {
-    margin-bottom: 80px;
+    margin-bottom: 79px;
 }
 .s-filter-sorting {
     margin-bottom: 50px;
     .s-top {
         @include flex(center, space-between);
+        .text {
+            color: var(--Text-2);
+            font-weight: 500;
+        }
     }
 }
