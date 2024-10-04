@@ -70,7 +70,7 @@
                 flex-direction: column;
                 gap: 19px;
                 li {
-                    @include flex(center, center);
+                    @include flex(center, flex-start);
                     gap: 23px;
                     .image {
                         img {
@@ -116,6 +116,7 @@
                                 left: -7px;
                                 @include visible;
                                 color: var(--Secondary);
+                                transition-delay: 0.2s;
                             }
                         }
                         &::before {
@@ -140,11 +141,14 @@
         @include flex(center, space-between);
         position: relative;
         z-index: 5;
+        gap: 20px;
+        flex-wrap: wrap;
         .no-copy {
             color: var(--White);
+            text-align: center;
+
             a {
                 position: relative;
-                // display: block;
                 color: var(--Secondary);
                 @include transition3;
                 &:hover {
@@ -169,7 +173,8 @@
         }
         .policy-list {
             @include flex(center, center);
-            gap: 37px;
+            gap: 10px 37px;
+            flex-wrap: wrap;
             li {
                 position: relative;
                 &:not(:last-child) {
@@ -196,10 +201,11 @@
     .img-item {
         position: absolute;
         &.item-1 {
-            bottom: 100%;
+            top: -22px;
             width: 100%;
             left: 0;
             img {
+                height: 23px;
                 object-fit: cover;
                 width: 100%;
             }

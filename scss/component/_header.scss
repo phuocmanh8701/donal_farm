@@ -3,14 +3,16 @@
     padding: 17px 0px;
     .topbar-inner {
         @include flex(center, space-between);
+        gap: 20px;
         .topbar-left {
+            @include flex(center, space-between);
+            gap: 31px;
             background-color: var(--Bg);
             padding: 10px 20px;
             border-radius: 18px;
             span {
                 color: var(--White);
                 &:not(:last-child) {
-                    padding-right: 28px;
                     position: relative;
                     &::after {
                         content: "";
@@ -18,7 +20,7 @@
                         width: 5px;
                         height: 5px;
                         top: 45%;
-                        right: 8px;
+                        right: -20px;
                         border-radius: 50%;
                         background-color: var(--Secondary);
                     }
@@ -78,6 +80,8 @@
 
 .header {
     .header-inner {
+        position: relative;
+        z-index: 5;
         padding-top: 30px;
         @include flex(center, space-between);
         .header-left {

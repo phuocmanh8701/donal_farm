@@ -562,7 +562,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -702,13 +702,40 @@ a {
   display: -webkit-flex;
   display: flex;
 }
+.mb-80 {
+  margin-bottom: 80px;
+}
 .mb-50 {
   margin-bottom: 50px;
 }
-
+.mb-40 {
+  margin-bottom: 40px;
+}
 .mb-35 {
   margin-bottom: 35px;
 }
+
 .lt-sp-01 {
   letter-spacing: 0.1px;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--Border);
+    border-radius: 999px;
+  }
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--Border);
+    border-radius: 999px;
+  }
 }

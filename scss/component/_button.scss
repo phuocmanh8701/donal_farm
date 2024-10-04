@@ -11,6 +11,8 @@
     font-weight: 500;
     font-size: 16px;
     font-family: $font-main5;
+    overflow: hidden;
+    // white-space: nowrap;
     .icon {
         width: 43px;
         height: 43px;
@@ -18,6 +20,7 @@
         @include transition3;
         background-color: var(--Secondary);
         border-radius: 50%;
+        // flex-shrink: 0;
         position: relative;
         i {
             position: relative;
@@ -34,8 +37,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 0%;
             border-radius: 50%;
+            width: 0%;
             height: 100%;
             z-index: 0;
             background-color: var(--Primary);
@@ -62,37 +65,41 @@
         }
     }
     &:hover {
-        // box-shadow: 200px 0px 2px 0px var(--Secondary) inset;
-        .icon {
-            background-color: var(--Primary);
-
-            &::before {
-                width: 100%;
-            }
-            i {
-                color: var(--White);
-            }
+        .text-style {
+            color: var(--Primary);
+            transform: translateX(5px);
         }
         &::after {
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--Secondary);
-            border: 1px solid var(--Secondary);
+            transform: scale(30);
+        }
+    }
+    .text-style {
+        color: var(--White);
+        transform: translateX(0px);
+        @include transition3;
+        &.cl-primary {
+            color: var(--Primary);
+        }
+    }
+    &.scale-40 {
+        &:hover {
+            &::after {
+                transform: scale(40);
+            }
         }
     }
     &::after {
         content: "";
         position: absolute;
-        width: 0%;
-        height: 0%;
-        right: 20px;
-        top: 50%;
+        width: 22px;
+        height: 22px;
+        right: 14px;
+        top: 17px;
         border-radius: 28px;
-        @include transition3;
+        @include transition5;
         z-index: -1;
-        background-color: var(--White);
+        background-color: var(--Secondary);
+        transform: scale(1);
     }
     &.full {
         width: 100%;

@@ -5,6 +5,8 @@
     margin-bottom: 50px;
     .s-top {
         @include flex(center, space-between);
+        gap: 20px;
+        flex-wrap: wrap;
         .text {
             color: var(--Text-2);
             font-weight: 500;
