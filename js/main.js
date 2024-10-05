@@ -50,9 +50,13 @@
 
         }
     }
+
+
+    var countUp = new CountUp('counter', 0, 1000, 0, 2.5);
     // Dom Ready
     $(function () {
         videoWrap();
         openNavMobile();
+        countUp();
     });
 })(jQuery);

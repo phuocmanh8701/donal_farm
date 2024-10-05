@@ -81,8 +81,22 @@ form {
     textarea {
         height: 218px;
     }
-}
+    .cols {
+        @include flex(center, center);
+        gap: 22px 30px;
+        width: 100%;
+        &.cols-two{
 
+            > * {
+                width: 50%;
+            }
+        }
+    }
+}
+fieldset {
+    margin-bottom: 0px;
+    width: 100%;
+}
 .form-email {
     @include flex(center, center);
     position: relative;

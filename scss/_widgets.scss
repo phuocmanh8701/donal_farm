@@ -177,11 +177,25 @@ i {
                 border-radius: 50%;
                 i {
                     color: var(--Bg-6);
-                    
                 }
                 &:hover {
                     background-color: var(--White);
                 }
+            }
+        }
+    }
+}
+
+.widget {
+    height: 20000px;
+    #odometer {
+        font-size: 50px;
+        span {
+            font-family: $font-main5;
+            .odometer-value {
+                // display: block;
+                @include flex(center, flex-end);
+                width: 100%;
             }
         }
     }

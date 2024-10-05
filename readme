@@ -18,8 +18,8 @@ js phải viết dạng Function và gọi function
 
 /// img co class:lazyload va data-src
 
-blog-item 467 x 403: 1.5 = 700 604
 javascript:void(0)
+
 /* Thin: 100
 Extra Light: 200
 Light: 300
@@ -29,3 +29,9 @@ Semi-Bold: 600
 Bold: 700
 Extra Bold: 800
 Black: 900 */
+
+
+blog-item 467 x 403: 1.5 = 700 604
+blog-single:
+video 401 x 328: 1.5
+img-2 402 x 290: 1.5
