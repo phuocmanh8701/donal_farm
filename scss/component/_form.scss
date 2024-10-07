@@ -85,8 +85,7 @@ form {
         @include flex(center, center);
         gap: 22px 30px;
         width: 100%;
-        &.cols-two{
-
+        &.cols-two {
             > * {
                 width: 50%;
             }
@@ -128,6 +127,17 @@ fieldset {
         }
         .tf-btn {
             padding: 6px 7px 6px 33px;
+        }
+    }
+    &.style-3 {
+        input {
+            background-color: var(--White);
+        }
+        .btn-send {
+            background-color: transparent;
+            i {
+                color: var(--Text-4);
+            }
         }
     }
 }

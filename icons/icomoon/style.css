@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qsi0wx');
-  src:  url('fonts/icomoon.eot?qsi0wx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qsi0wx') format('truetype'),
-    url('fonts/icomoon.woff?qsi0wx') format('woff'),
-    url('fonts/icomoon.svg?qsi0wx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2kv2n2');
+  src:  url('fonts/icomoon.eot?2kv2n2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2kv2n2') format('truetype'),
+    url('fonts/icomoon.woff?2kv2n2') format('woff'),
+    url('fonts/icomoon.svg?2kv2n2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-slide-next:before {
+  content: "\e9ca";
+}
+.icon-slide-prev:before {
+  content: "\e9cb";
+}
 .icon-facebook:before {
   content: "\e900";
 }
 .icon-facebook1:before {
   content: "\ea90";
+}
+.icon-send-message:before {
+  content: "\f12d";
 }
 .icon-arrow_up:before {
   content: "\e9c6";
@@ -45,6 +54,9 @@
 }
 .icon-close:before {
   content: "\e9c4";
+}
+.icon-send:before {
+  content: "\e9c9";
 }
 .icon-instagram2:before {
   content: "\ea92";

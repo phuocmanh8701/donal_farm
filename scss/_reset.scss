@@ -598,6 +598,9 @@ h6,
 .fw-5 {
     font-weight: 500;
 }
+.fs-45 {
+    font-size: 45px;
+}
 .fs-24 {
     font-size: 24px;
 }
@@ -606,6 +609,9 @@ h6,
 }
 .fs-21 {
     font-size: 21px;
+}
+.fs-18 {
+    font-size: 18px;
 }
 .fs-17 {
     font-size: 17px;
@@ -616,7 +622,9 @@ h6,
 .fs-14 {
     font-size: 14px;
 }
-
+.fw-5 {
+    font-weight: 500;
+}
 /* link style
 -------------------------------------------------------------- */
 a {
@@ -665,6 +673,10 @@ a {
     &.w-1290 {
         width: 100%;
         max-width: 1320px;
+    }
+    &.w-1620 {
+        width: 100%;
+        max-width: 1650px;
     }
 }
 
@@ -744,4 +756,10 @@ a {
 }
 .item-center {
     align-items: cente;
+}
+.swiper-slide {
+    height: auto;
+    > * {
+        height: 100%;
+    }
 }

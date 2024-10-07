@@ -50,13 +50,30 @@
 
         }
     }
+    var textUp = function () {
+        const $textElement = $('.text-move-up');
+        const text = $textElement.text();
+        $textElement.html(''); // Xoá nội dung cũ
 
+        // Chèn từng chữ vào <span>
+        $.each(text.split(''), function (index, char) {
+            const $span = $('<span>').text(char);
+            $textElement.append($span);
 
-    var countUp = new CountUp('counter', 0, 1000, 0, 2.5);
+            // Thêm độ trễ cho mỗi chữ cái
+            setTimeout(function () {
+                $span.css({
+                    'transform': 'translateY(0)',
+                    'opacity': '1'
+                });
+            }, index * 100); // Delay 100ms giữa mỗi chữ cái
+        });
+    }
     // Dom Ready
     $(function () {
         videoWrap();
         openNavMobile();
-        countUp();
+        // counter();
+        textUp();
     });
 })(jQuery);

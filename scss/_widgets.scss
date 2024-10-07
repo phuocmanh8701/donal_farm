@@ -188,15 +188,207 @@ i {
 
 .widget {
     height: 20000px;
-    #odometer {
-        font-size: 50px;
-        span {
-            font-family: $font-main5;
-            .odometer-value {
-                // display: block;
-                @include flex(center, flex-end);
-                width: 100%;
+}
+
+.wg-counter {
+    @include flex(center, space-between);
+    background-color: var(--Bg-6);
+    padding: 20px 0px;
+    .counter-item {
+        @include flex(center, space-between);
+        flex-direction: column;
+        max-width: 300px;
+        width: 100%;
+        &:not(:last-child) {
+            border-right: 1px dashed var(--Border-5);
+        }
+    }
+    .icon {
+        margin-bottom: 20px;
+        i {
+            font-size: 35px;
+            color: var(--White);
+        }
+    }
+    .counter {
+        height: 100%;
+        margin-bottom: 20px;
+        .sub-odo {
+            position: relative;
+            bottom: -14px;
+            font-size: 55px;
+            line-height: 55px;
+            font-weight: 700;
+            &.color-secondary {
+                color: var(--Secondary);
             }
+        }
+    }
+    .odometer {
+        .odometer-value {
+            // display: block;
+            width: 100%;
+            text-align: right !important;
+        }
+        .odometer-digit {
+            vertical-align: unset !important;
+        }
+        span {
+            color: var(--Secondary);
+            font-size: 65px;
+            font-family: $font-main5;
+            line-height: 50px;
+            font-weight: 700;
+        }
+    }
+    .sub {
+        font-size: 20px;
+        font-family: $font-main5;
+        color: var(--White);
+        font-weight: 500;
+    }
+    &.style-2 {
+        max-width: 440px;
+        width: 100%;
+        background-color: var(--Secondary);
+        padding: 20px;
+        border-radius: 20px;
+        .has-border {
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 1px dashed var(--Border-7);
+            position: relative;
+        }
+        .counter-item {
+            align-items: flex-start;
+            .sub-odo {
+                color: var(--Bg-6);
+                font-size: 65px;
+                font-family: $font-main5;
+                line-height: 50px;
+                font-weight: 700;
+            }
+            .icon {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background-color: var(--Bg-6);
+                i {
+                    font-size: 23px;
+                }
+            }
+            .title {
+                color: var(--Bg-6);
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .text {
+                color: var(--Bg-6);
+            }
+        }
+        .odometer {
+            span {
+                color: var(--Bg-6);
+            }
+        }
+    }
+    &.style-3 {
+        background-color: var(--Text-4);
+        max-width: 198px;
+        border-radius: 20px;
+        padding: 20px;
+        background: url("./../images/item/counter.jpg") center center;
+        .has-border {
+            width: 100%;
+            padding: 20px 0px;
+            // right: auto;
+            border-radius: 20px;
+            border: 1px dashed var(--Border-8);
+        }
+        .icon {
+            background-color: var(--Primary);
+            i {
+                font-size: 22px;
+            }
+        }
+        .counter-item {
+            .sub-odo {
+                font-size: 55px;
+                line-height: 55px;
+                font-weight: 700;
+                color: var(--Secondary);
+            }
+        }
+        .title {
+            color: var(--White);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+    &.style-4 {
+        background: unset;
+        .counter-item {
+            max-width: 222px;
+        }
+        .odometer {
+            span {
+                color: var(--Text-4);
+            }
+        }
+        .title {
+            font-size: 20px;
+        }
+        .icon-img {
+            max-width: 120px;
+        }
+    }
+    &.style-5 {
+        max-width: 280px;
+        background-color: transparent;
+        .title {
+            // color: var(--White);
+        }
+        .icon {
+            background-color: var(--Text-4);
+            i {
+                font-size: 20px;
+            }
+        }
+        .counter-item {
+            .counter {
+                span {
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+}
+.wg-rating {
+    @include flex(center, center);
+    i {
+        color: var(--Secondary);
+    }
+}
+
+.page-title-home-3 {
+    position: relative;
+    margin-top: 60px;
+    .img-item {
+        z-index: 1;
+        position: absolute;
+        &.item-1 {
+            top: -30px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+        }
+        &.item-2 {
+            bottom: 0;
+        }
+        &.item-3 {
+            top: 0;
+            right: 0;
         }
     }
 }

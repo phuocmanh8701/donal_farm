@@ -1,4 +1,4 @@
-.topbar {
+.tf-topbar {
     background-color: var(--Primary);
     padding: 17px 0px;
     .topbar-inner {
@@ -71,6 +71,39 @@
                     }
                     .icon-instagram2 {
                         font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        border-bottom: 1px dashed var(--Text-4); //var(--Border-9)
+        .topbar-inner {
+            .topbar-left {
+                background-color: unset;
+                .logo {
+                    max-width: 220px;
+                }
+            }
+            .topbar-right {
+                .contact-list {
+                    .icon {
+                        width: 55px;
+                        height: 55px;
+                        i {
+                            font-size: 25px;
+                        }
+                    }
+                    .infor {
+                        .title {
+                            color: var(--White);
+                            font-family: $font-main5;
+                            font-weight: 500;
+                        }
+                        .text {
+                            color: var(--Text-3);
+                            font-family: $font-main4;
+                        }
                     }
                 }
             }
@@ -259,6 +292,49 @@
                 i {
                     @include transition3;
                     color: var(--White);
+                }
+            }
+        }
+    }
+    &.style-2 {
+        .header-inner {
+            .header-right {
+                .icon-wrap {
+                    .icon {
+                        background-color: var(--Primary);
+                        border-color: var(--Primary);
+                        i {
+                            color: var(--White);
+                        }
+                        &:hover {
+                            background-color: var(--Secondary);
+                            border-color: var(--Secondary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-3 {
+        .header-inner {
+            .header-right {
+                .contact-wrap {
+                    @include flex(center, center);
+                    gap: 25px;
+                    .icon {
+                        i {
+                            color: var(--White);
+                        }
+                    }
+                    .sub {
+                        color: var(--Text-4);
+                        font-size: 23px;
+                    }
+                    .number {
+                        font-weight: 600;
+                        font-size: 23px;
+                        color: var(--Primary);
+                    }
                 }
             }
         }
