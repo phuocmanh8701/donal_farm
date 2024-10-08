@@ -125,3 +125,40 @@
         gap: 35px;
     }
 }
+
+.tf-btn-read {
+    display: block;
+    padding-bottom: 13px;
+    position: relative;
+    font-family: $font-main5;
+    color: var(--Primary);
+    width: max-content;
+    font-weight: 500;
+    &:hover {
+        color: var(--Secondary);
+        &::after {
+            width: 0%;
+            left: auto;
+            right: 0;
+        }
+    }
+    &.hover-text-4 {
+        &:hover {
+            color: var(--Text-4);
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        height: 3px;
+        width: 100%;
+        background-color: var(--Secondary);
+        @include transition3;
+    }
+    &.text-white {
+        color: var(--White);
+    }
+}

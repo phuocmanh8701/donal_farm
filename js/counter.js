@@ -9,7 +9,6 @@ function isElementInViewport($el) {
     return bottom > viewportTop && top < viewportBottom;
 }
 
-
 $(window).on('scroll', function () {
 
     if (isElementInViewport($('#odometer'))) {

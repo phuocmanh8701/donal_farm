@@ -109,6 +109,81 @@
             }
         }
     }
+    &.style-3 {
+        background-color: unset;
+        .topbar-inner {
+            .topbar-left {
+                padding: 0px;
+                background-color: unset;
+
+                span {
+                    color: var(--Primary);
+                    &:not(:last-child) {
+                        &::after {
+                            top: 30%;
+                        }
+                    }
+                }
+            }
+        }
+        .topbar-right {
+            .contact-list {
+                .item {
+                    a {
+                        color: var(--Text);
+                    }
+                }
+            }
+        }
+        .icon-wrap {
+            @include flex(center, center);
+            gap: 30px;
+            .icon {
+                &:not(:last-child) {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 33px;
+                        width: 1px;
+                        background-color: var(--Bg-9);
+                        right: -15px;
+                        top: -5px;
+                    }
+                }
+                i {
+                    @include transition3;
+
+                    color: var(--Primary);
+                }
+                &:hover {
+                    i {
+                        color: var(--Secondary);
+                    }
+                }
+                &.wg-bag {
+                    i {
+                        font-size: 24px;
+                    }
+                    position: relative;
+                    &::after {
+                        @include flex(center, center);
+                        content: "3";
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        background-color: var(--Secondary);
+                        color: var(--Text-5);
+                        font-weight: 600;
+                        font-size: 14px;
+                        top: -9px;
+                        right: -7px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .header {
