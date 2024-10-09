@@ -15,16 +15,18 @@
         }
     }
 }
-.img-hover-2 {
-    .hover-item {
-        > * {
+.ic-hover {
+    .hover-icon {
+        .icon,
+        &.icon {
             transition: all 0.8s ease-in-out;
         }
     }
 
     &:hover {
-        .hover-item {
-            > * {
+        .hover-icon {
+            .icon,
+            &.icon {
                 transform: rotateY(360deg);
             }
         }

@@ -1,0 +1,101 @@
+//reset accordion
+.accordion {
+    .accordion-item {
+        border-color: transparent;
+        .accordion-header {
+            .accordion-button {
+                @include transition3;
+                position: relative;
+                &::after {
+                    @include transition3;
+                    content: "";
+                    margin-left: unset;
+                }
+                &::before {
+                    @include transition3;
+                }
+                &:not(.collapsed) {
+                    background-color: unset;
+                    box-shadow: unset;
+                    &::after {
+                        transform: rotate(90deg);
+                    }
+                }
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+        }
+        .accordion-collapse {
+            @include transition3;
+
+            .accordion-body {
+                @include transition3;
+            }
+        }
+    }
+}
+//end reset
+
+.tf-accordion {
+    max-width: 720px;
+    width: 100%;
+    margin-right: auto;
+    .accordion-item {
+        border-radius: 10px;
+        overflow: hidden;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        .accordion-header {
+            background-color: var(--Primary);
+
+            .accordion-button {
+                padding: 16px 25px;
+                background-color: var(--Primary);
+                font-size: 18px;
+                line-height: 28px;
+                font-family: $font-main5;
+                font-weight: 600;
+                color: var(--White);
+                &::before {
+                    @include transition3;
+                    position: absolute;
+                    content: "";
+                    width: 14px;
+                    height: 2px;
+                    top: 29px;
+                    right: 35px;
+                    background-color: var(--Secondary);
+                }
+                &::after {
+                    @include transition3;
+
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: 14px;
+                    background-color: var(--Secondary);
+                    right: 41px;
+                    top: 23px;
+                    margin-left: unset;
+                }
+            }
+        }
+        .accordion-collapse {
+            background-color: var(--Bg-8);
+            .accordion-body {
+                font-family: $font-main4;
+                letter-spacing: 1px;
+                line-height: 26px;
+                font-size: 16px;
+                padding: 33px 30px;
+            }
+            &.show {
+                .accordion-body {
+                    // margin-bottom: 11px;
+                }
+            }
+        }
+    }
+}

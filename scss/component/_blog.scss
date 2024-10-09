@@ -278,6 +278,43 @@
         .content {
             padding-top: 0px;
         }
+        &.type-3 {
+            gap: 0px;
+            .image {
+                img {
+                    max-height: 348px;
+                    height: 100%;
+                }
+            }
+            .content {
+                text-align: center;
+                padding: 25px 20px;
+                .entry-meta {
+                    border: unset;
+                    padding-bottom: 0px;
+                    gap: 18px;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    &::after {
+                        content: none;
+                    }
+                    li {
+                        &:not(:last-child) {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+                .title {
+                    font-size: 23px;
+                    line-height: 33px;
+                }
+                .bot {
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
 .social-list {

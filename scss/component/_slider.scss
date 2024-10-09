@@ -185,3 +185,23 @@
         background-color: var(--Bg-2);
     }
 }
+.slider-partner {
+    .slide-partner {
+        .image {
+            max-width: 185px;
+            width: 100%;
+            @include flex(center, center);
+            a {
+                display: block;
+                opacity: 0.45;
+                img {
+                    // filter: brightness(45%);
+                    @include transition3;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

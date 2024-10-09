@@ -588,3 +588,101 @@
         }
     }
 }
+.box-welcome {
+    position: relative;
+    z-index: 50;
+
+    .welcome-wrap {
+        position: absolute;
+        right: -40px;
+        top: 130px;
+        width: 447px;
+        background-color: var(--Bg-11);
+        z-index: 50;
+        border-radius: 20px;
+        overflow: hidden;
+        @include transition3;
+
+        @include hidden;
+        transform: translateY(20px);
+        &.active {
+            @include visible;
+            transform: translateY(0px);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            right: 0px;
+            top: 0px;
+            // width: 447px;
+            background: linear-gradient(to top, #0d401c, #1c6932);
+            z-index: 51;
+        }
+        .content {
+            position: relative;
+            z-index: 52;
+            right: 0px;
+            top: 0px;
+            padding: 55px 35px;
+            .btn-close-welcome {
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                top: 22px;
+                right: 23px;
+                cursor: pointer;
+                background-color: var(--Primary);
+                @include transition3;
+                i {
+                    color: var(--White);
+                }
+                &:hover {
+                    background-color: var(--Secondary);
+                }
+            }
+            .title {
+                color: var(--Secondary);
+            }
+            .text {
+                color: var(--Text-3);
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px dashed var(--Border-5);
+                }
+            }
+            .infor-list {
+                margin-bottom: 20px;
+                .item {
+                    @include d-flex();
+                    align-items: center;
+                    gap: 15px;
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                    i {
+                        color: var(--Secondary);
+                    }
+                    p {
+                        font-family: $font-main4;
+                        color: var(--White);
+                    }
+                }
+            }
+            .wg-social {
+                .list {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

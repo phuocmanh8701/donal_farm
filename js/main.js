@@ -69,11 +69,23 @@
             }, index * 100); // Delay 100ms giữa mỗi chữ cái
         });
     }
+
+    var openWelcome = function () {
+        $(".btn-open-welcome").on("click", () => {
+            $(".welcome-wrap").toggleClass("active");
+            // $(".btn-open-welcome").toggleClass("active");
+        })
+
+        $(".btn-close-welcome").on("click", () => {
+            $(".welcome-wrap").toggleClass("active");
+            // $(".btn-open-welcome").toggleClass("active");
+        })
+    }
     // Dom Ready
     $(function () {
         videoWrap();
         openNavMobile();
-        // counter();
         textUp();
+        openWelcome();
     });
 })(jQuery);
