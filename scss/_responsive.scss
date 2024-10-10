@@ -41,7 +41,7 @@
     br {
         display: none;
     }
-    .topbar {
+    .tf-topbar {
         .topbar-inner {
             .topbar-left {
                 text-align: center;
@@ -93,7 +93,7 @@
                 }
             }
         }
-        .wg-welcome {
+        .box-welcome {
             display: none !important;
         }
     }
@@ -202,7 +202,7 @@
             display: block;
         }
     }
-    .topbar {
+    .tf-topbar {
         .topbar-inner {
             .topbar-right {
                 .social-list {
@@ -319,7 +319,7 @@
     .main-content {
         padding: 100px 0px;
     }
-    .topbar {
+    .tf-topbar {
         .topbar-inner {
             .topbar-right {
                 gap: 25px;
@@ -493,7 +493,7 @@
             }
         }
     }
-    .topbar {
+    .tf-topbar {
         .topbar-inner {
             flex-wrap: wrap;
             gap: 10px;

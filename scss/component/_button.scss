@@ -13,6 +13,7 @@
     font-family: $font-main5;
     overflow: hidden;
     // white-space: nowrap;
+    // background-color: ;
     .icon {
         width: 43px;
         height: 43px;
@@ -77,6 +78,8 @@
         // .icon {
         //     transform: rotate(180deg);
         // }
+        background-color: transparent;
+        // transition: 0.3s;
         .text-style {
             color: var(--Primary);
             transform: translateX(5px);
@@ -123,6 +126,12 @@
     }
     &.gap-35 {
         gap: 35px;
+    }
+    &.style-3 {
+        background-color: var(--Bg-6);
+        &:hover {
+            background-color: transparent;
+        }
     }
 }
 

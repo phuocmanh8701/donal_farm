@@ -1,0 +1,91 @@
+.wg-tabs {
+    .menu-tab {
+        @include flex(center, center);
+        gap: 40px;
+        margin-bottom: 35px;
+        white-space: nowrap;
+        .item {
+            @include transition3;
+
+            a {
+                padding-bottom: 10px;
+                position: relative;
+                font-size: 18px;
+                font-weight: 500;
+                font-family: $font-main5;
+                display: block;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: auto;
+                    right: 0;
+                    height: 3px;
+                    width: 0;
+                    background-color: var(--Secondary);
+                    @include transition3;
+                }
+                &:hover {
+                    color: var(--Text-4);
+                    &::after {
+                        left: 0;
+                        right: auto;
+                        width: 100%;
+                    }
+                }
+            }
+            &.active {
+                a {
+                    color: var(--Text-4);
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        border-radius: 20px;
+        border: 1px solid var(--Border);
+        padding: 0px 130px 75px;
+        .menu-tab {
+            padding: 0px 50px;
+            margin-top: -29px;
+            background: white;
+            .item {
+                a {
+                    font-size: 16px;
+
+                    background-color: var(--Bg-9);
+                    color: var(--Primary);
+                    border-radius: 27.5px;
+                    padding: 20px 50px;
+                    &::after {
+                        content: none;
+                    }
+                    &:hover {
+                        background-color: var(--Primary);
+                        color: var(--White);
+                    }
+                }
+            }
+        }
+        .widget-content-inner {
+            text-align: center;
+            .text-1 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .widget-content-tab {
+        .widget-content-inner {
+            visibility: hidden;
+            opacity: 0;
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

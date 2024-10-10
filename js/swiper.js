@@ -131,3 +131,39 @@ if ((".slider-partner").length > 0) {
         },
     });
 }
+//thumbs
+
+
+if ($(".thumbs-slider").length > 0) {
+    var direction = $(".tf-product-media-thumbs").data("direction");
+    var thumbs = new Swiper(".tf-product-media-thumbs", {
+        spaceBetween: 20,
+        slidesPerView: "3",
+        initialSlide: 1,
+        slideTo: 1,
+        direction: "vertical",
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            0: {
+                direction: "horizontal",
+                slidesPerView: 3,
+            },
+            1150: {
+                direction: "horizontal",
+                direction: direction,
+            },
+        },
+        450: {
+            direction: "horizontal",
+        },
+    });
+    var main = new Swiper(".tf-product-media-main", {
+        spaceBetween: 0,
+        observer: true,
+        observeParents: true,
+        thumbs: {
+            swiper: thumbs,
+        },
+    });
+}
