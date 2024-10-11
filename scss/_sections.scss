@@ -175,38 +175,73 @@
     }
 }
 .s-break-page {
-    // margin-top: 23px;
-    // height: 400px;
-    // background-color: var(--Secondary);
-    // position: relative;
-    // z-index: 3;
-    // .img-item {
-    //     position: absolute;
-    //     &.item-1 {
-    //         top: -20px;
-    //         left: 0;
-    //         width: 100%;
-    //         img {
-    //             height: 23px;
-    //             width: 100%;
-    //             object-fit: cover;
-    //         }
-    //     }
-    //     &.item-2 {
-    //         right: 0;
-    //         bottom: 0;
-    //     }
-    //     &.item-3 {
-    //         bottom: -40px;
-    //         left: 0;
-    //         width: 100%;
+    margin-top: 23px;
+    height: 400px;
+    background-color: var(--Secondary);
+    position: relative;
+    z-index: 3;
+    .img-item {
+        position: absolute;
+        &.item-1 {
+            top: -20px;
+            left: 0;
+            width: 100%;
+            img {
+                height: 23px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &.item-2 {
+            right: 0;
+            bottom: 0;
+        }
+        &.item-3 {
+            bottom: -40px;
+            left: 0;
+            width: 100%;
 
-    //         img {
-    //             width: 100%;
-    //             height: 60px;
-    //         }
-    //     }
-    // }
+            img {
+                width: 100%;
+                height: 60px;
+            }
+        }
+    }
+    &.style-2 {
+        height: 550px;
+        position: relative;
+        z-index: 0;
+        .content {
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            padding: 150px 0px 0px;
+            width: 100%;
+            h1 {
+                color: var(--White);
+            }
+        }
+        &::after {
+            z-index: 0;
+
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: url("./../images/section/break-page.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        &::before {
+            background-color: var(--Bg-14);
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+    }
 }
 .s-box-portfolio {
     position: relative;
@@ -627,44 +662,9 @@
         }
     }
 }
-.s-break-page {
-    height: 550px;
-    position: relative;
-    z-index: 0;
-    .content {
-        position: absolute;
-        top: 0;
-        z-index: 3;
-        padding: 150px 0px 0px;
-        width: 100%;
-        h1 {
-            color: var(--White);
-        }
-    }
-    &::after {
-        z-index: 0;
-
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: url("./../images/section/break-page.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    &::before {
-        background-color: var(--Bg-14);
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-}
-
 .s-faq {
     padding-top: 100px;
+    padding-bottom: 120px;
     .content-section {
         max-width: 720px;
         width: 100%;

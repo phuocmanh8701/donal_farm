@@ -6795,6 +6795,74 @@ a.mapboxgl-ctrl-logo {
   color: var(--Text-2);
 }
 
+.s-break-page {
+  margin-top: 23px;
+  height: 400px;
+  background-color: var(--Secondary);
+  position: relative;
+  z-index: 3;
+}
+.s-break-page .img-item {
+  position: absolute;
+}
+.s-break-page .img-item.item-1 {
+  top: -20px;
+  left: 0;
+  width: 100%;
+}
+.s-break-page .img-item.item-1 img {
+  height: 23px;
+  width: 100%;
+  object-fit: cover;
+}
+.s-break-page .img-item.item-2 {
+  right: 0;
+  bottom: 0;
+}
+.s-break-page .img-item.item-3 {
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+}
+.s-break-page .img-item.item-3 img {
+  width: 100%;
+  height: 60px;
+}
+.s-break-page.style-2 {
+  height: 550px;
+  position: relative;
+  z-index: 0;
+}
+.s-break-page.style-2 .content {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  padding: 150px 0px 0px;
+  width: 100%;
+}
+.s-break-page.style-2 .content h1 {
+  color: var(--White);
+}
+.s-break-page.style-2::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("./../images/section/break-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.s-break-page.style-2::before {
+  background-color: var(--Bg-14);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
 .s-box-portfolio {
   position: relative;
   z-index: 4;
@@ -7238,43 +7306,9 @@ a.mapboxgl-ctrl-logo {
   z-index: 1;
 }
 
-.s-break-page {
-  height: 550px;
-  position: relative;
-  z-index: 0;
-}
-.s-break-page .content {
-  position: absolute;
-  top: 0;
-  z-index: 3;
-  padding: 150px 0px 0px;
-  width: 100%;
-}
-.s-break-page .content h1 {
-  color: var(--White);
-}
-.s-break-page::after {
-  z-index: 0;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: url("./../images/section/break-page.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.s-break-page::before {
-  background-color: var(--Bg-14);
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
 .s-faq {
   padding-top: 100px;
+  padding-bottom: 120px;
 }
 .s-faq .content-section {
   max-width: 720px;

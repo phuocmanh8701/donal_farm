@@ -190,3 +190,17 @@ if ((".slider-s-testimonial").length > 0) {
         },
     });
 }
+
+//slider-box-event
+
+if ((".slider-box-event").length > 0) {
+    var swiper = new Swiper(".slider-box-event", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 28,
+        // navigation: {
+        //     nextEl: '.btn-slide-home-3.btn-next',  // Chọn phần tử chứa nút next
+        //     prevEl: '.btn-slide-home-3.btn-prev',  // Chọn phần tử chứa nút prev
+        // },
+    });
+}
