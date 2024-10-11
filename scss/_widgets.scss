@@ -259,7 +259,6 @@ i {
 
 .wg-counter {
     @include flex(center, space-between);
-    background-color: var(--Bg-6);
     padding: 20px 0px;
     .counter-item {
         @include flex(center, space-between);
@@ -750,8 +749,10 @@ i {
             height: 125px;
             margin-top: -69px;
             margin-bottom: 35px;
+            // display: block;
+            // padding: 37px;
             i {
-                font-size: 50px;
+                font-size: 49px;
             }
         }
         .caption {
@@ -1216,6 +1217,21 @@ i {
             }
         }
     }
+    &.style-5 {
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            bottom: -90px;
+        }
+        &:hover {
+            .content {
+                bottom: 35px;
+            }
+        }
+    }
 }
 .box-portfolio-style-2 {
     @include d-flex();
@@ -1554,6 +1570,15 @@ i {
                     margin-bottom: 20px;
                 }
             }
+        }
+    }
+    &.style-4 {
+        padding: 0px;
+        &:hover {
+            box-shadow: unset;
+        }
+        .author-wrap {
+            margin-bottom: 0px;
         }
     }
 }
@@ -1999,6 +2024,5 @@ i {
         border-color: var(--Bg-8);
     }
 }
-.s-service{
-    
+.s-service {
 }

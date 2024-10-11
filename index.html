@@ -39,7 +39,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
 </head>
 
-<body>
+<body class="counter-scroll">
 
     <!-- wrapper -->
     <div id="wrapper">
@@ -125,10 +125,10 @@
                                 </div>
                                 <div class="main-nav">
                                     <ul class="nav-list">
-                                        <li class="item has-child ">
+                                        <li class="item has-child current-menu">
                                             <a href="javascript:void(0)">Home</a>
                                             <ul class="sub-nav">
-                                                <li class="">
+                                                <li class="current-item">
                                                     <a href="index.html">
                                                         <span>
                                                             Home 1
@@ -298,7 +298,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="item has-child current-menu">
+                                        <li class="item has-child">
                                             <a href="javascript:void(0)">Blog</a>
                                             <ul class="sub-nav">
                                                 <li>
@@ -308,7 +308,7 @@
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class="current-item">
+                                                <li>
                                                     <a href="blog-right-sidebar.html">
                                                         <span>
                                                             Blog Right Sidebar
@@ -485,8 +485,7 @@
                                                 <i class="icon-arrow_down"></i>
                                             </a>
                                             <ul class="sub-menu-mobile">
-
-                                                <li class="menu-item "><a href="#">Service Detail</a></li>
+                                                <li class="menu-item "><a href="">Service Detail</a></li>
                                                 <li class="menu-item"><a href="#">Event Detail</a></li>
                                                 <li class="menu-item"><a href="#">FAQs</a></li>
                                                 <li class="menu-item"><a href="#">Testimonial</a></li>
@@ -494,19 +493,15 @@
                                                 <li class="menu-item"><a href="#">Coming Soon</a></li>
                                                 <li class="menu-item"><a href="#">404</a></li>
                                             </ul>
+                                        </li>
                                         <li class="menu-item menu-item-has-children-mobile">
                                             <a class="item-menu-mobile " href="javascript:void(0)">Blog <i
                                                     class="icon-arrow_down"></i></a>
                                             <ul class="sub-menu-mobile">
-                                                <li class="menu-item">
-                                                    <a href="blog-full-width.html">
-                                                        Blog Full Width</a>
+                                                <li class="menu-item"><a href="blog-full-width.html">Blog Full Width</a>
                                                 </li>
-                                                <li class="menu-item ">
-                                                    <a href="blog-right-sidebar.html">
-                                                        Blog Right
-                                                        Sidebar
-                                                    </a>
+                                                <li class="menu-item "><a href="blog-right-sidebar.html">Blog Right
+                                                        Sidebar</a>
                                                 </li>
                                                 <li class="menu-item "><a href="blog-single.html">Blog Single</a></li>
                                             </ul>
@@ -1029,10 +1024,10 @@
                                     </div>
                                 </div>
                                 <div class="content-section">
-                                    <div class="heading-section">
+                                    <div class="heading-section style-2">
                                         <div class="img-item">
 
-                                            <div class="img-item">
+                                            <div class="item">
                                                 <img src="./images/item/rice-plant-2.png" alt="">
                                             </div>
                                             <p class="sub-title">
@@ -1045,7 +1040,65 @@
                                             Wonderful Love Of Nature
                                         </p>
                                     </div>
+                                    <p class="text">
+                                        Wendell Berry said it best when he said that “eating is an agricultural act.”
+                                        Our mission is to change the food system
+                                        by providing a healthy, fresh alternative to industrial food. Large-scale
+                                        agriculture often uses pesticides, herbicides,
+                                        genetic modification.
+                                    </p>
+                                    <a href="#" class="tf-btn btn-read-more scale-40">
+                                        <span class="text-style ">
+                                            More Why Choose Us
+                                        </span>
+                                        <div class="icon">
+                                            <i class="icon-arrow_right"></i>
+                                        </div>
+                                    </a>
                                 </div>
+                            </div>
+                            <div class="bot relative">
+                                <ul class="benefit-list">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <a href="#" class="h5 hover-text-secondary title fw-6 font-worksans">
+
+                                            100% Organic Products
+                                        </a>
+                                        <p class="sub">
+                                            Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin
+                                            nibh sit amet commodo nulla.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <a href="#" class="h5 hover-text-secondary title fw-6 font-worksans">
+
+                                            100% Organic Products
+                                        </a>
+                                        <p class="sub">
+                                            Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin
+                                            nibh sit amet commodo nulla.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <a href="#" class="h5 hover-text-secondary title fw-6 font-worksans">
+
+                                            100% Organic Products
+                                        </a>
+                                        <p class="sub">
+                                            Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin
+                                            nibh sit amet commodo nulla.
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1053,6 +1106,561 @@
             </section>
             <!-- /section why us -->
 
+            <!-- section our commitments -->
+            <section class="s-our-commitment tf-spacing-3">
+                <div class="tf-container w-1620">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main-section">
+                                <div class="content-section">
+                                    <div class="heading-section style-2">
+                                        <div class="img-item">
+
+                                            <div class="item">
+                                                <img src="./images/item/rice-plant-2.png" alt="">
+                                            </div>
+                                            <p class="sub-title">
+                                                Our Commitment
+                                            </p>
+                                        </div>
+
+                                        <p class="title">
+                                            We Always Bring Customers
+                                            Green & Clean Products
+                                        </p>
+                                    </div>
+                                    <p class="text mb-20">
+                                        At Capital Gardens we believe that we have a duty to adhere to good
+                                        environmental practice, and operate in a sustainable
+                                        manner. As lovers of plants and the environment it is only natural for us to
+                                        want to reduce man’s impact.
+                                    </p>
+
+                                    <ul class="box-icon-list">
+                                        <li class="li">
+                                            <div class="box-icon style-3 ic-hover">
+                                                <div class="icon style-circle hover-icon">
+                                                    <i class="icon-chemical"></i>
+                                                </div>
+                                                <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                    Minimal
+                                                    Chemicals Used
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="li">
+                                            <div class="box-icon style-3 ic-hover">
+                                                <div class="icon style-circle hover-icon">
+                                                    <i class="icon-worm"></i>
+                                                </div>
+                                                <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                    Minimal
+                                                    Chemicals Used
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="li">
+                                            <div class="box-icon style-3 ic-hover">
+                                                <div class="icon style-circle hover-icon">
+                                                    <i class="icon-disposal"></i>
+                                                </div>
+                                                <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                    All Organic
+                                                    Waste Reused
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="li">
+                                            <div class="box-icon style-3 ic-hover">
+                                                <div class="icon style-circle hover-icon">
+                                                    <i class="icon-light-bulb"></i>
+                                                </div>
+                                                <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                    Do Not Use
+                                                    Artificial Light
+
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="tf-btn btn-read-more scale-40">
+                                        <span class="text-style ">
+                                            See More Our Commitment
+                                        </span>
+                                        <div class="icon">
+                                            <i class="icon-arrow_right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-wrap img-hover">
+                                    <div class="image hover-item">
+                                        <img src="./images/section/s-commit.jpg"
+                                            data-src="./images/section/s-commit.jpg" alt="" class="lazyload">
+                                    </div>
+                                    <div class="img-item item-1">
+                                        <img class="laztyload" src="./images/item/notice.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section our commitments -->
+
+            <!-- section project -->
+            <section class="s-project ">
+
+
+                <div class="heading-side has-img-item">
+
+                    <div class="tf-container w-1290">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading-section style-3 has-text text-center">
+                                    <p class="sub-title">
+                                        Closes Projects
+                                    </p>
+                                    <p class="title">
+                                        Latest Projects List
+                                    </p>
+                                    <p class="text">
+                                        Duis eleifend euismod arcu, nec faucibus mauris finibus id. Integer mattis,
+                                        tellus
+                                        non finibus rutrum.
+                                    </p>
+                                    <div class="img-item">
+                                        <img src="./images/item/rice-plant-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-img-item item-1">
+                        <img src="./images/item/page-title-top.png" alt="">
+                    </div>
+                    <div class="s-img-item item-2">
+                        <img src="./images/item/windmill.png" alt="">
+                    </div>
+                    <div class="s-img-item item-3">
+                        <img src="./images/item/green.png" alt="">
+
+                    </div>
+                </div>
+
+                <div class="slider-side">
+                    <div class="swiper-container slider-s-project">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box-portfolio style-5">
+                                    <div class="image">
+                                        <img src="./images/section/s-project-1.jpg"
+                                            data-src="./images/section/s-project-1.jpg" alt=""
+                                            class=" ls-is-cached lazyloaded">
+                                    </div>
+                                    <div class="content">
+                                        <p class="sub font-farmhouse text-upper">Agriculture - farm</p>
+                                        <a href="#" class="title fs-23 font-worksans fw-6 hover-text-secondary">The Joy
+                                            Of
+                                            Sheep
+                                            Farming</a>
+                                        <p class="text font-nunito">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Sed a
+                                            cursus massa.
+                                            Cras ut dui nec nibhvehicula fermentum.
+                                            natoque penatibus.</p>
+                                        <div class="bot">
+
+                                            <a href="#" class="btn-read icon style-circle">
+                                                <i class="icon-arrow_right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-portfolio style-5">
+                                    <div class="image">
+                                        <img src="./images/section/s-project-2.jpg"
+                                            data-src="./images/section/s-project-2.jpg" alt=""
+                                            class=" ls-is-cached lazyloaded">
+                                    </div>
+                                    <div class="content">
+                                        <p class="sub font-farmhouse text-upper">Agriculture - farm</p>
+                                        <a href="#" class="title fs-23 font-worksans fw-6 hover-text-secondary">The Joy
+                                            Of
+                                            Sheep
+                                            Farming</a>
+                                        <p class="text font-nunito">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Sed a
+                                            cursus massa.
+                                            Cras ut dui nec nibhvehicula fermentum.
+                                            natoque penatibus.</p>
+                                        <div class="bot">
+
+                                            <a href="#" class="btn-read icon style-circle">
+                                                <i class="icon-arrow_right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-portfolio style-5">
+                                    <div class="image">
+                                        <img src="./images/section/s-project-3.jpg"
+                                            data-src="./images/section/s-project-3.jpg" alt=""
+                                            class=" ls-is-cached lazyloaded">
+                                    </div>
+                                    <div class="content">
+                                        <p class="sub font-farmhouse text-upper">Agriculture - farm</p>
+                                        <a href="#" class="title fs-23 font-worksans fw-6 hover-text-secondary">The Joy
+                                            Of
+                                            Sheep
+                                            Farming</a>
+                                        <p class="text font-nunito">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Sed a
+                                            cursus massa.
+                                            Cras ut dui nec nibhvehicula fermentum.
+                                            natoque penatibus.</p>
+                                        <div class="bot">
+
+                                            <a href="#" class="btn-read icon style-circle">
+                                                <i class="icon-arrow_right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tf-container w-120">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="bot">
+                                        <div class="swiper-pagination pagination-s-project"></div>
+                                        <a href="#" class="tf-btn-read">View All Latest Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-img-item item-4">
+                    <img src="./images/item/page-title-top.png" alt="">
+                </div>
+            </section>
+            <!-- /section project -->
+
+            <!-- section testimonial -->
+            <section class="s-testimonial">
+                <div class="image">
+                    <img src="./images/item/s-testi.png" alt="">
+                    <!-- <img src="./images/item/farm-1.png" alt="" class="img-item item-1"> -->
+                    <!-- <img src="./images/item/farm-2.png" alt="" class="img-item item-2"> -->
+
+                </div>
+
+                <div class="content-section">
+                    <div class="heading-section">
+                        <p class="sub-title">
+                            Testimonials With Us
+                        </p>
+                        <p class="title">
+                            What Clients Says?
+
+                        </p>
+                        <div class="img-item">
+                            <img src="./images/item/rice-plant-2.png" alt="">
+                        </div>
+                        <div class="img-item item-2">
+                            <i class="icon-quote"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-container slider-s-testimonial">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial style-4">
+                                    <div class="comment">
+                                        <p class="caption fs-23 font-snowfall">
+                                            Having been a host farmer for three seasons, we’ve seen firsthand the
+                                            difference
+                                            this
+                                            internship makes in beginning
+                                            farmers and host farms alike. As a farmer it is difficult to weigh the
+                                            benefits
+                                            of
+                                            hosting young farmers. Fresh energy
+                                            and enthusiasm.
+                                        </p>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <div class="left">
+                                            <div class="image-avt">
+                                                <img src="./images/widget/author-comment.jpg" alt="">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="name-wrap">
+                                                    <a href="#" class="name text-upper hover-text-4">
+                                                        CHRISTINE ROSE
+                                                    </a>
+                                                    <div class="wg-rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="duty">
+                                                    Director, Radical Orange Pty Ltd.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" btn-s-testimonial btn-next">
+                            <img src="./icons/slide-next-2.svg" alt="">
+                        </div>
+                        <div class=" btn-s-testimonial btn-prev">
+                            <img src="./icons/slide-prev-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section testimonial -->
+
+            <!-- section counter -->
+            <section class="s-counter has-img-item">
+                <div class="tf-container w-1290">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wg-counter">
+                                <div class="counter-item">
+                                    <div class="icon">
+                                        <i class="icon-barley"></i>
+                                    </div>
+                                    <div class="counter">
+                                        <div id="odometer" class="odometer style-1 style-1-1">1000</div>
+                                    </div>
+                                    <p class="sub">
+                                        Completed Projects
+                                    </p>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-cow"></i>
+                                    </div>
+                                    <div class="counter">
+                                        <div id="odometer" class="odometer style-1 style-1-2">1000</div>
+                                    </div>
+                                    <p class="sub">
+                                        Animals Anda Plants
+                                    </p>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-tractor"></i>
+                                    </div>
+                                    <div class="counter">
+                                        <div id="odometer" class="odometer style-1-3">10</div>
+                                    </div>
+                                    <p class="sub">
+                                        Years Of Experience
+
+                                    </p>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="icon">
+                                        <i class="icon-barley"></i>
+
+                                    </div>
+                                    <div class="counter">
+                                        <div id="odometer" class="odometer style-1-4">1000</div>
+                                    </div>
+                                    <p class="sub">
+                                        Tons of Harvest
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-img-item item-1">
+                    <img src="./images/item/brown-top.png" alt="">
+                </div>
+                <div class="s-img-item item-2">
+                    <img src="./images/item/tructor.png" alt="">
+                </div>
+                <div class="s-img-item item-bottom">
+                    <img src="./images/item/brown-bottom.png" alt="">
+                </div>
+            </section>
+            <!-- /section counter -->
+
+            <!-- section break page -->
+            <section class="s-break-page style-2">
+                <div class="content">
+                    <h1 class="font-farmhouse text-center">
+                        Agriculture Is The Most <br>
+                        Healthful, Most Useful And Most <br>
+                        Noble Employment Of Man
+                    </h1>
+                </div>
+            </section>
+            <!-- /section break page -->
+
+            <!-- section faq -->
+            <section class="s-faq has-img-item">
+                <div class="tf-container w-1290">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="content-section">
+                                <div class="heading-section style-2">
+                                    <div class="img-item">
+
+                                        <div class="item">
+                                            <img src="./images/item/rice-plant-2.png" alt="">
+                                        </div>
+                                        <p class="sub-title">
+                                            Frequently Asked Questions
+                                        </p>
+                                    </div>
+
+                                    <p class="title">
+                                        Most Frequently Asked
+                                        Questions About The Farm.
+                                    </p>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales
+                                    faucibus.
+                                </p>
+                                <div class="tf-accordion accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                What proof do you need for Carer’s tickets?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Under 2’s are free and will need a ticket. Tickets are free of charge
+                                                but attract a
+                                                booking fee to cover the cost of
+                                                processing the booking. If you book an under 2 ticket please bring with
+                                                you proof of
+                                                age.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Do I have to pay extra for the shows?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Under 2’s are free and will need a ticket. Tickets are free of charge
+                                                but attract a
+                                                booking fee to cover the cost of
+                                                processing the booking. If you book an under 2 ticket please bring with
+                                                you proof of
+                                                age.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Can I bring my team or friends?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Under 2’s are free and will need a ticket. Tickets are free of charge
+                                                but attract a
+                                                booking fee to cover the cost of
+                                                processing the booking. If you book an under 2 ticket please bring with
+                                                you proof of
+                                                age.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Can I join the farm as a permanent member?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Under 2’s are free and will need a ticket. Tickets are free of charge
+                                                but attract a
+                                                booking fee to cover the cost of
+                                                processing the booking. If you book an under 2 ticket please bring with
+                                                you proof of
+                                                age.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="s-right img-hover">
+                                <div class="image-wrap hover-item">
+                                    <div class="image">
+                                        <img src="./images/section/s-faq.jpg" data-src="./images/section/s-faq.jpg"
+                                            alt="" class="lazyload">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <img src="./images/item/question.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p class="text fs-30 font-snowfall">
+                                        You didn't find your question? See more questions and ask us today!
+                                    </p>
+                                    <a href="#" class="tf-btn  bg-white">
+                                        <span class="text-style cl-primary">
+                                            Read More
+                                        </span>
+                                        <div class="icon">
+                                            <i class="icon-arrow_right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-img-item item-1 t--40 z-3">
+                    <img src="./images/item/page-title-top.png" alt="">
+                </div>
+            </section>
+            <!-- /section faq -->
+
+            <!-- section banner -->
+            <!-- /section banner -->
 
 
         </div>
@@ -1303,18 +1911,18 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/lazysize.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.textillate.js"></script>
     <script type="text/javascript" src="js/jquery-lettering.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/swiper.js"></script>
-    <script type="text/javascript" src="js/magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/textanimation.js"></script>
 
     <script type="text/javascript" src="js/odometer.min.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
     <script type="text/javascript" src="js/count-down.js"></script>
-
     <script type="text/javascript" src="js/main.js"></script>
+
     <!-- /Javascript -->
 </body>
 

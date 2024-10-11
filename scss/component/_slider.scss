@@ -254,3 +254,19 @@
         }
     }
 }
+
+.slider-s-testimonial {
+    position: relative;
+    .btn-s-testimonial {
+        position: absolute;
+        z-index: 5;
+        &.btn-next {
+            bottom: 30px;
+            right: 315px;
+        }
+        &.btn-prev {
+            bottom: 30px;
+            right: 410px;
+        }
+    }
+}

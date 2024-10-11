@@ -96,7 +96,8 @@
             $(window).scroll(function (event) {
                 if ($(this).scrollTop() >= 300) {
                     didScroll = true;
-                } else {
+                }
+                else {
                     didScroll = false;
                     if ($(this).scrollTop() === 0) {
                         $(".header").removeClass("scrollHeader")

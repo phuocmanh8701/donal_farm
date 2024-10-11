@@ -167,3 +167,26 @@ if ($(".thumbs-slider").length > 0) {
         },
     });
 }
+if ((".slider-s-project").length > 0) {
+    var swiper = new Swiper(".slider-s-project", {
+        slidesPerView: 2.9,
+        loop: true,
+        // centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination.pagination-s-project',  // Kích hoạt pagination
+            clickable: true,           // Cho phép click vào pagination để điều hướng
+        },
+    });
+}
+
+if ((".slider-s-testimonial").length > 0) {
+    var swiper = new Swiper(".slider-s-testimonial", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: '.btn-s-testimonial.btn-next',  // Chọn phần tử chứa nút next
+            prevEl: '.btn-s-testimonial.btn-prev',  // Chọn phần tử chứa nút prev
+        },
+    });
+}
