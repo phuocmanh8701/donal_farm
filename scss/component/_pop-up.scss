@@ -20,6 +20,7 @@
         transform: translateY(0px) !important;
         @include visible;
         @include transition2;
+        z-index: 999999;
     }
     > .btn-close-search {
         position: absolute;

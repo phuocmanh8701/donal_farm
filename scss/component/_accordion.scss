@@ -84,17 +84,17 @@
             }
         }
         .accordion-collapse {
-            background-color: var(--Bg-8);
             .accordion-body {
+                background-color: var(--Bg-8);
                 font-family: $font-main4;
                 letter-spacing: 1px;
                 line-height: 26px;
                 font-size: 16px;
                 padding: 33px 30px;
+                margin-bottom: 11px;
             }
             &.show {
                 .accordion-body {
-                    // margin-bottom: 11px;
                 }
             }
         }

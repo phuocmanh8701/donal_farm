@@ -189,6 +189,25 @@
                 });
         });
     };
+    //
+    //changeValue
+    var changeValue = function () {
+        if ($(".tf-dropdown-sort").length > 0) {
+            $(".select-item").click(function (event) {
+                $(this)
+                    .closest(".tf-dropdown-sort")
+                    .find(".text-sort-value")
+                    .text($(this).find(".text-value-item").text());
+
+                $(this)
+                    .closest(".dropdown-menu")
+                    .find(".select-item.active")
+                    .removeClass("active");
+
+                $(this).addClass("active");
+            });
+        }
+    };
     // Dom Ready
     $(function () {
         videoWrap();
@@ -198,5 +217,6 @@
         headerScroll();
         btnQuantity();
         tabs();
+        changeValue();
     });
 })(jQuery);

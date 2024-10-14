@@ -177,6 +177,17 @@
             .text {
                 margin-bottom: 30px;
             }
+            .bot {
+                .share {
+                    transform: translateX(0px);
+                    .social-list {
+                        @include visible;
+                    }
+                    p {
+                        margin-right: 10px !important;
+                    }
+                }
+            }
         }
     }
     .subscribe-wrap {

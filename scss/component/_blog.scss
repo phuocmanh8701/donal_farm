@@ -229,12 +229,16 @@
         }
         .bot {
             @include flex(center, space-between);
-            gap: 20px;
+            gap: 15px 10px;
             flex-wrap: wrap;
+            overflow: hidden;
             .share {
                 @include flex(center, flex-start);
                 flex-wrap: wrap;
                 gap: 10px 0px;
+                cursor: pointer;
+                @include transition3;
+                transform: translateX(216px);
                 .icon {
                     width: 43px;
                     height: 43px;
@@ -249,6 +253,16 @@
                 p {
                     &.mr-23 {
                         margin-right: 23px;
+                    }
+                }
+                .social-list {
+                    @include hidden;
+                    @include transition3;
+                }
+                &:hover {
+                    transform: translateX(0px);
+                    .social-list {
+                        @include visible;
                     }
                 }
             }
@@ -928,6 +942,11 @@
                 }
             }
         }
+        .btn-reply {
+            &:hover {
+                background-color: transparent;
+            }
+        }
     }
 }
 
@@ -946,5 +965,8 @@
         &.field-text {
             margin-bottom: 50px;
         }
+    }
+    .tf-btn {
+        @include transition3;
     }
 }

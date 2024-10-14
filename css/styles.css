@@ -752,6 +752,9 @@ a.hover-text-secondary:hover {
 a.hover-text-4:hover {
   color: var(--Text-4) !important;
 }
+a.text-white {
+  color: var(--White);
+}
 
 /* tf-container
 -------------------------------------------------------------- */
@@ -935,7 +938,8 @@ a.hover-text-4:hover {
   position: absolute;
   width: 5px;
   height: 5px;
-  top: 45%;
+  top: 50%;
+  transform: translateY(-50%);
   right: -20px;
   border-radius: 50%;
   background-color: var(--Secondary);
@@ -1161,7 +1165,7 @@ a.hover-text-4:hover {
 .header .header-inner .header-left .nav-list .item a {
   font-family: "WorkSans", sans-serif;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 60px;
   display: block;
   font-size: 18px;
 }
@@ -1183,7 +1187,7 @@ a.hover-text-4:hover {
   opacity: 0;
 }
 .header .header-inner .header-left .nav-list .item:hover::before {
-  top: 13px;
+  top: 17px;
   visibility: visible;
   opacity: 1;
 }
@@ -1193,7 +1197,7 @@ a.hover-text-4:hover {
   transform: translateY(0px);
 }
 .header .header-inner .header-left .nav-list .item.current-menu::before {
-  top: 13px;
+  top: 17px;
   visibility: visible;
   opacity: 1;
 }
@@ -1393,7 +1397,7 @@ a.hover-text-4:hover {
 .header.scrollHeader {
   position: sticky;
   background-color: var(--White);
-  z-index: 100000000000000000;
+  z-index: 99999;
   box-shadow: 0px 14px 35px 0px rgba(0, 0, 0, 0.13);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1796,9 +1800,10 @@ a.hover-text-4:hover {
   justify-content: flex-start;
   gap: 23px;
 }
-.footer .footer-inner .footer-inner-wrap .new-post-list li .image img {
+.footer .footer-inner .footer-inner-wrap .new-post-list li .image {
   max-width: 63px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .footer .footer-inner .footer-inner-wrap .new-post-list li .content {
   flex-direction: column;
@@ -2924,6 +2929,7 @@ fieldset {
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  z-index: 999999;
 }
 .offcanvas-search > .btn-close-search {
   position: absolute;
@@ -3246,8 +3252,9 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px 10px;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .article-blog-item .content .bot .share {
   display: -webkit-box;
@@ -3259,6 +3266,13 @@ fieldset {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px 0px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateX(216px);
 }
 .article-blog-item .content .bot .share .icon {
   width: 43px;
@@ -3279,6 +3293,22 @@ fieldset {
 }
 .article-blog-item .content .bot .share p.mr-23 {
   margin-right: 23px;
+}
+.article-blog-item .content .bot .share .social-list {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.article-blog-item .content .bot .share:hover {
+  transform: translateX(0px);
+}
+.article-blog-item .content .bot .share:hover .social-list {
+  visibility: visible;
+  opacity: 1;
 }
 .article-blog-item.style-2 {
   flex-direction: column;
@@ -4038,6 +4068,9 @@ fieldset {
   font-weight: 600;
   font-size: 18px;
 }
+.comment-wrap .author-wrap .btn-reply:hover {
+  background-color: transparent;
+}
 
 .post-comment-wrap h2 {
   margin-bottom: 20px;
@@ -4052,6 +4085,13 @@ fieldset {
 }
 .form-post-comment .cols.field-text {
   margin-bottom: 50px;
+}
+.form-post-comment .tf-btn {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*------------ testimonial ---------------- */
@@ -4162,15 +4202,14 @@ fieldset {
   margin-left: unset;
   background-image: unset;
 }
-.tf-accordion .accordion-item .accordion-collapse {
-  background-color: var(--Bg-8);
-}
 .tf-accordion .accordion-item .accordion-collapse .accordion-body {
+  background-color: var(--Bg-8);
   font-family: "Nunito", sans-serif;
   letter-spacing: 1px;
   line-height: 26px;
   font-size: 16px;
   padding: 33px 30px;
+  margin-bottom: 11px;
 }
 /*------------ shop ---------------- */
 /*------------ map ---------------- */
@@ -4602,11 +4641,24 @@ a.mapboxgl-ctrl-logo {
 .wg-social.style-2 .list {
   gap: 0px;
   border-radius: 10px;
-  border: 1px solid var(--Border-14);
   overflow: hidden;
 }
+.wg-social.style-2 .list li {
+  border: 1px solid var(--Border-14);
+  border-radius: 0;
+  overflow: hidden;
+}
+.wg-social.style-2 .list li:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.wg-social.style-2 .list li:last-child {
+  border-radius: 0 10px 10px 0;
+}
 .wg-social.style-2 .list li:not(:last-child) {
-  border-right: 1px solid var(--Border-14);
+  border-right: 0;
+}
+.wg-social.style-2 .list li:hover {
+  border-color: var(--Text-4) !important;
 }
 .wg-social.style-2 .list li a {
   border-radius: unset;
@@ -6497,7 +6549,14 @@ a.mapboxgl-ctrl-logo {
   top: 10px;
   right: 8px;
 }
-.wrap-quantity .tf-btn i {
+.wrap-quantity .btn-add-cart {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wrap-quantity .btn-add-cart i {
   font-size: 15px;
 }
 .wrap-quantity .white-list-wrap {
@@ -6796,7 +6855,6 @@ a.mapboxgl-ctrl-logo {
 }
 
 .s-break-page {
-  margin-top: 23px;
   height: 400px;
   background-color: var(--Secondary);
   position: relative;
@@ -7345,6 +7403,16 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 35px;
 }
 
+.s-banner .heading-side .image img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.s-banner .slider-side {
+  margin-top: -450px;
+}
+
 /*-------------- Responsive ----------------- */
 @media (max-width: 1600px) {
   .header .header-inner {
@@ -7466,6 +7534,16 @@ a.mapboxgl-ctrl-logo {
   }
   .article-blog-item .content .text {
     margin-bottom: 30px;
+  }
+  .article-blog-item .content .bot .share {
+    transform: translateX(0px);
+  }
+  .article-blog-item .content .bot .share .social-list {
+    visibility: visible;
+    opacity: 1;
+  }
+  .article-blog-item .content .bot .share p {
+    margin-right: 10px !important;
   }
   .subscribe-wrap .has-border {
     gap: 20px;

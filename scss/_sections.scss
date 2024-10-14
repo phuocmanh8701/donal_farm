@@ -175,7 +175,7 @@
     }
 }
 .s-break-page {
-    margin-top: 23px;
+    // margin-top: 23px;
     height: 400px;
     background-color: var(--Secondary);
     position: relative;
@@ -700,5 +700,20 @@
                 margin-bottom: 35px;
             }
         }
+    }
+}
+.s-banner {
+    .heading-side {
+        .image {
+            img {
+                max-height: 450px;
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
+    }
+    .slider-side {
+        margin-top: -450px;
     }
 }

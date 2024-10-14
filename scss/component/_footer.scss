@@ -73,9 +73,10 @@
                     @include flex(center, flex-start);
                     gap: 23px;
                     .image {
+                        max-width: 63px;
+                        border-radius: 10px;
+                        overflow: hidden;
                         img {
-                            max-width: 63px;
-                            border-radius: 10px;
                         }
                     }
                     .content {

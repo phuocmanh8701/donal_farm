@@ -210,15 +210,25 @@ i {
         .list {
             gap: 0px;
             border-radius: 10px;
-            border: 1px solid var(--Border-14);
             overflow: hidden;
+
             li {
+                border: 1px solid var(--Border-14);
+                border-radius: 0;
+                overflow: hidden;
+                &:first-child {
+                    border-radius: 10px 0 0 10px;
+                }
+                &:last-child {
+                    border-radius: 0 10px 10px 0;
+                }
                 &:not(:last-child) {
-                    border-right: 1px solid var(--Border-14);
+                    border-right: 0;
+                }
+                &:hover {
+                    border-color: var(--Text-4) !important;
                 }
                 a {
-                    // border: 1px solid var(--Border-14);
-
                     border-radius: unset;
                     width: 45px;
                     height: 45px;
@@ -1924,7 +1934,8 @@ i {
             right: 8px;
         }
     }
-    .tf-btn {
+    .btn-add-cart {
+        @include transition3;
         i {
             font-size: 15px;
         }
