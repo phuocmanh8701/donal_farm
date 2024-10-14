@@ -6,10 +6,6 @@
 //     });
 // }
 
-
-
-
-
 if ($(".slider-home-1").length > 0) {
     var swiper = new Swiper(".slider-home-1", {
         slidesPerView: 1,
@@ -19,35 +15,37 @@ if ($(".slider-home-1").length > 0) {
             // disableOnInteraction: false,  // Để autoplay không bị dừng khi tương tác với Swiper
         },
         navigation: {
-            nextEl: '.btn-slide-home-1.btn-next',  // Chọn phần tử chứa nút next
-            prevEl: '.btn-slide-home-1.btn-prev',  // Chọn phần tử chứa nút prev
+            nextEl: ".btn-slide-home-1.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-home-1.btn-prev", // Chọn phần tử chứa nút prev
         },
-
-
     });
 }
-if ((".slider-home-2").length > 0) {
+if (".slider-home-2".length > 0) {
     var swiper = new Swiper(".slider-home-2", {
         slidesPerView: 1,
         loop: true,
         navigation: {
-            nextEl: '.btn-slide-home-2.btn-next',  // Chọn phần tử chứa nút next
-            prevEl: '.btn-slide-home-2.btn-prev',  // Chọn phần tử chứa nút prev
+            nextEl: ".btn-slide-home-2.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-home-2.btn-prev", // Chọn phần tử chứa nút prev
+        },
+        autoplay: {
+            delay: 4000, // Thời gian giữa mỗi lần chuyển slide
+            disableOnInteraction: false, // Để autoplay không bị dừng khi tương tác với Swiper
         },
         on: {
             slideChange: function () {
-                $('.swiper-slide-active .tlt').each(function () {
+                $(".swiper-slide-active .tlt").each(function () {
                     $(this).textillate({
                         autoStart: true,
                         in: {
-                            effect: 'fadeInUp',
+                            effect: "fadeInUp",
                             delayScale: 0.1,
                             delay: 50,
                             sync: false,
                             shuffle: false,
                         },
                         out: {
-                            effect: 'fadeOut',
+                            effect: "fadeOut",
                             delayScale: 0.1,
                             delay: 50,
                             sync: true,
@@ -60,17 +58,17 @@ if ((".slider-home-2").length > 0) {
         },
     });
 }
-if ((".slider-home-3").length > 0) {
+if (".slider-home-3".length > 0) {
     var swiper = new Swiper(".slider-home-3", {
         slidesPerView: 1,
         loop: true,
         navigation: {
-            nextEl: '.btn-slide-home-3.btn-next',  // Chọn phần tử chứa nút next
-            prevEl: '.btn-slide-home-3.btn-prev',  // Chọn phần tử chứa nút prev
+            nextEl: ".btn-slide-home-3.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-home-3.btn-prev", // Chọn phần tử chứa nút prev
         },
     });
 }
-if ((".slider-provide").length > 0) {
+if (".slider-provide".length > 0) {
     var swiper = new Swiper(".slider-provide", {
         slidesPerView: 3,
         loop: true,
@@ -82,7 +80,7 @@ if ((".slider-provide").length > 0) {
     });
 }
 //slider-why-us
-if ((".slider-why-us").length > 0) {
+if (".slider-why-us".length > 0) {
     var swiper = new Swiper(".slider-why-us", {
         slidesPerView: 4,
         loop: true,
@@ -95,7 +93,7 @@ if ((".slider-why-us").length > 0) {
 }
 //slider-partner
 
-if ((".slider-partner").length > 0) {
+if (".slider-partner".length > 0) {
     var swiper = new Swiper(".slider-partner", {
         slidesPerView: 6,
         loop: true,
@@ -110,7 +108,6 @@ if ((".slider-partner").length > 0) {
             0: {
                 slidesPerView: 3,
                 spaceBetween: 10,
-
             },
             450: {
                 slidesPerView: 3,
@@ -132,7 +129,6 @@ if ((".slider-partner").length > 0) {
     });
 }
 //thumbs
-
 
 if ($(".thumbs-slider").length > 0) {
     var direction = $(".tf-product-media-thumbs").data("direction");
@@ -167,33 +163,33 @@ if ($(".thumbs-slider").length > 0) {
         },
     });
 }
-if ((".slider-s-project").length > 0) {
+if (".slider-s-project".length > 0) {
     var swiper = new Swiper(".slider-s-project", {
         slidesPerView: 2.9,
         loop: true,
         // centeredSlides: true,
         spaceBetween: 30,
         pagination: {
-            el: '.swiper-pagination.pagination-s-project',  // Kích hoạt pagination
-            clickable: true,           // Cho phép click vào pagination để điều hướng
+            el: ".swiper-pagination.pagination-s-project", // Kích hoạt pagination
+            clickable: true, // Cho phép click vào pagination để điều hướng
         },
     });
 }
 
-if ((".slider-s-testimonial").length > 0) {
+if (".slider-s-testimonial".length > 0) {
     var swiper = new Swiper(".slider-s-testimonial", {
         slidesPerView: 1,
         loop: true,
         navigation: {
-            nextEl: '.btn-s-testimonial.btn-next',  // Chọn phần tử chứa nút next
-            prevEl: '.btn-s-testimonial.btn-prev',  // Chọn phần tử chứa nút prev
+            nextEl: ".btn-s-testimonial.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-s-testimonial.btn-prev", // Chọn phần tử chứa nút prev
         },
     });
 }
 
 //slider-box-event
 
-if ((".slider-box-event").length > 0) {
+if (".slider-box-event".length > 0) {
     var swiper = new Swiper(".slider-box-event", {
         slidesPerView: 3,
         loop: true,
@@ -207,14 +203,14 @@ if ((".slider-box-event").length > 0) {
 
 // slider-blog-post
 
-if ((".slider-blog-post").length > 0) {
+if (".slider-blog-post".length > 0) {
     var swiper = new Swiper(".slider-blog-post", {
         slidesPerView: 3,
         loop: true,
         spaceBetween: 30,
         navigation: {
-            nextEl: '.btn-s-blog-post.btn-next',  // Chọn phần tử chứa nút next
-            prevEl: '.btn-s-blog-post.btn-prev',  // Chọn phần tử chứa nút prev
+            nextEl: ".btn-s-blog-post.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-s-blog-post.btn-prev", // Chọn phần tử chứa nút prev
         },
     });
 }
