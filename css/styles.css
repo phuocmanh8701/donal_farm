@@ -7403,6 +7403,9 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 35px;
 }
 
+.s-banner {
+  padding-bottom: 100px;
+}
 .s-banner .heading-side .image img {
   max-height: 450px;
   width: 100%;
@@ -7411,6 +7414,23 @@ a.mapboxgl-ctrl-logo {
 }
 .s-banner .slider-side {
   margin-top: -450px;
+}
+
+.s-blog-post {
+  position: relative;
+}
+.s-blog-post .s-slide .btn-s-blog-post {
+  position: absolute;
+}
+.s-blog-post .s-slide .btn-s-blog-post.btn-next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.s-blog-post .s-slide .btn-s-blog-post.btn-prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
 }
 
 /*-------------- Responsive ----------------- */

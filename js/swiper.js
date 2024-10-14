@@ -204,3 +204,17 @@ if ((".slider-box-event").length > 0) {
         // },
     });
 }
+
+// slider-blog-post
+
+if ((".slider-blog-post").length > 0) {
+    var swiper = new Swiper(".slider-blog-post", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.btn-s-blog-post.btn-next',  // Chọn phần tử chứa nút next
+            prevEl: '.btn-s-blog-post.btn-prev',  // Chọn phần tử chứa nút prev
+        },
+    });
+}
