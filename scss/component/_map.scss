@@ -12,6 +12,12 @@
             cursor: pointer;
         }
     }
+    &.style-2 {
+        .map {
+            height: 283px;
+            border-radius: 20px;
+        }
+    }
 }
 
 .mapboxgl-ctrl-attrib {

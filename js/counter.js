@@ -37,5 +37,21 @@ if ($(".counter-scroll-2").length > 0) {
                 $(".odometer.style-4-3").html(4657);
             }, 0);
         }
+        if (isElementInViewport($(".odometer.style-6"))) {
+            setTimeout(function () {
+                $(".odometer.style-6").html(12980);
+            }, 0);
+        }
+    });
+}
+
+if ($(".counter-scroll-3").length > 0) {
+    $(window).on("scroll", function () {
+        if (isElementInViewport($(".odometer.style-5"))) {
+            setTimeout(function () {
+                $(".odometer.style-5").html(1386);
+                $(".odometer.style-5-2").html(12980);
+            }, 0);
+        }
     });
 }

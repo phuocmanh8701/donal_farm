@@ -69,17 +69,10 @@
             padding: 16px 27px;
             font-weight: 400;
             gap: 11px;
-            &:hover {
-                // color: var(--Primary);
-            }
         }
     }
     &:hover {
-        // .icon {
-        //     transform: rotate(180deg);
-        // }
         background-color: transparent;
-        // transition: 0.3s;
         .text-style {
             color: var(--Primary);
             transform: translateX(5px);
@@ -100,6 +93,14 @@
         &:hover {
             &::after {
                 transform: scale(40);
+            }
+        }
+    }
+    &.scale-50 {
+        &:hover {
+            transition-delay: 0.1s;
+            &::after {
+                transform: scale(50);
             }
         }
     }

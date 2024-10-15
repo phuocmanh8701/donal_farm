@@ -269,4 +269,47 @@ fieldset {
         flex-wrap: wrap;
         gap: 20px 10px;
     }
+    &.style-2 {
+        input,
+        textarea {
+            background: var(--Bg-10) !important;
+            color: var(--Text-2) !important;
+            // padding: 10px 19px !important;
+            &:focus {
+                border: 1px solid var(--Primary) !important;
+                background: var(--White) !important;
+                // color: var(--Text-2) !important;
+            }
+        }
+        select {
+            width: 100%;
+            padding: 17px 10px 16px 16px;
+            border: 1px solid var(--Bg-10);
+            background: var(--Bg-10) !important;
+            color: var(--Text-2);
+            option {
+                background-color: var(--Bg-10);
+            }
+            &:focus {
+                border-color: var(--Primary) !important;
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        .checkbox-item {
+            .text {
+                color: var(--Text-2);
+            }
+            .btn-checkbox {
+                top: 40%;
+                &::after {
+                    color: var(--Text-2);
+                }
+            }
+            .tf-btn {
+                @include transition3;
+            }
+        }
+    }
 }

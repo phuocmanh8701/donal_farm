@@ -714,16 +714,26 @@
     top: 48px;
 }
 .wrapper-home-2 {
-    position: relative;
-    &::after {
-        position: absolute;
-        content: "";
-        background-image: url("./../images/item/yellow-field.jpg");
-        background-size: contain;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 824px;
+    // position: relative;
+    // &::after {
+    //     position: absolute;
+    //     content: "";
+    //     background-image: url("./../images/item/yellow-field.jpg");
+    //     background-size: contain;
+    //     background-position: top;
+    //     background-repeat: no-repeat;
+    //     height: 824px;
+    //     width: 100%;
+    //     top: 0;
+    // }
+}
+.bg-page {
+    top: 0;
+    width: 100%;
+    img {
         width: 100%;
-        top: 0;
+        object-fit: cover;
+        object-position: bottom;
+        height: 824px;
     }
 }

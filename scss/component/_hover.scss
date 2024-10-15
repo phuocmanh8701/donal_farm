@@ -22,12 +22,25 @@
             transition: all 0.8s ease-in-out;
         }
     }
-
+    .hover-icon-2 {
+        .icon,
+        &.icon {
+            transition: all 0.8s ease-in-out;
+        }
+    }
     &:hover {
         .hover-icon {
             .icon,
             &.icon {
                 transform: rotateY(360deg);
+            }
+        }
+    }
+    &:hover {
+        .hover-icon-2 {
+            .icon,
+            &.icon {
+                transform: rotateY(180deg);
             }
         }
     }

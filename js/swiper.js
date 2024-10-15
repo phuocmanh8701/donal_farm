@@ -62,6 +62,10 @@ if (".slider-home-3".length > 0) {
     var swiper = new Swiper(".slider-home-3", {
         slidesPerView: 1,
         loop: true,
+        autoplay: {
+            delay: 4000, // Thời gian giữa mỗi lần chuyển slide
+            disableOnInteraction: false, // Để autoplay không bị dừng khi tương tác với Swiper
+        },
         navigation: {
             nextEl: ".btn-slide-home-3.btn-next", // Chọn phần tử chứa nút next
             prevEl: ".btn-slide-home-3.btn-prev", // Chọn phần tử chứa nút prev
@@ -165,7 +169,7 @@ if ($(".thumbs-slider").length > 0) {
 }
 if (".slider-s-project".length > 0) {
     var swiper = new Swiper(".slider-s-project", {
-        slidesPerView: 2.9,
+        slidesPerView: 2,
         loop: true,
         // centeredSlides: true,
         spaceBetween: 30,
@@ -211,6 +215,42 @@ if (".slider-blog-post".length > 0) {
         navigation: {
             nextEl: ".btn-s-blog-post.btn-next", // Chọn phần tử chứa nút next
             prevEl: ".btn-s-blog-post.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+// slider-s-service-2
+if (".slider-s-service-2".length > 0) {
+    var swiper = new Swiper(".slider-s-service-2", {
+        slidesPerView: 2.7,
+        // loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-s-service-2.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-s-service-2.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+// slider-s-testimonial-2
+if (".slider-s-testimonial-2".length > 0) {
+    var swiper = new Swiper(".slider-s-testimonial-2", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-slide-testimonial-2.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-testimonial-2.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+// slider-s-our-mission
+
+if (".slider-s-our-mission".length > 0) {
+    var swiper = new Swiper(".slider-s-our-mission", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".btn-slide-our-mission.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-our-mission.btn-prev", // Chọn phần tử chứa nút prev
         },
     });
 }
