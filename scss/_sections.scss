@@ -1486,12 +1486,118 @@
     }
 }
 .s-our-mission {
+    margin-top: 0px;
     .content-section {
         @include d-flex();
         gap: 30px;
-        .slider-s-our-mission {
+        margin-top: -217px;
+        position: relative;
+        z-index: 6;
+        .slider-wrap {
             max-width: 655px;
             width: 100%;
+            background-color: var(--Secondary);
+            border-radius: 20px;
+            padding: 75px 60px;
+            .content {
+                p {
+                    color: var(--Bg-6);
+                    &.title {
+                        font-size: 27px;
+                        margin-bottom: 35px;
+                    }
+                    &.text {
+                        font-size: 30px;
+                        margin-bottom: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            .btn-slide-wrap {
+                @include d-flex();
+                justify-content: flex-end;
+                gap: 38px;
+            }
+        }
+    }
+}
+.s-our-expertise {
+    .heading-section {
+        .image {
+            width: 100%;
+            height: 591px;
+            object-fit: cover;
+        }
+    }
+    .s-slider {
+        margin-top: -500px;
+    }
+}
+.s-quality-of-life-2 {
+    padding: 150px 0px;
+    .content-section {
+        position: relative;
+        .sub {
+            color: var(--Text-2);
+        }
+        .img-item {
+            &.item-1 {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(-30deg);
+            }
+        }
+    }
+    .box-icon {
+        max-width: 300px;
+        width: 100%;
+        .icon {
+            i {
+                color: var(--White);
+                font-size: 30px;
+            }
+        }
+    }
+    .quality-list {
+        @include d-flex();
+        justify-content: center;
+        gap: 30px;
+
+        li {
+            max-width: 300px;
+            width: 100%;
+            position: relative;
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -15px;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    border-right: 1px dashed var(--Border-12);
+                    z-index: 1;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 11px;
+                    width: 11px;
+                    border-radius: 50%;
+                    right: -15px;
+                    top: 30px;
+                    transform: translateX(50%);
+                    background-color: var(--Secondary);
+                    z-index: 2;
+                }
+            }
+            &.bottom {
+                &::before {
+                    top: unset;
+                    bottom: 30px;
+                }
+            }
         }
     }
 }
