@@ -19,8 +19,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/drift-basic.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/odometer.min.css" />
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/map.min.css" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- Font -->
@@ -122,10 +123,10 @@
                                 </div>
                                 <div class="main-nav">
                                     <ul class="nav-list">
-                                        <li class="item has-child ">
+                                        <li class="item has-child current-menu">
                                             <a href="javascript:void(0)">Home</a>
                                             <ul class="sub-nav">
-                                                <li class="">
+                                                <li class="current-item">
                                                     <a href="index.html">
                                                         <span>
                                                             Home 1
@@ -295,7 +296,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="item has-child current-menu">
+                                        <li class="item has-child">
                                             <a href="javascript:void(0)">Blog</a>
                                             <ul class="sub-nav">
                                                 <li>
@@ -305,7 +306,7 @@
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class="current-item">
+                                                <li>
                                                     <a href="blog-right-sidebar.html">
                                                         <span>
                                                             Blog Right Sidebar
@@ -482,8 +483,7 @@
                                                 <i class="icon-arrow_down"></i>
                                             </a>
                                             <ul class="sub-menu-mobile">
-
-                                                <li class="menu-item "><a href="#">Service Detail</a></li>
+                                                <li class="menu-item "><a href="">Service Detail</a></li>
                                                 <li class="menu-item"><a href="#">Event Detail</a></li>
                                                 <li class="menu-item"><a href="#">FAQs</a></li>
                                                 <li class="menu-item"><a href="#">Testimonial</a></li>
@@ -491,19 +491,15 @@
                                                 <li class="menu-item"><a href="#">Coming Soon</a></li>
                                                 <li class="menu-item"><a href="#">404</a></li>
                                             </ul>
+                                        </li>
                                         <li class="menu-item menu-item-has-children-mobile">
                                             <a class="item-menu-mobile " href="javascript:void(0)">Blog <i
                                                     class="icon-arrow_down"></i></a>
                                             <ul class="sub-menu-mobile">
-                                                <li class="menu-item">
-                                                    <a href="blog-full-width.html">
-                                                        Blog Full Width</a>
+                                                <li class="menu-item"><a href="blog-full-width.html">Blog Full Width</a>
                                                 </li>
-                                                <li class="menu-item ">
-                                                    <a href="blog-right-sidebar.html">
-                                                        Blog Right
-                                                        Sidebar
-                                                    </a>
+                                                <li class="menu-item "><a href="blog-right-sidebar.html">Blog Right
+                                                        Sidebar</a>
                                                 </li>
                                                 <li class="menu-item "><a href="blog-single.html">Blog Single</a></li>
                                             </ul>
@@ -538,16 +534,16 @@
         <!-- /header -->
 
         <!-- page-title -->
-        <div class="page-title page-blog-full-w">
+        <div class="page-title page-about-us">
             <div class="tf-container w-1290">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="content">
                             <p class="sub-title">
-                                Read The Latest News From Us
+                                Nurturing the Earth, Feeding the World
                             </p>
                             <h1 class="title">
-                                Blog Single
+                                About the Farm
                             </h1>
                             <div class="icon-img">
                                 <img src="./images/item/line-throw-title.png" alt="">
@@ -557,11 +553,11 @@
                                 <div class="icon">
                                     <i class="icon-arrow-right1"></i>
                                 </div>
-                                <a href="blog-right-sidebar.html"> Blog Right Sidebar</a>
+                                <a href="javascript:void(0)">About Us </a>
                                 <div class="icon">
                                     <i class="icon-arrow-right1"></i>
                                 </div>
-                                <a href="javascript:void(0)">How to Care for Cows to have the Best Quality Meat</a>
+                                <a href="javascript:void(0)">About The Farm</a>
                             </div>
                         </div>
                     </div>
@@ -576,256 +572,52 @@
         </div>
         <!-- /page-title -->
 
+        <!-- main-content -->
+        <div class="main-content pb-0">
 
-        <div class="main-content">
-
-            <section class="s-product-detail section-image-zoom zoom-active">
-                <div class="tf-container w-1290">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="thumbs-slider">
-                                <div class="swiper-container tf-product-media-main">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-1.jpg"
-                                                    data-src="./images/section/shop-detail-1.jpg"
-                                                    data-zoom="./images/section/shop-detail-1.jpg" alt=""
-                                                    class="lazyload tf-image-zoom">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item ">
-                                                <img src="./images/section/shop-detail-2.jpg"
-                                                    data-src="./images/section/shop-detail-2.jpg"
-                                                    data-zoom="./images/section/shop-detail-2.jpg" alt=""
-                                                    class="lazyload  tf-image-zoom">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item ">
-                                                <img src="./images/section/shop-detail-3.jpg"
-                                                    data-src="./images/section/shop-detail-3.jpg"
-                                                    data-zoom="./images/section/shop-detail-3.jpg" alt=""
-                                                    class="lazyload tf-image-zoom">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-4.jpg"
-                                                    data-src="./images/section/shop-detail-4.jpg"
-                                                    data-zoom="./images/section/shop-detail-4.jpg" alt=""
-                                                    class="lazyload tf-image-zoom">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-container tf-product-media-thumbs" data-direction="horizontal">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-1.jpg"
-                                                    data-src="./images/section/shop-detail-1.jpg" alt=""
-                                                    class="lazyload">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-2.jpg"
-                                                    data-src="./images/section/shop-detail-2.jpg" alt=""
-                                                    class="lazyload">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-3.jpg"
-                                                    data-src="./images/section/shop-detail-3.jpg" alt=""
-                                                    class="lazyload">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image item">
-                                                <img src="./images/section/shop-detail-4.jpg"
-                                                    data-src="./images/section/shop-detail-4.jpg" alt=""
-                                                    class="lazyload">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-    
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="tf-zoom-main"></div>
-                            <div class="content-inner">
-                                <h3 class="fw-6 name font-worksans title">
-                                    Bag Of Succulent Oranges
-                                </h3>
-                                <div class="rating-wrap">
-                                    <div class="wg-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="font-nunito">
-                                        5.00(1 customer review)
+            <!-- section our-agriculture-2 -->
+            <section class="s-our-agriculture style-2 type-2">
+                <div class="counter-wrap">
+                    <div class="tf-container w-1290">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="wrap">
+                                    <p class="text font-snowfall fs-30">
+                                        We are confident that we are the leading farm in providing
+                                        agricultural products that ensure <span>food hygiene and safety</span>
                                     </p>
                                 </div>
-                                <div class="price-wrap price-left">
-                                    <span class=" price-1">$5.25</span>
-                                    <span class=" price-2">$3.00</span>
-                                </div>
-                                <p class="sub font-nunito">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquam mauris.
-                                    Maecenas porta odio lorem, in aliquet
-                                    diam pellentesque vel. Donec pulvinar mi ipsum, a eleifend est porta id. Laboris
-                                    nisi ut aliquip ex ea commodo
-                                    consequat.
-                                </p>
-                                <ul class="notice-list">
-                                    <li>
-                                        <svg id="Layer_1" height="50" viewBox="0 0 512 512" width="50"
-                                            xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
-                                            <path
-                                                d="m441.667 118.253-192-85.333a10.687 10.687 0 0 0 -8.667 0l-192 85.333a10.669 10.669 0 0 0 -6.333 9.747v234.667a10.669 10.669 0 0 0 6.333 9.747l192 85.333a10.673 10.673 0 0 0 8.667 0l192-85.333a10.669 10.669 0 0 0 6.333-9.747v-234.667a10.669 10.669 0 0 0 -6.333-9.747z"
-                                                fill="#ff9500" />
-                                            <path
-                                                d="m249.667 457.747 192-85.333a10.669 10.669 0 0 0 6.333-9.747v-234.667a10.669 10.669 0 0 0 -6.333-9.747l-192-85.333a10.687 10.687 0 0 0 -4.334-.92v426.667a10.7 10.7 0 0 0 4.334-.92z"
-                                                fill="#fbab01" />
-                                            <path
-                                                d="m245.333 213.333 201.65-89.622a10.572 10.572 0 0 0 -5.316-5.459l-192-85.333a10.687 10.687 0 0 0 -8.667 0l-192 85.334a10.572 10.572 0 0 0 -5.316 5.459z"
-                                                fill="#fac100" />
-                                            <path d="m156.467 173.837 205.133-91.17-26.265-11.673-205.133 91.17z"
-                                                fill="#fbab01" />
-                                            <circle cx="373.333" cy="362.667" fill="#00cf66" r="96" />
-                                            <path
-                                                d="m389.333 437.333a90.608 90.608 0 0 1 -56.1-161.807 95.949 95.949 0 1 0 127.241 127.238 90.434 90.434 0 0 1 -71.141 34.569z"
-                                                fill="#00b157" />
-                                            <path
-                                                d="m362.667 405.333a10.632 10.632 0 0 1 -7.542-3.125l-26.667-26.667a10.666 10.666 0 0 1 15.083-15.083l19.125 19.122 45.792-45.789a10.666 10.666 0 1 1 15.083 15.083l-53.333 53.333a10.632 10.632 0 0 1 -7.541 3.126z"
-                                                fill="#eaeff0" />
-                                        </svg>
-                                        <p>
-                                            Available: 12 in stock
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <svg height="50" viewBox="0 0 58 44" width="50"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g id="Page-1" fill="none" fill-rule="evenodd">
-                                                <g id="064---Eyes">
-                                                    <ellipse id="Oval" cx="14.5" cy="22" fill="#ecf0f1" rx="14.5"
-                                                        ry="22" />
-                                                    <ellipse id="Oval" cx="43.5" cy="22" fill="#ecf0f1" rx="14.5"
-                                                        ry="22" />
-                                                    <ellipse id="Oval" cx="12" cy="22" fill="#2fa8cc" rx="10" ry="15" />
-                                                    <ellipse id="Oval" cx="41" cy="22" fill="#2fa8cc" rx="10" ry="15" />
-                                                    <ellipse id="Oval" cx="11" cy="22" fill="#35495e" rx="7" ry="10" />
-                                                    <ellipse id="Oval" cx="40" cy="22" fill="#35495e" rx="7" ry="10" />
-                                                    <g fill="#ecf0f1">
-                                                        <circle id="Oval" cx="16" cy="15" r="3" />
-                                                        <circle id="Oval" cx="45" cy="15" r="3" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <p>
-                                            9 people currently viewing this item
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <svg height="50" preserveAspectRatio="xMidYMid" viewBox="-33 0 255 255"
-                                            width="50" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <linearGradient id="linear-gradient-1" gradientUnits="userSpaceOnUse"
-                                                x1="94.141" x2="94.141" y1="255" y2=".188">
-                                                <stop offset="0" stop-color="#ff4c0d" />
-                                                <stop offset="1" stop-color="#fc9502" />
-                                            </linearGradient>
-                                            <g id="fire" fill-rule="evenodd">
-                                                <path id="path-1"
-                                                    d="m187.899 164.809c-2.096 50.059-43.325 90.003-93.899 90.003-51.915 0-94-43.5-94-94 0-6.75-.121-20.24 10-43 6.057-13.621 9.856-22.178 12-30 1.178-4.299 3.469-11.129 10 0 3.851 6.562 4 16 4 16s14.328-10.995 24-32c14.179-30.793 2.866-49.2-1-62-1.338-4.428-2.178-12.386 7-9 9.352 3.451 34.076 20.758 47 39 18.445 26.035 25 51 25 51s5.906-7.33 8-15c2.365-8.661 2.4-17.239 9.999-7.999 7.227 8.787 17.96 25.3 24.001 40.999 10.969 28.509 7.899 55.997 7.899 55.997z"
-                                                    fill="url(#linear-gradient-1)" />
-                                                <path id="path-2"
-                                                    d="m94 254.812c-35.899 0-65-29.101-65-65 0-21.661 8.729-34.812 26.896-52.646 11.632-11.419 22.519-25.444 27.146-34.994.911-1.88 2.984-11.677 10.977-.206 4.193 6.016 10.766 16.715 14.981 25.846 7.266 15.743 9 31 9 31s7.121-4.196 12-15c1.573-3.482 4.753-16.664 13.643-3.484 6.523 9.672 15.484 27.062 15.357 49.484 0 35.899-29.102 65-65 65z"
-                                                    fill="#fc9502" />
-                                                <path id="path-3"
-                                                    d="m95 183.812c9.25 0 9.25 17.129 21 40 7.824 15.229-3.879 31-21 31s-26-13.879-26-31c0-17.12 16.75-40 26-40z"
-                                                    fill="#fce202" />
-                                            </g>
-                                        </svg>
-                                        <p>
-                                            4 items sold in last 3 hours
-                                        </p>
-                                    </li>
-                                </ul>
-                                <div class="wrap-quantity">
-                                    <div class="wg-quantity">
-                                        <span class="btn-quantity plus-btn"> <i class="icon-arrow_up"></i></span>
-                                        <input class="font-worksans fw-5" type="text" name="number" value="1">
-                                        <span class="btn-quantity minus-btn"><i class="icon-arrow_down"></i></span>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="wg-counter style-5">
+                                    <div class="icon style-circle">
+                                        <i class="fa-solid fa-cow"></i>
                                     </div>
-                                    <button type="submit" class="tf-btn btn-add-cart">
-                                        <span class="text-style">
-                                            Add To Cart
-                                        </span>
-                                        <div class="icon">
-                                            <i class="fa-solid fa-cart-shopping"></i>
+                                    <div class="counter-item">
+                                        <p class="title font-worksans fw-5 fs-18">
+                                            Completed Projects
+                                        </p>
+                                        <div class="counter">
+                                            <div id="odometer" class="odometer style-5">1000</div>
+                                            <span class="sub-odo color-secondary">+</span>
                                         </div>
-                                    </button>
-                                    <div class="white-list-wrap">
-                                        <a href="#" class="icon style-circle">
-                                            <i class="fa-solid fa-heart"></i>
-                                        </a>
-                                        <a href="#" class="icon style-circle">
-                                            <i class="fa-solid fa-repeat"></i>
-                                        </a>
                                     </div>
                                 </div>
-                                <ul class="more-infor">
-                                    <li>
-                                        <p>SKU: 0282</p>
-                                    </li>
-                                    <li>
-                                        <p>Category:
-                                            <a href="#">
-                                                Jam & Jelly
-                                            </a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>Tags:
-                                            <a href="#">FOOD</a>/
-                                            <a href="#">NUTS</a>/
-                                            <a href="#">ORGANIC</a>
-                                        </p>
-                                    </li>
 
-                                </ul>
-                                <div class="bot">
-                                    <p class="font-worksans fw-5 text">Share:</p>
-                                    <div class="wg-social style-3">
-                                        <ul class="list">
-                                            <li class="item">
-                                                <a href="#"><i class="icon-facebook1"></i></a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="#"><i class="icon-twitter"></i></a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="#"><i class="icon-instagram2"></i></a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="#"><i class="icon-pinterest"></i></a>
-                                            </li>
-                                        </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="wg-counter style-5">
+                                    <div class="icon style-circle">
+                                        <i class="fa-solid fa-face-smile"></i>
+                                    </div>
+                                    <div class="counter-item">
+                                        <p class="title font-worksans fw-5 fs-18">
+                                            Trust By Clients
+                                        </p>
+                                        <div class="counter">
+                                            <div id="odometer" class="odometer style-5-2">10000</div>
+                                            <span class="sub-odo color-secondary">+</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -833,12 +625,713 @@
                     </div>
                 </div>
             </section>
+            <!-- section our-agriculture-2 -->
+
+            <!-- section welcome to -->
+            <section class="s-welcome-to">
+                <div class="s-content-wrap">
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="content-section">
+                                    <div class="heading-section style-4">
+                                        <div class="img-item">
+                                            <img src="./images/item/rice-plant-2.png" alt="">
+                                        </div>
+                                        <p class="sub-title">
+                                            Welcome to DonalFarm Agriculture & Organic Farms
+                                        </p>
+                                        <p class="title">
+                                            Providing The Finest
+                                            Products To The Best
+                                            Feed Suppliers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-wrap">
+                                    <p class="text-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacus odio,
+                                        egestas vitae augue sed, vulputate viverra velit. Quisque fringilla viverra
+                                        turpis, at condimentum arcu convallis sit amet. Class aptent taciti sociosqu ad
+                                        litora torquent per conubia nostra, per inceptos himenaeos. Fusce laoreet lectus
+                                        in velit euismod.
+                                    </p>
+                                    <p class="text-2">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce laoreet lectus in velit euismod. Praesent fermentum dignissim
+                                        sapien ornare sagittis. Cras erat lorem, vulputate non magna ac, molestie
+                                        bibendum felis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-img-item item-1">
+                        <img src="./images/section/yellow-f.png" alt="">
+                    </div>
+                </div>
+                <div class="s-content-wrap-2">
+                    <div class="tf-container w-1620">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="swiper-container slider-gallery">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="gallery-item img-hover">
+                                                <div class="image hover-item">
+                                                    <img class=" lazyload" src="./images/widget/gallery-item-4.jpg"
+                                                        data-src="./images/widget/gallery-item-4.jpg" alt="">
+                                                </div>
+                                                <a href="#" class="add-gallery">
+                                                    +
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="gallery-item img-hover">
+                                                <div class="image hover-item">
+                                                    <img class=" lazyload" src="./images/widget/gallery-item-7.jpg"
+                                                        data-src="./images/widget/gallery-item-7.jpg" alt="">
+                                                </div>
+                                                <a href="#" class="add-gallery">
+                                                    +
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="gallery-item img-hover">
+                                                <div class="image hover-item">
+                                                    <img class=" lazyload" src="./images/blog/blog-1.jpg"
+                                                        data-src="./images/blog/blog-1.jpg" alt="">
+                                                </div>
+                                                <a href="#" class="add-gallery">
+                                                    +
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="gallery-item img-hover">
+                                                <div class="image hover-item">
+                                                    <img class=" lazyload" src="./images/widget/gallery-item-9.jpg"
+                                                        data-src="./images/widget/gallery-item-9.jpg" alt="">
+                                                </div>
+                                                <a href="#" class="add-gallery">
+                                                    +
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="box-text">
+                                    <p class="title font-worksans fw-7">
+                                        Our Mission
+                                    </p>
+                                    <p class="text font-snowfall">
+                                        Our mission is to contribute to the promotion of agricultural products in
+                                        Vietnam with a commitment to produce sustainable values that meet international
+                                        standards and thereby create a fair and competitive market
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="box-text">
+                                    <p class="title font-worksans fw-7">
+                                        Our Vision
+                                    </p>
+                                    <p class="text font-snowfall">
+                                        Our mission is to contribute to the promotion of agricultural products in
+                                        Vietnam with a commitment to produce sustainable values that meet international
+                                        standards and thereby create a fair and competitive market
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-img-item item-1">
+                        <img src="./images/item/wave-yellow-has-item.png" alt="">
+                    </div>
+
+                </div>
+            </section>
+            <!-- /section welcome to -->
+
+            <!-- section our agriculture -->
+            <section class="s-our-agriculture style-3">
+                <div class="s-content-wrap content-section">
+                    <div class="tf-container w-1290">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="image-wrap">
+                                    <div class="image video-wrap">
+                                        <img src="./images/section/s-farm.jpg" alt="" class="lazyload">
+                                        <a href="https://www.youtube.com/watch?v=MLpWrANjFbI"
+                                            class="style-icon-play popup-youtube">
+                                            <i class="fa-solid fa-play"></i>
+                                            <div class="wave"></div>
+                                            <div class="wave-1"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="content">
+                                    <div class="heading-section style-2">
+                                        <div class="img-item">
+                                            <div class="item">
+                                                <img src="./images/item/rice-plant-2.png" alt="" />
+                                            </div>
+                                            <p class="sub-title">
+                                                Our Agriculture Skill
+
+                                            </p>
+                                        </div>
+
+                                        <p class="title">
+                                            We Believe In Bringing
+                                            Customers The Best Products
+                                        </p>
+                                    </div>
+                                    <p class="text mb-20">
+                                        Mauris quam tellus, pellentesque ut faucibus pretium, aliquet vitae est. Nullam
+                                        non
+                                        lorem
+                                        metus. Nulla pretium dui a diam faucibus. vehicula efficitur enim maximus. Proin
+                                        sollicitudin erat eu auctor egestas.
+                                    </p>
+                                    <div class="wg-progress">
+                                        <div class="top">
+                                            <span>Organic Solutions</span>
+                                            <span>76%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 76%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="wg-progress">
+                                        <div class="top">
+                                            <span>Quality Agriculture</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="s-img-item item-1">
+                    <img src="./images/item/rice-plant-color.png" alt="">
+                </div>
+                <div class="s-img-item item-2">
+                    <img src="./images/item/page-title-top.png" alt="">
+                </div>
+            </section>
+            <!-- /section our agriculture -->
+
+
+            <!-- section benefit -->
+            <section class="s-benefit">
+                <div class="benefit-list">
+                    <div class="box-icon ic-hover">
+                        <div class="icon hover-icon style-circle">
+                            <img src="./icons/tomato.png" alt="">
+                        </div>
+                        <a href="#" class="caption fw-6  font-worksans hover-text-secondary">
+                            100% Organic Products
+                        </a>
+                        <p class="text font-nunito">
+                            Ultrices sagittis orci a scelerisque <br> purus semper eget duis at. <br>
+                            Sollictudin nibh sit amet.
+                        </p>
+                    </div>
+                    <div class="box-icon  ic-hover">
+                        <div class="icon style-circle hover-icon img-hover-2">
+                            <i class="icon-tractor22"></i>
+                        </div>
+                        <a href="#" class="caption fw-6  font-worksans hover-text-secondary">
+                            Absolute Quality
+                        </a>
+                        <p class="text font-nunito">
+                            Ultrices sagittis orci a scelerisque <br> purus semper eget duis at. <br>
+                            Sollictudin nibh sit amet.
+                        </p>
+                    </div>
+                    <div class="box-icon ic-hover">
+                        <div class="icon hover-icon style-circle">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <a href="#" class="caption fw-6  font-worksans hover-text-secondary">
+                            Environmentally Friendly
+                        </a>
+                        <p class="text font-nunito">
+                            Ultrices sagittis orci a scelerisque <br> purus semper eget duis at. <br>
+                            Sollictudin nibh sit amet.
+                        </p>
+                    </div>
+                    <div class="box-icon ic-hover">
+                        <div class="icon hover-icon style-circle">
+                            <img src="./icons/dollar-circle.png" alt="">
+                        </div>
+                        <a href="#" class="caption fw-6  font-worksans hover-text-secondary">
+                            Reasonable Price
+                        </a>
+                        <p class="text font-nunito">
+                            Ultrices sagittis orci a scelerisque <br> purus semper eget duis at. <br>
+                            Sollictudin nibh sit amet.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- /section benefit -->
+
+
+            <!-- section quality of life -->
+            <section class="s-quality-of-life style-2">
+                <div class="tf-container w-1290">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-section text-center">
+
+                                <div class="img-item item-3">
+                                    <img src="./images/item/notice.png" alt="">
+                                </div>
+                                <div class="clip-color-text font-snowfall text-center">
+                                    <p>
+                                        Committed to Freshness!
+
+                                    </p>
+                                </div>
+                                <p class="sub font-snowfall fs-30">
+                                    We believe that to have good health, clean and healthy food sources are the key
+                                </p>
+                                <ul class="box-icon-list style-2">
+                                    <li>
+                                        <div class="box-icon style-3 ic-hover">
+                                            <div class="icon style-circle hover-icon">
+                                                <i class="icon-chemical"></i>
+                                            </div>
+                                            <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                Minimal Chemicals Used
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box-icon style-3 ic-hover">
+                                            <div class="icon style-circle hover-icon">
+                                                <i class="icon-worm"></i>
+                                            </div>
+                                            <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                Minimal Chemicals Used
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box-icon style-3 ic-hover">
+                                            <div class="icon style-circle hover-icon">
+                                                <i class="icon-disposal"></i>
+                                            </div>
+                                            <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                All Organic Waste Reused
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box-icon style-3 ic-hover">
+                                            <div class="icon style-circle hover-icon">
+                                                <i class="icon-light-bulb"></i>
+                                            </div>
+                                            <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                Do Not Use Artificial
+                                                Light
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box-icon style-3 ic-hover">
+                                            <div class="icon style-circle hover-icon">
+                                                <i class="icon-water-drops"></i>
+                                            </div>
+                                            <a href="#" class="caption fw-6 font-worksans hover-text-4">
+                                                Borehole Sourced Water
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="bot flex justify-center">
+
+                                    <a href="#" class="tf-btn scale-50">
+                                        <span class="text-style ">
+                                            See More Our Commitment
+                                        </span>
+                                        <div class="icon">
+                                            <i class="icon-arrow_right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section quality of life -->
+
+
+            <!-- section our history -->
+            <section class="s-our-history has-img-item">
+                <div class="tf-container w-1620">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-section img-hover">
+                                <div class="image hover-item">
+                                    <img src="./images/section/our-history.jpg"
+                                        data-src="./images/section/our-history.jpg" alt="" class="lazyload">
+                                </div>
+                                <div class="heading-section style-4 has-text style-3">
+                                    <div class="img-item">
+                                        <div class="item">
+                                            <img src="./images/item/rice-plant-2.png" alt="">
+                                        </div>
+                                        <p class="sub-title">
+                                            Our History
+                                        </p>
+                                    </div>
+                                    <p class="title">
+                                        Important Historical
+                                        Milestones Of Our Farm
+
+                                    </p>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacus odio,
+                                        egestas vitae augue sed, vulputate viverra velit. Quisque fringilla viverra
+                                        turpis, at condimentum arcu convallis sit amet. Proin quis rhoncus nibh.
+                                        Pellentesque consectetur nunc ac nunc convallis placerat.
+                                    </p>
+                                    <a href="#" class="tf-btn bg-white">
+                                        <span class="text-style cl-primary">
+                                            Read More
+                                        </span>
+                                        <div class="icon">
+                                            <i class="icon-arrow_right"></i>
+                                        </div>
+                                    </a>
+                                    <div class="wg-exprerience text-center z-5">
+                                        <p class="year">65</p>
+                                        <p class="text">
+                                            Years Of <br> Experience
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="s-img-item item-1">
+                    <img src="./images/item/brown-top.png" alt="">
+                </div>
+                <div class="s-img-item item-bottom">
+                    <img src="./images/item/brown-bottom.png" alt="">
+                </div>
+                <div class="s-img-item item-3 ">
+                    <img src="./images/item/windmill-2.png" alt="">
+                </div>
+            </section>
+            <!-- /section our history -->
+
+
+            <!-- section farmer tour -->
+            <section class="s-farm-tour">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="box-about-us img-hover">
+                                <div class="image hover-item">
+                                    <img src="./images/widget/about-us-1.jpg" data-src="./images/widget/about-us-1.jpg"
+                                        alt="" class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title fw-7 fs-30 font-worksans hover-text-secondary">
+                                        We Are Dedicated Farmers!
+                                    </a>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <br> sodales
+                                        faucibus
+                                        commodo.
+                                        Proin vehicula massa id congue <br>
+                                        rutrum, ex libero sodales ex, cursus euismod.
+                                    </p>
+                                    <div class="flex justify-center">
+                                        <a href="#" class="tf-btn-read text-white hover-text-secondary"> View All The
+                                            Farmers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="box-about-us img-hover">
+                                <div class="image hover-item">
+                                    <img src="./images/widget/about-us-2.jpg" data-src="./images/widget/about-us-2.jpg"
+                                        alt="" class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title fw-7 fs-30 font-worksans hover-text-secondary">
+                                        Explore Our Farm Tours
+
+                                    </a>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <br> sodales
+                                        faucibus
+                                        commodo.
+                                        Proin vehicula massa id congue <br>
+                                        rutrum, ex libero sodales ex, cursus euismod.
+                                    </p>
+                                    <div class="flex justify-center">
+                                        <a href="#" class="tf-btn-read text-white hover-text-secondary"> Discovey Farm
+                                            Tours</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section farmer tour -->
+
+            <!-- section contact us -->
+            <section class="s-contact-us style-2 bg-white">
+                <div class="section-wrap">
+                    <div class="tf-container w-1290">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="content-left">
+
+                                    <div class="box-map style-2">
+                                        <div id="map" class="map"></div>
+                                    </div>
+                                    <ul class="contact-list">
+                                        <li>
+                                            <div class="icon style-circle">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="infor">
+                                                <p class="title">
+                                                    Farm Address
+                                                </p>
+                                                <p class="text">
+                                                    Prinsengracht 250, 2501016 PM
+                                                    Amsterdam Netherlands
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon style-circle">
+                                                <i class="fa-solid fa-address-book"></i>
+                                            </div>
+                                            <div class="infor">
+                                                <p class="title">
+                                                    Contact Us
+                                                </p>
+                                                <p class="text">
+                                                    Donalfarms@gmail.com <br>
+                                                    Call Us 24/7: +1 987 654 3210
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon style-circle">
+                                                <i class="fa-solid fa-clock"></i>
+                                            </div>
+                                            <div class="infor">
+
+                                                <p class="title">
+                                                    Working Hours
+                                                </p>
+                                                <p class="text">
+                                                    Mon - Fri: 8.00am - 18.00pm <br>
+                                                    Sat: 9.00am - 17.00pm Holidays: Closes
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="content-section">
+                                    <div class="heading-section has-text">
+                                        <p class="sub-title">Let's Cooperate Together</p>
+                                        <p class="title">Contact Us Today!</p>
+                                        <p class="text">
+                                            We will reply you within 24 hours via email, thank you for contacting
+
+                                        </p>
+                                        <div class="img-item">
+                                            <img src="./images/item/rice-plant-2.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <form action="#" class="form-send-message style-2">
+                                        <div class="cols style-2 mb-15">
+                                            <fieldset>
+                                                <input type="text" class="name " placeholder="Name*" required />
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="email" class="email " placeholder="Email*" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="cols style-2 mb-15">
+                                            <fieldset>
+                                                <input type="number" class="name " placeholder="Phone Number*"
+                                                    required />
+                                            </fieldset>
+                                            <fieldset class="dropdown">
+                                                <select name="text" id="Support">
+                                                    <option value="You need to suport?" selected="">You need to
+                                                        suport?
+                                                    </option>
+                                                    <option value="You need to suport? 1">You need to suport? 1
+                                                    </option>
+                                                    <option value="You need to suport? 2">You need to suport? 2
+                                                    </option>
+                                                    <option value="You need to suport? 3">You need to suport? 3
+                                                    </option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="cols mb-30">
+                                            <fieldset>
+                                                <textarea id="" placeholder="Message..."></textarea>
+                                            </fieldset>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <label class="mb-0">
+                                                <span class="text font-nunito">Agree to our terms and
+                                                    conditions</span>
+                                                <input type="checkbox" class="checkbox-item" checked>
+                                                <span class="btn-checkbox"></span>
+                                            </label>
+                                            <button type="submit" class="tf-btn ">
+                                                <span class="text-style">
+                                                    Send Message
+                                                </span>
+                                                <div class="icon">
+                                                    <i class="icon-arrow_right"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section contact us -->
+            <!-- section partner -->
+            <section class="s-partner style-2 has-img-item">
+                <div class="tf-container w-1780">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider-wrap">
+                                <div class="swiper-container slider-partner">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+                                                <div class="image">
+                                                    <a href="#">
+
+                                                        <img src="./images/partner/wide-open.png" alt=""
+                                                            class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="./images/partner/sollio.png" alt="" class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+                                                <div class="image">
+                                                    <a href="#">
+
+                                                        <img src="./images/partner/syngenta.png" alt=""
+                                                            class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+
+                                                <div class="image">
+                                                    <a href="#">
+
+                                                        <img src="./images/partner/strachan-valley.png" alt=""
+                                                            class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+
+
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="./images/partner/new-holland.png" alt=""
+                                                            class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-partner">
+
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="./images/partner/stony-field.png" alt=""
+                                                            class="lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-img-item item-1">
+                    <img src="./images/item/page-title-top.png" alt="" />
+                </div>
+            </section>
+            <!-- /section partner -->
         </div>
+        <!-- /main-content -->
 
         <!-- Footer -->
         <footer class="footer" id="footer-main">
-
-
             <div class="tf-container w-1290">
                 <div class="row">
                     <div class="col-lg-12">
@@ -987,7 +1480,7 @@
                                 <form action="#" class="form-email style-2">
                                     <input type="email" class="email style-2" placeholder="Email address*" required>
                                     <button class="tf-btn full bg-white scale-40">
-                                        <span class="text-style cl-primary ">
+                                        <span class="text-style cl-primary">
                                             Subscribe Now!
                                         </span>
                                         <div class="icon">
@@ -1006,9 +1499,9 @@
                     <div class="col-lg-12">
                         <div class="footer-bottom">
                             <p class="no-copy font-nunito">
-                                Copyright © 2024 Donal Farm HTML Template by
+                                Copyright © 2024 Donal Farm by
                                 <span>
-                                    <a href="https://themeforest.net/user/themesflat/portfolio" target="_blank">
+                                    <a href="https://themeforest.net/user/themesflat/portfolio">
                                         Themesflat</a>.</span>
                                 All Rights Reserved.
                             </p>
@@ -1083,11 +1576,12 @@
     <script type="text/javascript" src="js/lazysize.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/zoom.js"></script>
-    <script type="text/javascript" src="js/drift.min.js"></script>
+    <script type="text/javascript" src="js/odometer.min.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/swiper.js"></script>
-
+    <script type="text/javascript" src="js/map.min.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
     <!-- /Javascript -->

@@ -77,10 +77,10 @@ if (".slider-provide".length > 0) {
         slidesPerView: 3,
         loop: true,
         spaceBetween: 30,
-        // navigation: {
-        //     nextEl: '.btn-slide-home-3.btn-next',  // Chọn phần tử chứa nút next
-        //     prevEl: '.btn-slide-home-3.btn-prev',  // Chọn phần tử chứa nút prev
-        // },
+        navigation: {
+            nextEl: ".btn-slider-provide.style-2.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slider-provide.style-2.btn-prev", // Chọn phần tử chứa nút prev
+        },
     });
 }
 //slider-why-us
@@ -167,6 +167,44 @@ if ($(".thumbs-slider").length > 0) {
         },
     });
 }
+if ($(".testimonial-thumbs").length > 0) {
+    var direction = $(".slider-testimonial-3-thumb").data("direction");
+    var thumbs = new Swiper(".slider-testimonial-3-thumb", {
+        spaceBetween: 30,
+        slidesPerView: 3,
+        // initialSlide: 1,
+        // slideTo: 1,
+        direction: "horizontal",
+        // observer: true,
+        // observeParents: true,
+        // breakpoints: {
+        //     0: {
+        //         direction: "horizontal",
+        //         slidesPerView: 3,
+        //     },
+        //     1150: {
+        //         direction: "horizontal",
+        //         direction: direction,
+        //     },
+        // },
+        // 450: {
+        //     direction: "horizontal",
+        // },
+    });
+    var main = new Swiper(".slider-testimonial-3", {
+        spaceBetween: 0,
+        observer: true,
+        observeParents: true,
+        thumbs: {
+            swiper: thumbs,
+        },
+        navigation: {
+            nextEl: ".btn-slide-testimonial-3.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-testimonial-3.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+
 if (".slider-s-project".length > 0) {
     var swiper = new Swiper(".slider-s-project", {
         slidesPerView: 2,
@@ -252,5 +290,43 @@ if (".slider-s-our-mission".length > 0) {
             nextEl: ".btn-slide-our-mission.btn-next", // Chọn phần tử chứa nút next
             prevEl: ".btn-slide-our-mission.btn-prev", // Chọn phần tử chứa nút prev
         },
+    });
+}
+
+if (".slider-project-2".length > 0) {
+    var swiper = new Swiper(".slider-project-2", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: ".btn-slide-project-2.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-project-2.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+
+if (".slider-shopping-card".length > 0) {
+    var swiper = new Swiper(".slider-shopping-card", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-slider-shopping.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slider-shopping.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+// silder-gallery
+if (".slider-gallery".length > 0) {
+    var swiper = new Swiper(".slider-gallery", {
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 30,
+        // navigation: {
+        //     nextEl: '.btn-slide-home-3.btn-next',  // Chọn phần tử chứa nút next
+        //     prevEl: '.btn-slide-home-3.btn-prev',  // Chọn phần tử chứa nút prev
+        // },
     });
 }

@@ -44,6 +44,18 @@
             }
         }
     }
+
+    .widget-content-tab {
+        .widget-content-inner {
+            visibility: hidden;
+            opacity: 0;
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
     &.style-2 {
         border-radius: 20px;
         border: 1px solid var(--Border);
@@ -77,14 +89,24 @@
             }
         }
     }
-    .widget-content-tab {
-        .widget-content-inner {
-            visibility: hidden;
-            opacity: 0;
-
-            &.active {
-                visibility: visible;
-                opacity: 1;
+    &.style-3 {
+        .menu-tab {
+            justify-content: flex-start;
+            .item {
+                &.active {
+                    .btn-tab {
+                        color: var(--Secondary);
+                    }
+                }
+                .btn-tab {
+                    color: var(--White);
+                    &::after {
+                        content: none;
+                    }
+                    &:hover {
+                        color: var(--Secondary);
+                    }
+                }
             }
         }
     }
