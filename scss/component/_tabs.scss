@@ -110,4 +110,59 @@
             }
         }
     }
+    &.style-4 {
+        .menu-tab {
+            flex-direction: column;
+            margin-bottom: 0px;
+            gap: 10px;
+            align-items: start;
+            li {
+                a {
+                    font-family: $font-main5;
+                    color: var(--White);
+                    padding-bottom: 0px;
+                    &:hover {
+                        color: var(--Secondary);
+                        padding-left: 20px;
+                        &::before {
+                            left: 0;
+                            @include visible;
+                            transition-delay: 0.1s;
+                        }
+                    }
+                    &::after {
+                        content: none;
+                    }
+                    &::before {
+                        position: absolute;
+                        color: var(--Secondary);
+                        content: "\e926";
+                        font-family: $fontIcon;
+                        top: 50%;
+                        left: -10px;
+                        transform: translateY(-50%);
+                        @include transition3;
+                        @include hidden;
+                    }
+                }
+                &.active {
+                    a {
+                        &::before {
+                            left: 0;
+                            @include visible;
+                        }
+                        padding-left: 20px;
+                        color: var(--Secondary);
+                    }
+                }
+                &:not(:last-child) {
+                    padding-bottom: 21px;
+                    border-bottom: 1px dashed var(--Border-5);
+                }
+                &:not(:first-child) {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
 }

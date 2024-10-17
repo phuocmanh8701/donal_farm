@@ -206,6 +206,54 @@
             });
         }
     };
+
+    var dayTimeInput = function () {
+        if ($(".choose-date").length > 0) {
+            $("#day").on("focus", function () {
+                $(".choose-date").addClass("has-value"); // Thêm class khi input được click
+            });
+
+            $("#day").on("blur", function () {
+                if (!$(this).val()) {
+                    $(".choose-date").removeClass("has-value"); // Xóa class nếu không có giá trị khi rời khỏi input
+                }
+            });
+        }
+        if ($(".choose-date-2").length > 0) {
+            $("#time").on("focus", function () {
+                $(".choose-date-2").addClass("has-value"); // Thêm class khi input được click
+            });
+
+            $("#time").on("blur", function () {
+                if (!$(this).val()) {
+                    $(".choose-date-2").removeClass("has-value"); // Xóa class nếu không có giá trị khi rời khỏi input
+                }
+            });
+        }
+        if ($(".amount").length > 0) {
+            $("#positiveNumber").on("input", function () {
+                // Lấy giá trị nhập vào
+                let value = $(this).val();
+
+                // Kiểm tra và loại bỏ dấu trừ
+                if (value.includes("-")) {
+                    $(this).val(value.replace(/-/g, ""));
+                }
+
+                // Kiểm tra và loại bỏ số 0
+                if (value === "0" || value === "") {
+                    $(this).val(""); // Xóa giá trị nếu là 0 hoặc chuỗi rỗng
+                }
+
+                // Chỉ cho phép nhập các số dương (1 trở lên)
+                const numValue = parseInt(value, 10);
+                if (numValue < 1) {
+                    $(this).val(""); // Xóa giá trị nếu là số âm
+                }
+            });
+        }
+    };
+    var timeInput = function () {};
     // Dom Ready
     $(function () {
         videoWrap();
@@ -216,5 +264,7 @@
         btnQuantity();
         tabs();
         changeValue();
+        dayTimeInput();
+        // timeInput();
     });
 })(jQuery);

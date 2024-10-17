@@ -148,6 +148,36 @@ fieldset {
             }
         }
     }
+    &.style-4 {
+        input {
+            background-color: var(--White);
+            padding: 12px 19px;
+            color: var(--Primary);
+            font-family: $font-main4;
+            font-weight: 600;
+            &:focus {
+                border: 1px solid var(--White);
+                // background: var(--White);
+            }
+            &::placeholder {
+                color: var(--Primary);
+                font-family: $font-main4;
+                font-weight: 600;
+            }
+        }
+        .btn-send {
+            @include transition3;
+            &:hover {
+                background-color: var(--Text-4);
+                i {
+                    color: var(--White);
+                }
+            }
+            i {
+                color: var(--Bg-6);
+            }
+        }
+    }
 }
 
 .checkbox-item {
@@ -309,6 +339,53 @@ fieldset {
             }
             .tf-btn {
                 @include transition3;
+            }
+        }
+    }
+}
+.form-book {
+    .choose-date,
+    .choose-date-2 {
+        position: relative;
+        label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--Text-2);
+            z-index: 1;
+        }
+        input {
+            position: relative;
+            z-index: 0;
+            color: transparent;
+            &:focus {
+                color: var(--Text-2);
+                z-index: 2;
+            }
+        }
+        &.has-value {
+            label {
+                z-index: -1;
+                color: transparent;
+            }
+            input {
+                color: var(--Text-2);
+            }
+        }
+    }
+    fieldset {
+        &.mb-15 {
+            margin-bottom: 15px;
+        }
+        &.mb-35 {
+            margin-bottom: 35px;
+        }
+        input {
+            background-color: var(--White);
+            padding: 12px 19px;
+            &:focus {
+                border-color: var(--White);
             }
         }
     }

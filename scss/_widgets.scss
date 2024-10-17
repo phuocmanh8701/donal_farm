@@ -89,6 +89,9 @@ i {
     width: max-content;
     @include flex(center, center);
     img {
+        &.mw-unset {
+            max-width: unset;
+        }
         object-fit: cover;
         width: 100%;
         max-width: 467px;
@@ -1499,6 +1502,8 @@ i {
 .js-countdown {
     display: block;
     width: max-content;
+    padding-bottom: 50px;
+
     .countdown__timer {
         @include d-flex();
         gap: 120px;
@@ -1573,10 +1578,64 @@ i {
     }
 }
 .wg-countdown {
-    background-color: var(--Primary);
-    padding: 100px 50px;
+    // background-color: var(--Primary);
+    // padding: 100px 50px;
 }
+.wg-coming-soon {
+    // @include flex(center, center);
+    @include d-flex();
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Primary);
+    .content {
+        max-width: 1084px;
+        width: 100%;
+        padding: 90px 129px;
+        .top {
+            margin-bottom: 100px;
+        }
+        .text {
+            margin-bottom: 65px;
+        }
+        .wg-countdown {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--Border-5);
+        }
 
+        .bot {
+            @include flex(center, space-between);
+
+            .form-email {
+                max-width: 514px;
+                width: 100%;
+            }
+        }
+    }
+    .image {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        color: var(--White);
+        &.title {
+            font-size: 100px;
+            line-height: 100px;
+        }
+        &.caption {
+            font-size: 45px;
+            line-height: 55px;
+            margin-bottom: 25px;
+        }
+        &.notice {
+            font-size: 20px;
+            line-height: 55px;
+            margin-bottom: 20px;
+        }
+    }
+}
 .wg-404 {
     padding: 81px 0px 72px 0px;
     background-image: url("./../images/item/404-2.png");
@@ -1898,7 +1957,7 @@ i {
         font-size: 30px;
         color: var(--White);
         z-index: 3;
-        transform: translateY(-20px);
+        transform: translateY(20px);
         @include hidden;
     }
     &::after {

@@ -531,9 +531,12 @@ h5,
 h6,
 .h6 {
     font-family: $font-main5;
-    color: var(--Primary);
+    color: var(--Text-2);
     margin: 0;
     text-rendering: optimizeLegibility;
+    // &.cl-text-2 {
+    //     color: var(--Text-2);
+    // }
 }
 
 h1,

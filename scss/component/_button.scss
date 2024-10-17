@@ -70,6 +70,17 @@
             font-weight: 400;
             gap: 11px;
         }
+        &.type-3 {
+            background-color: var(--Bg-6);
+            border-color: var(--Bg-6);
+
+            color: var(--White);
+            @include flex(center, center);
+            &:hover {
+                box-shadow: 0px 67px 2px 0px var(--Text-4) inset;
+                border-color: var(--Text-4);
+            }
+        }
     }
     &:hover {
         background-color: transparent;

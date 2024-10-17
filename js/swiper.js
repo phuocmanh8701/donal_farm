@@ -330,3 +330,16 @@ if (".slider-gallery".length > 0) {
         // },
     });
 }
+
+if (".slider-event-detail".length > 0) {
+    var swiper = new Swiper(".slider-event-detail", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+
+        navigation: {
+            nextEl: ".btn-event-detail.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-event-detail.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
