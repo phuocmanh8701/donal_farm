@@ -38,7 +38,7 @@
         font-family: $font-main6;
         font-size: 23px;
         line-height: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .title {
@@ -51,23 +51,28 @@
 
     &.has-text {
         .title {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .text {
             color: var(--Text-2);
-            margin-bottom: 20px;
+            margin-bottom: 26px;
+            letter-spacing: 0.1px;
         }
     }
 
     &.style-2 {
+        margin-bottom: 26px;
         .img-item {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             @include d-flex();
             align-items: center;
 
             .item {
-                margin-right: 15px;
+                margin-right: 19px;
+                &.mr-16 {
+                    margin-right: 16px;
+                }
             }
 
             .sub-title {
@@ -237,7 +242,7 @@
 
 .s-break-page {
     // margin-top: 23px;
-    height: 400px;
+    height: 425px;
     background-color: var(--Secondary);
     position: relative;
     z-index: 3;
@@ -347,11 +352,13 @@
 .s-box-portfolio {
     position: relative;
     z-index: 4;
-    margin-top: -300px;
-    margin-bottom: 115px;
+    margin-top: -344px;
+    // margin-bottom: 115px;
 }
 
 .s-about-us {
+    padding-top: 130px;
+    padding-bottom: 70px;
     .main-section {
         @include d-flex();
         // justify-content: space-between;
@@ -361,13 +368,15 @@
             max-width: 820px;
             width: 100%;
             flex-shrink: 0;
-
+            .heading-section {
+                margin-bottom: 25px;
+            }
             .text-1 {
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
 
             .text-2 {
-                margin-bottom: 40px;
+                margin-bottom: 42px;
             }
 
             .btn-read-more {
@@ -377,6 +386,8 @@
             .image {
                 border-radius: 20px;
                 overflow: hidden;
+                max-height: 378px;
+                height: 100%;
             }
         }
 
@@ -384,7 +395,7 @@
             width: 100%;
             @include d-flex();
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
 
             .box-trust {
                 height: 100%;
@@ -395,31 +406,32 @@
                 .has-border {
                     border-radius: 15px;
                     border: 1px dashed var(--Border-3);
-                    padding: 60px 35px 50px;
+                    padding: 57px 34px 50px;
                     height: 100%;
                 }
 
                 .benefit-list {
                     border-bottom: 1px solid var(--Border-3);
-                    padding-bottom: 25px;
-
-                    margin-bottom: 30px;
+                    padding-bottom: 27px;
+                    margin-bottom: 34px;
 
                     li {
                         @include d-flex();
                         align-items: center;
-                        gap: 15px;
+                        gap: 16px;
 
                         &:not(:last-child) {
-                            margin-bottom: 10px;
+                            margin-bottom: 14px;
                         }
 
                         i {
                             color: var(--Secondary);
+                            font-size: 18px;
                         }
 
                         p {
                             color: var(--White);
+                            font-size: 18px;
                         }
                     }
                 }
@@ -435,7 +447,9 @@
                         .box-icon {
                             padding: 0px;
                             border: unset;
-
+                            max-width: unset;
+                            justify-content: flex-start;
+                            gap: 15px;
                             .icon {
                                 width: 79px;
                                 height: 79px;
@@ -443,14 +457,22 @@
 
                                 i {
                                     color: var(--Secondary);
+                                    &.icon-farmer {
+                                        font-size: 48px;
+                                    }
                                 }
                             }
 
                             .caption {
                                 color: var(--White);
+                                line-height: 28px;
+                                font-size: 19px;
                             }
                         }
                     }
+                }
+                .tf-btn-read {
+                    margin-left: 22px;
                 }
             }
         }
@@ -460,7 +482,7 @@
 .s-service {
     background-color: var(--Bg-8);
     position: relative;
-    padding-top: 110px;
+    padding-top: 117px;
     z-index: 1;
 
     .s-img-item {
@@ -534,8 +556,7 @@
 }
 
 .s-why-us {
-    margin-bottom: 100px;
-
+    padding-top: 157px;
     .main-section {
         @include d-flex();
         // align-items: center;
@@ -580,11 +601,21 @@
         .content-section {
             max-width: 660px;
             width: 100%;
+            padding-top: 72px;
+            .img-item {
+                margin-bottom: 17px;
+            }
+            .heading-section {
+                margin-bottom: 25px;
+            }
+            .text {
+                margin-bottom: 43px;
+            }
         }
     }
 
     .bot {
-        margin-top: -106px;
+        margin-top: -205px;
 
         .benefit-list {
             @include d-flex();
@@ -598,20 +629,35 @@
             li {
                 max-width: 380px;
                 width: 100%;
-                padding: 50px 50px 50px 54px;
-
+                padding: 50px 50px 42px 50px;
+                &:not(:last-child) {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 1px;
+                        border-right: 1px dashed var(--Secondary);
+                    }
+                }
+                &:first-child {
+                    padding-left: 54px;
+                    // padding: 50px 50px 50px 54px;
+                }
                 i {
                     color: var(--Secondary);
                     font-size: 30px;
                 }
 
                 .icon {
-                    margin-bottom: 20px;
+                    margin-bottom: 23px;
                 }
 
                 .title {
                     color: var(--White);
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                     display: block;
                 }
 
@@ -624,6 +670,7 @@
 }
 
 .s-our-commitment {
+    padding-top: 100px;
     .main-section {
         @include d-flex();
         justify-content: space-between;
@@ -631,13 +678,14 @@
         .content-section {
             max-width: 730px;
             width: 100%;
+            padding-top: 46px;
         }
 
         .image-wrap {
             position: relative;
 
             .image {
-                max-width: 756px;
+                max-width: 746px;
                 width: 100%;
                 border-radius: 20px;
             }
@@ -2042,11 +2090,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(
-            to right,
-            rgb(6, 32, 15, 0.85) 20%,
-            transparent
-        );
+        background: linear-gradient(to right, rgb(6, 32, 15, 0.85) 20%, transparent);
     }
     .s-img-item {
         &.item-2 {

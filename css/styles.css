@@ -702,6 +702,10 @@ h6,
   font-size: 20px;
 }
 
+.fs-22 {
+  font-size: 22px;
+}
+
 .fs-21 {
   font-size: 21px;
 }
@@ -2231,7 +2235,7 @@ a.text-white {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 34px;
   background-color: var(--Primary);
   color: var(--White);
   padding: 6px 5px 6px 35px;
@@ -2243,6 +2247,9 @@ a.text-white {
   font-size: 16px;
   font-family: "WorkSans", sans-serif;
   overflow: hidden;
+}
+.tf-btn.gap-34 {
+  gap: 34px;
 }
 .tf-btn .icon {
   width: 43px;
@@ -2405,12 +2412,13 @@ a.text-white {
 
 .tf-btn-read {
   display: block;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   position: relative;
   font-family: "WorkSans", sans-serif;
   color: var(--Primary);
   width: max-content;
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 .tf-btn-read:hover {
   color: var(--Secondary);
@@ -2429,7 +2437,7 @@ a.text-white {
   bottom: 0;
   left: 0;
   right: auto;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background-color: var(--Secondary);
   -webkit-transition: all 0.3s ease;
@@ -3006,7 +3014,7 @@ fieldset {
 .page-title-home-1 .img-item-1 {
   position: absolute;
   z-index: 3;
-  top: -30px;
+  top: -25px;
   width: 100%;
 }
 .page-title-home-1 .img-item-1 img {
@@ -3030,13 +3038,14 @@ fieldset {
 }
 .slide-home-1 .image img {
   width: 100%;
+  height: 693px;
 }
 .slide-home-1 .content-wrap {
   width: 100%;
   position: absolute;
   z-index: 2;
   top: 0;
-  padding: 100px 0px;
+  padding: 141px 0px 100px 0px;
 }
 .slide-home-1 .content-wrap .content {
   max-width: 1290px;
@@ -3045,7 +3054,7 @@ fieldset {
 .slide-home-1 .content-wrap .content .sub-title {
   font-size: 23px;
   color: var(--Secondary);
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 .slide-home-1 .content-wrap .content .title {
   color: var(--White);
@@ -3055,7 +3064,11 @@ fieldset {
 }
 .slide-home-1 .content-wrap .content .text {
   color: var(--Text-3);
-  margin-bottom: 25px;
+  margin-bottom: 43px;
+  letter-spacing: 1px;
+}
+.slide-home-1 .content-wrap .content .tf-btn {
+  gap: 33px;
 }
 .slide-home-1::after {
   top: 0;
@@ -5351,6 +5364,8 @@ a.mapboxgl-ctrl-logo {
 }
 .video-wrap.style-4 .popup-youtube {
   background-color: var(--Bg-6);
+  height: 74px;
+  width: 74px;
 }
 .video-wrap.style-4 .popup-youtube .wave {
   background-color: var(--Bg-6);
@@ -5518,6 +5533,9 @@ a.mapboxgl-ctrl-logo {
 .wg-counter .counter .sub-odo.color-secondary {
   color: var(--Secondary);
 }
+.wg-counter .odometer {
+  left: -12px;
+}
 .wg-counter .odometer .odometer-value {
   width: 100%;
   text-align: right !important;
@@ -5527,7 +5545,7 @@ a.mapboxgl-ctrl-logo {
 }
 .wg-counter .odometer span {
   color: var(--Secondary);
-  font-size: 65px;
+  font-size: 55px;
   font-family: "WorkSans", sans-serif;
   line-height: 50px;
   font-weight: 700;
@@ -5542,12 +5560,12 @@ a.mapboxgl-ctrl-logo {
   max-width: 440px;
   width: 100%;
   background-color: var(--Secondary);
-  padding: 20px;
+  padding: 18px 18px 20px 19px;
   border-radius: 20px;
 }
 .wg-counter.style-2 .has-border {
   width: 100%;
-  padding: 40px 30px;
+  padding: 36px 30px 31px 32px;
   border-radius: 15px;
   border: 1px dashed var(--Border-7);
   position: relative;
@@ -5557,27 +5575,36 @@ a.mapboxgl-ctrl-logo {
 }
 .wg-counter.style-2 .counter-item .sub-odo {
   color: var(--Bg-6);
-  font-size: 65px;
+  font-size: 55px;
   font-family: "WorkSans", sans-serif;
   line-height: 50px;
   font-weight: 700;
+  left: -17px;
 }
 .wg-counter.style-2 .counter-item .icon {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 18px;
   background-color: var(--Bg-6);
+  width: 54px;
+  height: 54px;
 }
 .wg-counter.style-2 .counter-item .icon i {
-  font-size: 23px;
+  font-size: 32px;
+  transform: rotate(45deg);
 }
 .wg-counter.style-2 .counter-item .title {
   color: var(--Bg-6);
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 13px;
 }
 .wg-counter.style-2 .counter-item .text {
   color: var(--Bg-6);
+}
+.wg-counter.style-2 .counter {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 .wg-counter.style-2 .odometer span {
   color: var(--Bg-6);
@@ -6054,20 +6081,25 @@ a.mapboxgl-ctrl-logo {
   max-width: 383px;
   width: 100%;
   border-radius: 20px;
-  margin-top: 69px;
-  padding: 0px 15px 40px;
+  margin-top: 48px;
+  margin-bottom: -65px;
+  padding: 0px 15px 47px;
 }
 .box-icon.style-6 .icon {
   width: 125px;
   height: 125px;
-  margin-top: -69px;
-  margin-bottom: 35px;
+  margin-top: -38px;
+  margin-bottom: 47px;
 }
 .box-icon.style-6 .icon i {
-  font-size: 49px;
+  font-size: 57px;
+}
+.box-icon.style-6 .icon i.fs-67 {
+  font-size: 67px;
 }
 .box-icon.style-6 .caption {
-  padding-bottom: 20px;
+  padding-bottom: 29px;
+  margin-bottom: 23px;
   position: relative;
   display: -webkit-box;
   display: -moz-box;
@@ -6076,6 +6108,8 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 22px;
+  letter-spacing: 0.5px;
 }
 .box-icon.style-6 .caption::after {
   content: "";
@@ -6086,7 +6120,7 @@ a.mapboxgl-ctrl-logo {
   bottom: 0;
 }
 .box-icon.style-6 .text {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .box-icon.style-6 .btn-read svg {
   width: 58px;
@@ -6455,14 +6489,14 @@ a.mapboxgl-ctrl-logo {
   border-radius: 20px;
   top: 398px;
   bottom: 20px;
-  left: 23px;
+  left: 20px;
   right: 23px;
   text-align: center;
   padding: 0px 35px 10px;
   height: 81px;
 }
 .box-portfolio.style-4 .content .icon {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   visibility: hidden;
   opacity: 0;
   transform: translateY(20px);
@@ -6474,12 +6508,12 @@ a.mapboxgl-ctrl-logo {
 }
 .box-portfolio.style-4 .content .icon i {
   color: var(--Text-4);
-  font-size: 55px;
+  font-size: 61px;
 }
 .box-portfolio.style-4 .content .title {
   color: var(--Text-2);
   margin-bottom: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 29px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -6500,10 +6534,12 @@ a.mapboxgl-ctrl-logo {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   left: unset;
+  width: 64px;
+  height: 3px;
 }
 .box-portfolio.style-4 .content .text {
   color: var(--Text);
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .box-portfolio.style-4 .content .bot {
   justify-content: center;
@@ -6512,19 +6548,21 @@ a.mapboxgl-ctrl-logo {
   background-color: var(--Primary);
   color: var(--White);
   display: block;
-  padding: 15px 30px;
-  border-radius: 10px;
+  padding: 20px 35px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
 }
 .box-portfolio.style-4 .content .bot a:hover {
   background-color: var(--Text-4);
 }
 .box-portfolio.style-4:hover .content {
-  padding: 50px 35px 10px;
+  padding: 59px 35px 10px;
   top: 20px;
   height: calc(100% - 40px);
 }
 .box-portfolio.style-4:hover .content .title {
   margin-top: 0px !important;
+  letter-spacing: 0.5px;
 }
 .box-portfolio.style-4:hover .content .title::after {
   visibility: visible;
@@ -6535,6 +6573,7 @@ a.mapboxgl-ctrl-logo {
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
+  margin-bottom: 35px;
 }
 .box-portfolio.style-4::after {
   background: linear-gradient(to top, rgba(13, 64, 28, 0.89), transparent);
@@ -7780,7 +7819,7 @@ a.mapboxgl-ctrl-logo {
   font-family: "GlitterySnowfall", sans-serif;
   font-size: 23px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .heading-section .title {
   font-size: 45px;
@@ -7790,14 +7829,18 @@ a.mapboxgl-ctrl-logo {
   font-weight: 700;
 }
 .heading-section.has-text .title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .heading-section.has-text .text {
   color: var(--Text-2);
-  margin-bottom: 20px;
+  margin-bottom: 26px;
+  letter-spacing: 0.1px;
+}
+.heading-section.style-2 {
+  margin-bottom: 26px;
 }
 .heading-section.style-2 .img-item {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -7806,7 +7849,10 @@ a.mapboxgl-ctrl-logo {
   align-items: center;
 }
 .heading-section.style-2 .img-item .item {
-  margin-right: 15px;
+  margin-right: 19px;
+}
+.heading-section.style-2 .img-item .item.mr-16 {
+  margin-right: 16px;
 }
 .heading-section.style-2 .img-item .sub-title {
   margin-bottom: 0px;
@@ -7955,7 +8001,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .s-break-page {
-  height: 400px;
+  height: 425px;
   background-color: var(--Secondary);
   position: relative;
   z-index: 3;
@@ -8058,10 +8104,13 @@ a.mapboxgl-ctrl-logo {
 .s-box-portfolio {
   position: relative;
   z-index: 4;
-  margin-top: -300px;
-  margin-bottom: 115px;
+  margin-top: -344px;
 }
 
+.s-about-us {
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
 .s-about-us .main-section {
   display: -webkit-box;
   display: -moz-box;
@@ -8075,11 +8124,14 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
   flex-shrink: 0;
 }
+.s-about-us .main-section .content-left .heading-section {
+  margin-bottom: 25px;
+}
 .s-about-us .main-section .content-left .text-1 {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .s-about-us .main-section .content-left .text-2 {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .s-about-us .main-section .content-left .btn-read-more {
   margin-bottom: 50px;
@@ -8087,6 +8139,8 @@ a.mapboxgl-ctrl-logo {
 .s-about-us .main-section .content-left .image {
   border-radius: 20px;
   overflow: hidden;
+  max-height: 378px;
+  height: 100%;
 }
 .s-about-us .main-section .content-right {
   width: 100%;
@@ -8096,7 +8150,7 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .s-about-us .main-section .content-right .box-trust {
   height: 100%;
@@ -8107,13 +8161,13 @@ a.mapboxgl-ctrl-logo {
 .s-about-us .main-section .content-right .box-trust .has-border {
   border-radius: 15px;
   border: 1px dashed var(--Border-3);
-  padding: 60px 35px 50px;
+  padding: 57px 34px 50px;
   height: 100%;
 }
 .s-about-us .main-section .content-right .box-trust .benefit-list {
   border-bottom: 1px solid var(--Border-3);
-  padding-bottom: 25px;
-  margin-bottom: 30px;
+  padding-bottom: 27px;
+  margin-bottom: 34px;
 }
 .s-about-us .main-section .content-right .box-trust .benefit-list li {
   display: -webkit-box;
@@ -8122,16 +8176,18 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
 }
 .s-about-us .main-section .content-right .box-trust .benefit-list li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .s-about-us .main-section .content-right .box-trust .benefit-list li i {
   color: var(--Secondary);
+  font-size: 18px;
 }
 .s-about-us .main-section .content-right .box-trust .benefit-list li p {
   color: var(--White);
+  font-size: 18px;
 }
 .s-about-us .main-section .content-right .box-trust .box-icon-list {
   margin-bottom: 50px;
@@ -8142,6 +8198,9 @@ a.mapboxgl-ctrl-logo {
 .s-about-us .main-section .content-right .box-trust .box-icon-list li .box-icon {
   padding: 0px;
   border: unset;
+  max-width: unset;
+  justify-content: flex-start;
+  gap: 15px;
 }
 .s-about-us .main-section .content-right .box-trust .box-icon-list li .box-icon .icon {
   width: 79px;
@@ -8151,14 +8210,22 @@ a.mapboxgl-ctrl-logo {
 .s-about-us .main-section .content-right .box-trust .box-icon-list li .box-icon .icon i {
   color: var(--Secondary);
 }
+.s-about-us .main-section .content-right .box-trust .box-icon-list li .box-icon .icon i.icon-farmer {
+  font-size: 48px;
+}
 .s-about-us .main-section .content-right .box-trust .box-icon-list li .box-icon .caption {
   color: var(--White);
+  line-height: 28px;
+  font-size: 19px;
+}
+.s-about-us .main-section .content-right .box-trust .tf-btn-read {
+  margin-left: 22px;
 }
 
 .s-service {
   background-color: var(--Bg-8);
   position: relative;
-  padding-top: 110px;
+  padding-top: 117px;
   z-index: 1;
 }
 .s-service .s-img-item.item-2 {
@@ -8216,7 +8283,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .s-why-us {
-  margin-bottom: 100px;
+  padding-top: 157px;
 }
 .s-why-us .main-section {
   display: -webkit-box;
@@ -8258,9 +8325,19 @@ a.mapboxgl-ctrl-logo {
 .s-why-us .main-section .content-section {
   max-width: 660px;
   width: 100%;
+  padding-top: 72px;
+}
+.s-why-us .main-section .content-section .img-item {
+  margin-bottom: 17px;
+}
+.s-why-us .main-section .content-section .heading-section {
+  margin-bottom: 25px;
+}
+.s-why-us .main-section .content-section .text {
+  margin-bottom: 43px;
 }
 .s-why-us .bot {
-  margin-top: -106px;
+  margin-top: -205px;
 }
 .s-why-us .bot .benefit-list {
   display: -webkit-box;
@@ -8278,24 +8355,42 @@ a.mapboxgl-ctrl-logo {
 .s-why-us .bot .benefit-list li {
   max-width: 380px;
   width: 100%;
-  padding: 50px 50px 50px 54px;
+  padding: 50px 50px 42px 50px;
+}
+.s-why-us .bot .benefit-list li:not(:last-child) {
+  position: relative;
+}
+.s-why-us .bot .benefit-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-right: 1px dashed var(--Secondary);
+}
+.s-why-us .bot .benefit-list li:first-child {
+  padding-left: 54px;
 }
 .s-why-us .bot .benefit-list li i {
   color: var(--Secondary);
   font-size: 30px;
 }
 .s-why-us .bot .benefit-list li .icon {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 .s-why-us .bot .benefit-list li .title {
   color: var(--White);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
 }
 .s-why-us .bot .benefit-list li .sub {
   color: var(--Text-3);
 }
 
+.s-our-commitment {
+  padding-top: 100px;
+}
 .s-our-commitment .main-section {
   display: -webkit-box;
   display: -moz-box;
@@ -8307,12 +8402,13 @@ a.mapboxgl-ctrl-logo {
 .s-our-commitment .main-section .content-section {
   max-width: 730px;
   width: 100%;
+  padding-top: 46px;
 }
 .s-our-commitment .main-section .image-wrap {
   position: relative;
 }
 .s-our-commitment .main-section .image-wrap .image {
-  max-width: 756px;
+  max-width: 746px;
   width: 100%;
   border-radius: 20px;
 }

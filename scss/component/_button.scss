@@ -1,6 +1,6 @@
 .tf-btn {
     @include flex(center, center);
-    gap: 30px;
+    gap: 34px;
     background-color: var(--Primary);
     color: var(--White);
     padding: 6px 5px 6px 35px;
@@ -14,6 +14,9 @@
     overflow: hidden;
     // white-space: nowrap;
     // background-color: ;
+    &.gap-34 {
+        gap: 34px;
+    }
     .icon {
         width: 43px;
         height: 43px;
@@ -149,12 +152,13 @@
 
 .tf-btn-read {
     display: block;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     position: relative;
     font-family: $font-main5;
     color: var(--Primary);
     width: max-content;
     font-weight: 500;
+    letter-spacing: 0.5px;
     &:hover {
         color: var(--Secondary);
         &::after {
@@ -174,7 +178,7 @@
         bottom: 0;
         left: 0;
         right: auto;
-        height: 3px;
+        height: 2px;
         width: 100%;
         background-color: var(--Secondary);
         @include transition3;
