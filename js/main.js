@@ -253,7 +253,29 @@
             });
         }
     };
-    var timeInput = function () {};
+
+    var btnLoadMore = function () {
+        $(".btn-loadMore").click(function () {
+            // Lấy container liên quan đến nút Load More được nhấn
+            var container = $(this).closest(".widget-content-inner");
+
+            // Tìm các item ẩn trong container đó
+            var hiddenItems = container.find(".item.hidden");
+
+            // Hiển thị tối đa 1 item mỗi lần nhấn nút với hiệu ứng fadeIn
+            hiddenItems.slice(0, 1).each(function (index) {
+                $(this)
+                    .removeClass("hidden")
+                    .hide()
+                    .fadeIn(400 * (index + 1));
+            });
+
+            // Nếu không còn item nào bị ẩn, ẩn nút Load More trong container hiện tại
+            if (container.find(".item.hidden").length === 0) {
+                $(this).hide();
+            }
+        });
+    };
     // Dom Ready
     $(function () {
         videoWrap();
@@ -265,6 +287,6 @@
         tabs();
         changeValue();
         dayTimeInput();
-        // timeInput();
+        btnLoadMore();
     });
 })(jQuery);

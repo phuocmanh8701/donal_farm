@@ -393,9 +393,40 @@
         border-radius: 50%;
         background-color: var(--Secondary);
         @include flex(center, center);
+        @include transition3;
         i {
             color: var(--Bg-6);
             font-size: 25px;
+            @include transition3;
+        }
+        &:hover {
+            background-color: var(--Text-4);
+            i {
+                color: var(--White);
+            }
+        }
+    }
+}
+
+.slider-portfolio {
+    .gallery-item {
+        .image {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .btn-portfolio {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        &.btn-next {
+            right: 50px;
+        }
+        &.btn-prev {
+            left: 50px;
         }
     }
 }

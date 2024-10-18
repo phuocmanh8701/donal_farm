@@ -94,6 +94,18 @@
     &.page-our-events {
         background-image: url("./../images/page-title/our-event.jpg");
     }
+    &.page-our-farmers {
+        background-image: url("./../images/page-title/our-farmer.jpg");
+    }
+    &.page-our-history {
+        background-image: url("./../images/page-title/our-history.jpg");
+    }
+    &.page-our-service {
+        background-image: url("./../images/page-title/our-service.jpg");
+    }
+    &.page-portfolio-details {
+        background-image: url("./../images/page-title/portfolio.jpg");
+    }
 }
 .main-content {
     padding: 120px 0px 106px;
@@ -737,6 +749,29 @@
                     }
                 }
             }
+            .project-detail-list {
+                li {
+                    @include d-flex();
+                    align-items: center;
+                    gap: 10px;
+                    i {
+                        color: var(--Text-4);
+                    }
+
+                    .infor {
+                        font-family: $font-main5;
+                        font-weight: 500;
+                        color: var(--Text-2);
+                    }
+                    &:not(:last-child) {
+                        padding-bottom: 15px;
+                        border-bottom: 1px dashed var(--Border-6);
+                    }
+                    &:not(:first-child) {
+                        padding-top: 15px;
+                    }
+                }
+            }
         }
         &:not(:last-child) {
             margin-bottom: 40px;
@@ -744,7 +779,7 @@
     }
 }
 .tf-sidebar-2 {
-    .sidebar-item {
+    .sidebar-item-2 {
         padding: 35px;
         border-radius: 20px;
         &.has-bg-1 {

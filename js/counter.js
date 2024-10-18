@@ -55,3 +55,12 @@ if ($(".counter-scroll-3").length > 0) {
         }
     });
 }
+if ($(".counter-scroll-4").length > 0) {
+    $(window).on("scroll", function () {
+        if (isElementInViewport($(".odometer.style-6"))) {
+            setTimeout(function () {
+                $(".odometer.style-6").html(12980);
+            }, 0);
+        }
+    });
+}

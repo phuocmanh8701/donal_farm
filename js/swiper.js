@@ -343,3 +343,16 @@ if (".slider-event-detail".length > 0) {
         },
     });
 }
+if (".slider-portfolio".length > 0) {
+    var swiper = new Swiper(".slider-portfolio", {
+        slidesPerView: 2.2,
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: ".btn-portfolio.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-portfolio.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}

@@ -607,6 +607,9 @@ h6,
 .fs-45 {
     font-size: 45px;
 }
+.fs-35 {
+    font-size: 35px;
+}
 .fs-30 {
     font-size: 30px;
 }
@@ -652,6 +655,11 @@ a {
         color: var(--Bg); //change
         outline: 0;
         @include transition3;
+    }
+    &.hover-text-primary {
+        &:hover {
+            color: var(--Primary) !important;
+        }
     }
     &.hover-text-secondary {
         &:hover {
@@ -752,8 +760,14 @@ a {
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-25 {
+    margin-bottom: 25px;
+}
 .mb-20 {
     margin-bottom: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
 }
 .lt-sp-01 {
     letter-spacing: 0.1px;

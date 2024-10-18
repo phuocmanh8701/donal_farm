@@ -7,10 +7,24 @@
             transition: all 1s ease-in-out;
         }
     }
+    .hover-item-2 {
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1.1);
+            @include transition5;
+            // transition: all 0 ease-in-out;
+        }
+    }
     &:hover {
         .hover-item {
             img {
                 transform: scale(1.15);
+            }
+        }
+        .hover-item-2 {
+            img {
+                transform: scale(1.2);
             }
         }
     }
