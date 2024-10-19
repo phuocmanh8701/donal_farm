@@ -356,3 +356,26 @@ if (".slider-portfolio".length > 0) {
         },
     });
 }
+if (".slider-service-detail".length > 0) {
+    var swiper = new Swiper(".slider-service-detail", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+
+        navigation: {
+            nextEl: ".btn-service-detail.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-service-detail.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
+if (".slider-relate-product".length > 0) {
+    var swiper = new Swiper(".slider-relate-product", {
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-slide-product.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-product.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}

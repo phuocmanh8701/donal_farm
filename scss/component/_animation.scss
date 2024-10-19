@@ -46,39 +46,51 @@
         transform: translateX(0) rotate(0deg);
     }
 }
+@keyframes ring {
+    0% {
+        transform: rotate(0) translateX(0);
+    }
+    25% {
+        transform: rotate(-20deg) translateX(0.2em);
+    }
+    50% {
+        transform: rotate(20deg) translateX(-0.2em);
+    }
+    75% {
+        transform: rotate(-10deg) translateX(0.1em);
+    }
+    100% {
+        transform: rotate(10deg) translateX(-0.1em);
+    }
+}
+@keyframes tf-ani-tada {
+    0%,
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 
+    10%,
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+}
 .rollInRight {
     animation-name: rollInRight;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-// .fade-item-1 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.2s;
-// }
-// .fade-item-2 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.3s;
-// }
-// .fade-item-3 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.4s;
-// }
-// .fade-item-4 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.5s;
-// }
-// .fade-item-5 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.6s;
-// }
-// .fade-item-6 {
-//     transform: translateY(0);
-//     @include visible;
-//     transition-delay: 0.7s;
-// }

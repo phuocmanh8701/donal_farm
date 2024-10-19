@@ -57,6 +57,7 @@
         }
     }
     &.style-2 {
+        margin-top: 29px;
         border-radius: 20px;
         border: 1px solid var(--Border);
         padding: 0px 130px 75px;
@@ -67,7 +68,6 @@
             .item {
                 a {
                     font-size: 16px;
-
                     background-color: var(--Bg-9);
                     color: var(--Primary);
                     border-radius: 27.5px;
@@ -76,6 +76,12 @@
                         content: none;
                     }
                     &:hover {
+                        background-color: var(--Primary);
+                        color: var(--White);
+                    }
+                }
+                &.active {
+                    a {
                         background-color: var(--Primary);
                         color: var(--White);
                     }
@@ -163,6 +169,45 @@
                     padding-top: 20px;
                 }
             }
+        }
+    }
+    &.style-5 {
+        border-radius: 20px 20px 10px 10px;
+        overflow: hidden;
+        .menu-tab {
+            padding: 0px;
+            margin-bottom: 0px;
+            gap: 0px;
+            .item {
+                width: 100%;
+                &:not(:last-child) {
+                    border-right: 1px solid var(--White);
+                }
+                &.active {
+                    a {
+                        background-color: var(--Primary);
+                        color: var(--White);
+                    }
+                }
+                a {
+                    padding-bottom: 0px;
+                    color: var(--Bg-6);
+                    width: 100%;
+                    @include flex(center, center);
+                    background-color: var(--Secondary);
+                    padding: 18px 0px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .widget-content-tab {
+            background-color: var(--Bg-8);
+            padding: 35px 30px;
         }
     }
 }

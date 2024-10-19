@@ -197,7 +197,8 @@ i {
         }
     }
 }
-.blog-pagination {
+.blog-pagination,
+.tf-page-pagination {
     ul {
         @include flex(center, center);
         gap: 11px;
@@ -640,12 +641,17 @@ i {
     @include transition3;
     // overflow: hidden;
     background-color: var(--White);
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
     &:hover {
         box-shadow: 0px 25px 32.2px 2.8px rgba(0, 0, 0, 0.06);
         border-color: var(--White);
     }
     .trendy-list {
+        position: absolute;
+        top: 10px;
+        right: 13px;
         @include flex(center, flex-end);
         gap: 10px;
         .trendy-item {
@@ -662,12 +668,23 @@ i {
                 &.color-2 {
                     background-color: var(--Text-4);
                 }
+                &.color-3 {
+                    background-color: var(--Color-3);
+                }
+                &.color-4 {
+                    background-color: var(--Color-4);
+                }
+                &.color-5 {
+                    // background-color: var(--Color);
+                }
             }
         }
     }
     .image {
         @include flex(center, center);
+        margin-top: 30px;
         margin-bottom: 35px;
+        height: 100%;
         img {
             max-width: 194px;
             width: 100%;
@@ -708,6 +725,96 @@ i {
         }
     }
     &.style-2 {
+        max-width: 270px;
+        width: 100%;
+        padding: 30px 25px;
+        justify-content: flex-end;
+        .trendy-list {
+            gap: 6px;
+        }
+        .trendy-item {
+            p {
+                padding: 2px 15px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .image {
+            height: unset;
+            img {
+                max-width: unset;
+                width: unset;
+            }
+        }
+        .name-product {
+            font-size: 16px;
+        }
+        .price-wrap {
+            span {
+                // font-weight: 500;
+                font-size: 16px;
+                font-family: $font-main5;
+            }
+        }
+        .wg-rating {
+            position: relative;
+            top: -2px;
+        }
+        .product-btn-list {
+            position: relative;
+            .tt-text {
+                position: absolute;
+                top: -35px;
+                white-space: nowrap;
+                pointer-events: visible;
+                z-index: 1;
+                pointer-events: none;
+                padding: 0px 7px;
+                // overflow: hidden;
+                transform: translateY(10px);
+                @include transition3;
+                @include hidden();
+                p {
+                    position: relative;
+                    z-index: 2;
+                    color: var(--White) !important;
+                }
+                &::after {
+                    content: "";
+                    border-radius: 5px;
+
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--Black);
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    transform: rotate(45deg) translateX(-50%);
+                    height: 10px;
+                    background-color: var(--Black);
+                    left: 50%;
+                    top: 24px;
+                    z-index: 2;
+                }
+            }
+            .icon {
+                width: 41px;
+                height: 41px;
+                &:hover {
+                    .tt-text {
+                        @include visible();
+                        transform: translateY(0px);
+                        transition-delay: 0.3s;
+                    }
+                }
+            }
+        }
     }
 }
 .box-icon {
@@ -723,7 +830,6 @@ i {
         width: 1px;
         height: 100%;
         border-right: 1px dashed var(--Border-3);
-        // background-color: var(--Border-3);
     }
     .icon {
         width: 71px;
@@ -1318,7 +1424,7 @@ i {
                     padding-bottom: 0px;
                     font-size: 20px;
                     line-height: 30px;
-                    
+
                     &::after {
                         content: none;
                     }
@@ -1931,6 +2037,9 @@ i {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    &.gap-30-20 {
+        gap: 30px 20px;
+    }
 }
 .grid-layout-2 {
     display: grid;
@@ -2410,4 +2519,7 @@ i {
             color: var(--White);
         }
     }
+}
+.wg-shop-content {
+    margin-bottom: 50px;
 }

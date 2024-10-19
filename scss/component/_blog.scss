@@ -8,6 +8,7 @@
     background-size: cover;
     background-attachment: fixed;
     // overflow: hidden;
+
     &::after {
         content: "";
         position: absolute;
@@ -19,6 +20,10 @@
         background-color: var(--Bg-2);
     }
     .content {
+        &.center {
+            @include flex(center, center);
+            flex-direction: column;
+        }
         .sub-title {
             font-family: $font-main6;
             color: var(--Secondary);
@@ -105,6 +110,9 @@
     }
     &.page-portfolio-details {
         background-image: url("./../images/page-title/portfolio.jpg");
+    }
+    &.page-shop-detail {
+        background-image: url("./../images/page-title/shop-detail.jpg");
     }
 }
 .main-content {
@@ -729,6 +737,31 @@
                         }
                     }
                 }
+                &.style-2 {
+                    .content {
+                        @include d-flex();
+                        flex-direction: column;
+                        gap: 10px;
+                        .name {
+                            color: var(--Primary);
+                            line-height: 26px;
+                            font-size: 16px;
+                        }
+                        .pricing-star {
+                            @include flex(center, flex-start);
+                            gap: 20px;
+                            // margin-bottom: 25px;
+                            .price {
+                                color: var(--Text-4);
+                                font-size: 18px;
+                            }
+                            .wg-rating {
+                                position: relative;
+                                top: -2px;
+                            }
+                        }
+                    }
+                }
             }
             .tag-list {
                 @include d-flex();
@@ -769,6 +802,53 @@
                     }
                     &:not(:first-child) {
                         padding-top: 15px;
+                    }
+                }
+            }
+            .color-list {
+                @include d-flex();
+                align-items: center;
+                gap: 12px;
+                li {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    position: relative;
+                    @include flex(center, center);
+                    cursor: pointer;
+                    pointer-events: all;
+                    &.color-1 {
+                        background-color: var(--Color-2);
+                    }
+                    &.color-2 {
+                        background-color: var(--Color-8);
+                    }
+                    &.color-3 {
+                        background-color: var(--Color-9);
+                    }
+                    &.color-4 {
+                        background-color: var(--Color-10);
+                    }
+                    &.color-5 {
+                        background-color: var(--Color-11);
+                    }
+                    &.color-6 {
+                        background-color: var(--Color-12);
+                    }
+                    &.color-7 {
+                        background-color: var(--Color-13);
+                    }
+                    &.active {
+                        width: 15px;
+                        height: 15px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 28px;
+                            height: 28px;
+                            border-radius: 50%;
+                            border: 1px solid var(--Border);
+                        }
                     }
                 }
             }

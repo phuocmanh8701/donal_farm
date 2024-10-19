@@ -276,6 +276,47 @@
             }
         });
     };
+    var colorList = function () {
+        $(".color-list li").on("click", function () {
+            // Xóa class "active" khỏi tất cả các thẻ li
+            $(".color-list li").removeClass("active");
+
+            // Thêm class "active" vào thẻ li được bấm
+            $(this).addClass("active");
+        });
+    };
+    var rangeslider = function () {
+        if ($("#range-two-val").length > 0) {
+            var skipSlider = document.getElementById("range-two-val");
+            var skipValues = [
+                document.getElementById("skip-value-lower"),
+                document.getElementById("skip-value-upper"),
+            ];
+
+            noUiSlider.create(skipSlider, {
+                start: [1, 500],
+                connect: true,
+                behaviour: "drag",
+                step: 1,
+                range: {
+                    min: 10,
+                    max: 1000,
+                },
+                format: {
+                    to: function (value) {
+                        return Math.round(value); // Bỏ phần thập phân
+                    },
+                    from: function (value) {
+                        return Number(value); // Chuyển đổi giá trị từ chuỗi sang số
+                    },
+                },
+            });
+
+            skipSlider.noUiSlider.on("update", function (values, handle) {
+                skipValues[handle].innerHTML = "$" + values[handle];
+            });
+        }
+    };
     // Dom Ready
     $(function () {
         videoWrap();
@@ -288,5 +329,7 @@
         changeValue();
         dayTimeInput();
         btnLoadMore();
+        colorList();
+        rangeslider();
     });
 })(jQuery);

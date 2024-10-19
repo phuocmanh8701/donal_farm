@@ -100,3 +100,51 @@
         }
     }
 }
+
+.tf-dropdown-sort {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 0px;
+    .btn-select {
+        @include d-flex();
+        span {
+            color: var(--White);
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    &.tf-languages,
+    &.tf-currencies {
+        .btn-select {
+            @include d-flex();
+            gap: 5px;
+            align-items: center;
+            .icon {
+                i {
+                    color: var(--White);
+                }
+            }
+        }
+        .dropdown-menu {
+            width: 96px;
+            background-color: var(--Bg-11);
+            top: 10px;
+            border-radius: 10px;
+            padding-top: unset;
+            padding-bottom: 5px;
+            position: absolute;
+            z-index: 10;
+            padding-left: 10px;
+        }
+        .select-item {
+            cursor: pointer;
+            width: 100%;
+            @include transition3();
+            span {
+                color: var(--White);
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}
