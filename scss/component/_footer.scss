@@ -218,6 +218,7 @@
         }
     }
     &.style-2 {
+        padding-top: 106px;
         .img-item {
             &.item-1 {
                 top: -10px;
@@ -227,8 +228,24 @@
             }
         }
         .footer-top {
+            padding-bottom: 39px;
+            margin-bottom: 64px;
+            border: unset;
+            position: relative;
+            &::after {
+                content: "";
+                max-width: 1290px;
+                width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                bottom: 0;
+                border-bottom: 1px dashed var(--Border-5);
+            }
             .footer-left {
-                @include flex(center, center);
+                // @include flex(center, center);
+                @include d-flex();
+                align-items: center;
                 gap: 44px;
                 .icon {
                     width: 87px;
@@ -240,6 +257,9 @@
                     }
                 }
                 .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
                     .title {
                         color: var(--White);
                     }
@@ -250,28 +270,63 @@
             }
             .footer-right {
                 max-width: 543px;
+                height: 100%;
                 margin-left: auto;
                 width: 100%;
+                @include d-flex();
+                align-items: center;
+                input {
+                    padding: 14px 53px 12px 30px;
+                }
+                .btn-send {
+                    right: 17px;
+                    top: 8px;
+                }
             }
         }
         .footer-inner {
+            margin-bottom: 65px;
+            .footer-title {
+                padding-bottom: 14px;
+                margin-bottom: 29px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 3px;
+                    background-color: var(--Secondary);
+                    bottom: 0;
+                    left: 0;
+                }
+            }
             .footer-inner-wrap {
                 .logo {
                     max-width: 180px;
-                    margin-bottom: 40px;
+                    margin-bottom: 32px;
                     img {
                     }
                 }
                 .text {
                     color: var(--White);
-                    margin-bottom: 35px;
+                    margin-bottom: 32px;
                 }
                 .wg-social {
                     ul {
                         justify-content: flex-start;
+                        gap: 8px;
+                    }
+                    li {
+                        a {
+                            width: 44px;
+                            height: 44px;
+                        }
                     }
                 }
             }
+        }
+        .footer-bottom {
+            padding-bottom: 33px;
         }
     }
 }

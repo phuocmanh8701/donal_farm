@@ -321,6 +321,9 @@ fieldset {
             border: 1px solid var(--Bg-10);
             background: var(--Bg-10) !important;
             color: var(--Text-2);
+            &.lt-sp-07 {
+                letter-spacing: 0.7px;
+            }
             option {
                 background-color: var(--Bg-10);
             }
