@@ -185,7 +185,7 @@ fieldset {
         margin-bottom: 10px;
     }
     label {
-        padding-left: 35px;
+        padding-left: 32px;
         cursor: pointer;
         position: relative;
         .checkbox-item {
@@ -198,6 +198,8 @@ fieldset {
             background: var(--White) !important;
             &:checked {
                 ~ .btn-checkbox {
+                    background-color: var(--Secondary);
+
                     &:after {
                         display: block;
                     }
@@ -210,7 +212,7 @@ fieldset {
             }
         }
         .text {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
             line-height: 19.6px;
             color: var(--White);
@@ -220,9 +222,10 @@ fieldset {
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            width: 22px;
-            height: 22px;
-            background-color: var(--Secondary);
+            width: 19px;
+            height: 20px;
+            background-color: transparent;
+            border: 2px solid var(--Secondary);
             border-radius: 50%;
             // border: 1px solid var(--Border);
             &:after {
@@ -234,7 +237,7 @@ fieldset {
                 top: 50%;
                 transform: translate(-50%, -50%);
                 display: none;
-                color: var(--White);
+                color: var(--Text-2);
             }
         }
     }
@@ -253,7 +256,8 @@ fieldset {
     }
     select {
         width: 100%;
-        padding: 17px 10px 16px 16px;
+        padding: 20px 10px 19px 25px;
+        letter-spacing: 1.2px;
         border: 1px solid var(--Primary);
         background: var(--Border-3) !important;
         color: var(--White);

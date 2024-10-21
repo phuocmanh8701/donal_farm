@@ -317,13 +317,32 @@
             });
         }
     };
+    var visibleHeader = function () {
+        let lastScrollTop = 0;
+        $(window).scroll(function () {
+            let scrollTop = $(this).scrollTop();
+            if (scrollTop < lastScrollTop) {
+                if (scrollTop > 0) {
+                    $('.fixed-header.style-absolute').addClass('visible');
+                }
+            } else {
+                $('.fixed-header.style-absolute').removeClass('visible');
+            }
+            if (scrollTop < 200) {
+                $('.fixed-header.style-absolute').removeClass('visible');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+    }
     // Dom Ready
     $(function () {
         videoWrap();
         openNavMobile();
         textUp();
         openWelcome();
-        headerScroll();
+        // headerScroll();
         btnQuantity();
         tabs();
         changeValue();
@@ -331,5 +350,6 @@
         btnLoadMore();
         colorList();
         rangeslider();
+        visibleHeader();
     });
 })(jQuery);

@@ -332,8 +332,8 @@
             }
             .entry-date {
                 right: unset;
-                top: 30px;
-                left: 29px;
+                top: 15px;
+                left: 17px;
             }
         }
         .content {
@@ -349,13 +349,16 @@
             }
             .content {
                 text-align: center;
-                padding: 25px 20px;
+                padding: 23px 20px 25px 20px;
+                .text {
+                    margin-bottom: 38px;
+                }
                 .entry-meta {
                     border: unset;
                     padding-bottom: 0px;
                     gap: 18px;
                     justify-content: center;
-                    margin-bottom: 15px;
+                    margin-bottom: 13px;
                     &::after {
                         content: none;
                     }
@@ -945,11 +948,7 @@
                 bottom: 0;
                 left: 0;
                 z-index: 0;
-                background: linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.502),
-                    transparent
-                );
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.502), transparent);
             }
             .image {
                 border-radius: 20px;

@@ -302,6 +302,9 @@ i {
 .wg-counter {
     @include flex(center, space-between);
     padding: 20px 0px;
+    &.p-0 {
+        padding: 0px;
+    }
     .counter-item {
         @include flex(center, space-between);
         flex-direction: column;
@@ -312,7 +315,7 @@ i {
         }
     }
     .icon {
-        margin-bottom: 20px;
+        margin-bottom: 38px;
         i {
             font-size: 35px;
             color: var(--White);
@@ -334,6 +337,11 @@ i {
     }
     .odometer {
         left: -12px;
+        &.fs-65 {
+            span {
+                font-size: 65px;
+            }
+        }
         .odometer-value {
             width: 100%;
             text-align: right !important;
@@ -729,6 +737,9 @@ i {
         width: 100%;
         padding: 30px 25px;
         justify-content: flex-end;
+        &.mw-unset {
+            max-width: unset;
+        }
         .trendy-list {
             gap: 6px;
         }
@@ -751,7 +762,6 @@ i {
         }
         .price-wrap {
             span {
-                // font-weight: 500;
                 font-size: 16px;
                 font-family: $font-main5;
             }
@@ -770,7 +780,6 @@ i {
                 z-index: 1;
                 pointer-events: none;
                 padding: 0px 7px;
-                // overflow: hidden;
                 transform: translateY(10px);
                 @include transition3;
                 @include hidden();
@@ -993,6 +1002,7 @@ i {
         background-color: rgb(0, 0, 0, 0.1);
         @include transition3;
         z-index: 1;
+        border-radius: 20px 0px 0px 20px;
     }
     &::before {
         content: "";
@@ -1005,18 +1015,20 @@ i {
         @include transition3;
         z-index: 1;
         transition-delay: 0.2s;
+        border-radius: 0px 20px 20px 0px;
     }
     .image {
         border-radius: 20px;
         overflow: hidden;
     }
     .img-item {
+        margin-bottom: 17px;
         img {
             transform: scale(1) !important;
         }
     }
     .content {
-        top: 50px;
+        top: 52px;
         width: 100%;
         position: absolute;
         @include flex(center, center);
@@ -1026,6 +1038,10 @@ i {
         .title {
             font-size: 30px;
             line-height: 55px;
+            margin-bottom: 6px;
+        }
+        .text {
+            margin-bottom: 31px;
         }
     }
     &.style-2 {
@@ -1193,6 +1209,7 @@ i {
             color: var(--Secondary);
             font-size: 25px;
             margin-bottom: 20px;
+            letter-spacing: 1.4px;
         }
         .title {
             color: var(--White);
@@ -1242,11 +1259,7 @@ i {
         height: 278px;
         bottom: 0;
         left: 0;
-        background: linear-gradient(
-            to top,
-            rgba(13, 21, 15, 0.749),
-            transparent
-        );
+        background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
         z-index: 1;
         @include transition3;
     }
@@ -1367,11 +1380,7 @@ i {
             }
         }
         &::after {
-            background: linear-gradient(
-                to top,
-                rgb(13, 64, 28, 0.89),
-                transparent
-            );
+            background: linear-gradient(to top, rgb(13, 64, 28, 0.89), transparent);
         }
     }
     &.style-3 {
@@ -1400,11 +1409,7 @@ i {
                 height: 278px;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient(
-                    to top,
-                    rgba(13, 21, 15, 0.749),
-                    transparent
-                );
+                background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
                 z-index: 1;
                 @include transition3;
             }
@@ -1451,10 +1456,29 @@ i {
         }
         .content {
             bottom: -90px;
+            left: 42px;
+            right: 46px;
+            .bot {
+                margin-top: 0px;
+            }
+            .title {
+                margin-bottom: 48px;
+                padding-bottom: 23px;
+            }
         }
         &:hover {
             .content {
-                bottom: 35px;
+                bottom: 43px;
+                .sub {
+                    margin-bottom: 17px;
+                }
+                .title {
+                    margin-bottom: 28px;
+                    padding-bottom: 23px;
+                }
+                .bot {
+                    margin-top: 0px;
+                }
             }
         }
     }
@@ -2155,11 +2179,7 @@ i {
         &.w-76 {
             width: 76%;
         }
-        background-image: -webkit-linear-gradient(
-            0deg,
-            rgb(39, 141, 69) 0%,
-            rgb(248, 195, 44) 100%
-        );
+        background-image: -webkit-linear-gradient(0deg, rgb(39, 141, 69) 0%, rgb(248, 195, 44) 100%);
     }
 }
 .main-history {

@@ -38,9 +38,9 @@
 //end reset
 
 .tf-accordion {
-    max-width: 720px;
+    // max-width: 720px;
     width: 100%;
-    margin-right: auto;
+    // margin-right: auto;
     .accordion-item {
         border-radius: 10px;
         overflow: hidden;
@@ -51,7 +51,7 @@
             background-color: var(--Primary);
 
             .accordion-button {
-                padding: 16px 25px;
+                padding: 17px 25px 15px 29px;
                 background-color: var(--Primary);
                 font-size: 18px;
                 line-height: 28px;
@@ -87,11 +87,12 @@
             .accordion-body {
                 background-color: var(--Bg-8);
                 font-family: $font-main4;
-                letter-spacing: 1px;
+                letter-spacing: 0.1px;
                 line-height: 26px;
                 font-size: 16px;
-                padding: 33px 30px;
+                padding: 30px 30px 31px 30px;
                 margin-bottom: 11px;
+                border-radius: 0px 0px 20px 20px;
             }
             &.show {
                 .accordion-body {
