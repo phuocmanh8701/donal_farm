@@ -1,4 +1,16 @@
-@media (min-width: 1441px) {
+@media (min-width: 576px) {
+    .s-testimonial {
+        &.style-2 {
+            .wrap {
+                .image {
+                    width: 52%;
+                }
+                .content-section {
+                    width: 49%;
+                }
+            }
+        }
+    }
 }
 
 // ----------------------------------

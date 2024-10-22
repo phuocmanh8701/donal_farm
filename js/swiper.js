@@ -295,7 +295,7 @@ if (".slider-s-our-mission".length > 0) {
 
 if (".slider-project-2".length > 0) {
     var swiper = new Swiper(".slider-project-2", {
-        slidesPerView: 2,
+        slidesPerView: 2.188235294117647,
         loop: true,
         spaceBetween: 30,
         centeredSlides: true,

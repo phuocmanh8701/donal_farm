@@ -151,12 +151,25 @@ i {
             max-width: unset;
         }
         a {
-            height: 74px;
-            width: 74px;
-            padding: 5px;
-            // position: relative;
+            height: 75px;
+            width: 75px;
+            @include transition-cubic-3;
+            &:hover {
+                height: 80px;
+                width: 80px;
+                background-color: transparent;
+                border: 2px solid var(--White);
+                &::after {
+                    border-color: var(--White);
+                }
+                i {
+                    color: var(--White);
+                }
+            }
             i {
-                padding-left: 5px;
+                font-size: 20px;
+                padding-left: 4px;
+                @include transition-cubic-3;
             }
             &::after {
                 content: "";
@@ -164,8 +177,9 @@ i {
                 height: 69px;
                 width: 69px;
                 border: 1px dashed var(--Border-15);
-                padding: 5px;
                 border-radius: 50%;
+                @include transition-cubic-3;
+                animation: spin-reverse 30s infinite linear;
             }
         }
     }
@@ -330,6 +344,7 @@ i {
             font-size: 55px;
             line-height: 55px;
             font-weight: 700;
+            font-family: $font-main5;
             &.color-secondary {
                 color: var(--Secondary);
             }
@@ -476,11 +491,14 @@ i {
     &.style-5 {
         max-width: 280px;
         background-color: transparent;
+        gap: 25px;
         .title {
             // color: var(--White);
         }
         .icon {
             background-color: var(--Text-4);
+            width: 57px;
+            height: 57px;
             i {
                 font-size: 20px;
             }
@@ -489,6 +507,11 @@ i {
             .counter {
                 span {
                     font-size: 55px;
+                }
+                .sub-odo {
+                    line-height: 0px;
+                    bottom: -12px;
+                    left: -17px;
                 }
             }
         }
@@ -585,18 +608,18 @@ i {
         width: 100%;
         text-align: center;
         @include transition3;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     .text {
         position: relative;
         text-align: center;
         @include flex(center, center);
         width: max-content;
-        padding-top: 30px;
+        padding-top: 27px;
         color: var(--Text);
         margin-bottom: 40px;
         @include transition3;
-
+        letter-spacing: 0.1px;
         &::after {
             content: "";
             position: absolute;
@@ -742,6 +765,41 @@ i {
         width: 100%;
         padding: 30px 25px;
         justify-content: flex-end;
+        &.type-2 {
+            padding: 30px 25px 49px 37px;
+            .image {
+                margin-bottom: 52px;
+                img {
+                    max-width: 215px;
+                }
+            }
+            .trendy-list {
+                top: 27px;
+                right: 34px;
+                p {
+                    padding: 5px 27px;
+                    font-size: 16px;
+                }
+            }
+            .name-product {
+                font-size: 20px;
+            }
+            .price-wrap {
+                gap: 18px;
+                span {
+                    font-size: 20px;
+                }
+            }
+            .product-btn-list {
+                .icon {
+                    width: 51px;
+                    height: 51px;
+                }
+            }
+            .pricing-star {
+                margin-bottom: 29px;
+            }
+        }
         &.mw-unset {
             max-width: unset;
         }
@@ -852,6 +910,9 @@ i {
         &.mb-30 {
             margin-bottom: 30px;
         }
+        &.mb-29 {
+            margin-bottom: 29px;
+        }
         i {
             font-size: 24px;
             color: var(--Bg-6);
@@ -864,6 +925,7 @@ i {
         &.mb-17 {
             margin-bottom: 17px;
         }
+        
     }
     .text {
         color: var(--Text-3);
@@ -912,8 +974,12 @@ i {
         max-width: 270px;
         .icon {
             background-color: var(--Text-4);
+            width: 80px;
+            height: 80px;
+            margin-bottom: 31px;
         }
         .caption {
+            margin-bottom: 25px;
             color: var(--Text-2);
         }
         .text {
@@ -1855,7 +1921,7 @@ i {
     }
 }
 .wg-404 {
-    padding: 81px 0px 72px 0px;
+    padding: 163px 0px 72px 0px;
     background-image: url("./../images/item/404-2.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1865,55 +1931,55 @@ i {
         @include flex(center, center);
         flex-direction: column;
         text-align: center;
-        .title {
-            @include flex(center, center);
-            margin-bottom: 18px;
-            .image {
-                z-index: 101;
+    }
+    .title {
+        @include flex(center, center);
+        margin-bottom: 8px;
+        .image {
+            z-index: 101;
+        }
+        position: relative;
+        &::after {
+            position: absolute;
+            content: none;
+            box-shadow: 0px 0px 200px var(--Black);
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            z-index: 100;
+            background-color: var(--Black);
+        }
+        .number {
+            font-size: 250px;
+            line-height: 50px;
+            color: var(--Text-4);
+            &.s1 {
+                position: relative;
+                top: -18px;
+                right: -4px;
             }
-            position: relative;
-            &::after {
-                position: absolute;
-                content: none;
-                box-shadow: 0px 0px 200px var(--Black);
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
-                z-index: 100;
-                background-color: var(--Black);
-            }
-            .number {
-                font-size: 250px;
-                line-height: 50px;
-                color: var(--Text-4);
-                &.s1 {
-                    position: relative;
-                    // top: 21px;
-                    // right: 4px;
-                }
-                &.s2 {
-                    position: relative;
-                    // top: 21px;
-                    // left: 14px;
-                    // padding-left: 4px;
-                }
+            &.s2 {
+                position: relative;
+                top: -18px;
+                right: -2px;
             }
         }
-        .not-found {
-            // letter-spacing: 2px;
-            // font-size: 40px;
-            margin-bottom: 5px;
-            color: var(--Text-2);
-        }
-        .desc {
-            margin-bottom: 44px;
-            font-size: 26px;
-            line-height: 36px;
-            color: var(--Text-2);
-        }
-        .btn-back {
-            padding: 10px 32px 8px 31px;
-        }
+    }
+    .not-found {
+        margin-bottom: 12px;
+        color: var(--Text-2);
+    }
+    .desc {
+        margin-bottom: 40px;
+        font-size: 26px;
+        line-height: 36px;
+        color: var(--Text-2);
+    }
+    .img-item {
+        margin-bottom: 36px;
+    }
+    .btn-back {
+        padding: 10px 32px 8px 31px;
     }
 }
 .s-customer-say {
@@ -2008,7 +2074,8 @@ i {
         }
     }
     &.style-3 {
-        padding: 50px 80px;
+        padding: 0px 20px;
+        background-color: transparent;
         .author-wrap {
             gap: 28px;
             justify-content: center;
@@ -2016,14 +2083,26 @@ i {
         .comment {
             text-align: center;
         }
+        .caption {
+            line-height: 45px;
+            margin-bottom: 36px;
+        }
+        .wg-rating {
+            i {
+                font-size: 12px;
+            }
+        }
         .infor {
             text-align: center;
+            .name {
+                margin-bottom: 2px;
+            }
             .name-wrap {
                 @include d-flex();
                 flex-direction: column-reverse;
                 margin-bottom: 5px;
                 .wg-rating {
-                    margin-bottom: 20px;
+                    margin-bottom: 27px;
                 }
             }
         }
@@ -2559,7 +2638,7 @@ i {
     border-radius: 20px;
     background-color: var(--Bg-6);
     position: relative;
-    padding: 60px 55px;
+    padding: 48px 55px 57px 55px;
     &::after {
         content: "";
         position: absolute;
@@ -2577,6 +2656,7 @@ i {
         &.title {
             line-height: 55px;
             color: var(--Secondary);
+            margin-bottom: 8px;
         }
         &.text {
             color: var(--White);

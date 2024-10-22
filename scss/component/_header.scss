@@ -142,7 +142,7 @@
             }
         }
         .topbar-right {
-            gap: 70px;
+            gap: 72px;
             .contact-list {
                 gap: 49px;
                 .item {
@@ -156,7 +156,7 @@
         .icon-wrap {
             @include flex(center, center);
             gap: 44px;
-            padding-right: 0px;
+            padding-right: 2px;
             margin-right: 27px;
             position: relative;
             &::after {

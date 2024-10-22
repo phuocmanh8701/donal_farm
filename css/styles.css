@@ -1119,7 +1119,7 @@ a.text-white {
   height: 7px;
 }
 .tf-topbar.style-3 .topbar-right {
-  gap: 70px;
+  gap: 72px;
 }
 .tf-topbar.style-3 .topbar-right .contact-list {
   gap: 49px;
@@ -1137,7 +1137,7 @@ a.text-white {
   align-items: center;
   justify-content: center;
   gap: 44px;
-  padding-right: 0px;
+  padding-right: 2px;
   margin-right: 27px;
   position: relative;
 }
@@ -2467,7 +2467,7 @@ a.text-white {
   top: 8px;
 }
 .footer.style-2 .footer-inner {
-  margin-bottom: 65px;
+  margin-bottom: 59px;
 }
 .footer.style-2 .footer-inner .footer-title {
   padding-bottom: 14px;
@@ -2512,7 +2512,7 @@ a.text-white {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 41px;
   margin-bottom: 35px;
   white-space: nowrap;
 }
@@ -3850,7 +3850,7 @@ fieldset {
   position: absolute;
   z-index: 2;
   top: 0;
-  padding: 128px 0px 100px 0px;
+  padding: 128px 0px 130px 0px;
 }
 .slide-home-3 .content-wrap .content {
   max-width: 1290px;
@@ -3892,9 +3892,12 @@ fieldset {
 }
 .slide-home-3 .image {
   width: 100%;
+  max-height: 700px;
+  height: 100%;
 }
 .slide-home-3 .image img {
   width: 100%;
+  height: 697px;
   object-fit: cover;
 }
 .slide-home-3::after {
@@ -4230,7 +4233,7 @@ fieldset {
 /*------------ product ---------------- */
 /*------------ blog ---------------- */
 .page-title {
-  padding: 133px 0px 50px;
+  padding: 111px 0px 48px;
   position: relative;
   z-index: 0;
   background-image: url("./../images/page-title/blog-full-w.jpg");
@@ -4355,6 +4358,9 @@ fieldset {
 }
 .main-content.mb--20px {
   margin-bottom: -20px;
+}
+.main-content.pt-93 {
+  padding-top: 93px;
 }
 
 .subscribe-wrap {
@@ -6180,6 +6186,56 @@ a.mapboxgl-ctrl-logo {
   transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
 }
 
+.tf-animate-spin-reverse {
+  -webkit-transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  -khtml-transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  -o-transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
+  -webkit-animation: spin-reverse 30s infinite linear;
+  -khtml-animation: spin-reverse 30s infinite linear;
+  -moz-animation: spin-reverse 30s infinite linear;
+  -ms-animation: spin-reverse 30s infinite linear;
+  -o-animation: spin-reverse 30s infinite linear;
+  animation: spin-reverse 30s infinite linear;
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.scroll-element,
+.scroll-element-2 {
+  transition: transform 0.3s ease;
+}
+
+@keyframes dotAnimationTopToBot {
+  0% {
+    top: 22%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes dotAnimationBotToTop {
+  0% {
+    bottom: 24%;
+  }
+  50% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
 /*------------ hover ---------------- */
 .img-hover .hover-item {
   overflow: hidden;
@@ -6471,12 +6527,36 @@ a.mapboxgl-ctrl-logo {
   max-width: unset;
 }
 .video-wrap.style-2 a {
-  height: 74px;
-  width: 74px;
-  padding: 5px;
+  height: 75px;
+  width: 75px;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -khtml-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -o-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+}
+.video-wrap.style-2 a:hover {
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  border: 2px solid var(--White);
+}
+.video-wrap.style-2 a:hover::after {
+  border-color: var(--White);
+}
+.video-wrap.style-2 a:hover i {
+  color: var(--White);
 }
 .video-wrap.style-2 a i {
-  padding-left: 5px;
+  font-size: 20px;
+  padding-left: 4px;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -khtml-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -o-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
 }
 .video-wrap.style-2 a::after {
   content: "";
@@ -6484,8 +6564,14 @@ a.mapboxgl-ctrl-logo {
   height: 69px;
   width: 69px;
   border: 1px dashed var(--Border-15);
-  padding: 5px;
   border-radius: 50%;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -khtml-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  -o-transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0.5, 0.6, 0.7);
+  animation: spin-reverse 30s infinite linear;
 }
 .video-wrap.style-3 .popup-youtube {
   background-color: var(--Secondary);
@@ -6673,6 +6759,7 @@ a.mapboxgl-ctrl-logo {
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
+  font-family: "WorkSans", sans-serif;
 }
 .wg-counter .counter .sub-odo.color-secondary {
   color: var(--Secondary);
@@ -6809,15 +6896,23 @@ a.mapboxgl-ctrl-logo {
 .wg-counter.style-5 {
   max-width: 280px;
   background-color: transparent;
+  gap: 25px;
 }
 .wg-counter.style-5 .icon {
   background-color: var(--Text-4);
+  width: 57px;
+  height: 57px;
 }
 .wg-counter.style-5 .icon i {
   font-size: 20px;
 }
 .wg-counter.style-5 .counter-item .counter span {
   font-size: 55px;
+}
+.wg-counter.style-5 .counter-item .counter .sub-odo {
+  line-height: 0px;
+  bottom: -12px;
+  left: -17px;
 }
 .wg-counter.style-6.style-5 {
   justify-content: flex-end;
@@ -6925,7 +7020,7 @@ a.mapboxgl-ctrl-logo {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .card-provide .text {
   position: relative;
@@ -6938,7 +7033,7 @@ a.mapboxgl-ctrl-logo {
   align-items: center;
   justify-content: center;
   width: max-content;
-  padding-top: 30px;
+  padding-top: 27px;
   color: var(--Text);
   margin-bottom: 40px;
   -webkit-transition: all 0.3s ease;
@@ -6946,6 +7041,7 @@ a.mapboxgl-ctrl-logo {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  letter-spacing: 0.1px;
 }
 .card-provide .text::after {
   content: "";
@@ -7132,6 +7228,39 @@ a.mapboxgl-ctrl-logo {
   padding: 30px 25px;
   justify-content: flex-end;
 }
+.card-product.style-2.type-2 {
+  padding: 30px 25px 49px 37px;
+}
+.card-product.style-2.type-2 .image {
+  margin-bottom: 52px;
+}
+.card-product.style-2.type-2 .image img {
+  max-width: 215px;
+}
+.card-product.style-2.type-2 .trendy-list {
+  top: 27px;
+  right: 34px;
+}
+.card-product.style-2.type-2 .trendy-list p {
+  padding: 5px 27px;
+  font-size: 16px;
+}
+.card-product.style-2.type-2 .name-product {
+  font-size: 20px;
+}
+.card-product.style-2.type-2 .price-wrap {
+  gap: 18px;
+}
+.card-product.style-2.type-2 .price-wrap span {
+  font-size: 20px;
+}
+.card-product.style-2.type-2 .product-btn-list .icon {
+  width: 51px;
+  height: 51px;
+}
+.card-product.style-2.type-2 .pricing-star {
+  margin-bottom: 29px;
+}
 .card-product.style-2.mw-unset {
   max-width: unset;
 }
@@ -7248,6 +7377,9 @@ a.mapboxgl-ctrl-logo {
 .box-icon .icon.mb-30 {
   margin-bottom: 30px;
 }
+.box-icon .icon.mb-29 {
+  margin-bottom: 29px;
+}
 .box-icon .icon i {
   font-size: 24px;
   color: var(--Bg-6);
@@ -7312,8 +7444,12 @@ a.mapboxgl-ctrl-logo {
 }
 .box-icon.style-4 .icon {
   background-color: var(--Text-4);
+  width: 80px;
+  height: 80px;
+  margin-bottom: 31px;
 }
 .box-icon.style-4 .caption {
+  margin-bottom: 25px;
   color: var(--Text-2);
 }
 .box-icon.style-4 .text {
@@ -8311,7 +8447,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .wg-404 {
-  padding: 81px 0px 72px 0px;
+  padding: 163px 0px 72px 0px;
   background-image: url("./../images/item/404-2.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -8329,7 +8465,7 @@ a.mapboxgl-ctrl-logo {
   flex-direction: column;
   text-align: center;
 }
-.wg-404 .content .title {
+.wg-404 .title {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -8337,13 +8473,13 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   position: relative;
 }
-.wg-404 .content .title .image {
+.wg-404 .title .image {
   z-index: 101;
 }
-.wg-404 .content .title::after {
+.wg-404 .title::after {
   position: absolute;
   content: none;
   box-shadow: 0px 0px 200px var(--Black);
@@ -8353,28 +8489,35 @@ a.mapboxgl-ctrl-logo {
   z-index: 100;
   background-color: var(--Black);
 }
-.wg-404 .content .title .number {
+.wg-404 .title .number {
   font-size: 250px;
   line-height: 50px;
   color: var(--Text-4);
 }
-.wg-404 .content .title .number.s1 {
+.wg-404 .title .number.s1 {
   position: relative;
+  top: -18px;
+  right: -4px;
 }
-.wg-404 .content .title .number.s2 {
+.wg-404 .title .number.s2 {
   position: relative;
+  top: -18px;
+  right: -2px;
 }
-.wg-404 .content .not-found {
-  margin-bottom: 5px;
+.wg-404 .not-found {
+  margin-bottom: 12px;
   color: var(--Text-2);
 }
-.wg-404 .content .desc {
-  margin-bottom: 44px;
+.wg-404 .desc {
+  margin-bottom: 40px;
   font-size: 26px;
   line-height: 36px;
   color: var(--Text-2);
 }
-.wg-404 .content .btn-back {
+.wg-404 .img-item {
+  margin-bottom: 36px;
+}
+.wg-404 .btn-back {
   padding: 10px 32px 8px 31px;
 }
 
@@ -8489,7 +8632,8 @@ a.mapboxgl-ctrl-logo {
   top: -1px !important;
 }
 .testimonial.style-3 {
-  padding: 50px 80px;
+  padding: 0px 20px;
+  background-color: transparent;
 }
 .testimonial.style-3 .author-wrap {
   gap: 28px;
@@ -8498,8 +8642,18 @@ a.mapboxgl-ctrl-logo {
 .testimonial.style-3 .comment {
   text-align: center;
 }
+.testimonial.style-3 .caption {
+  line-height: 45px;
+  margin-bottom: 36px;
+}
+.testimonial.style-3 .wg-rating i {
+  font-size: 12px;
+}
 .testimonial.style-3 .infor {
   text-align: center;
+}
+.testimonial.style-3 .infor .name {
+  margin-bottom: 2px;
 }
 .testimonial.style-3 .infor .name-wrap {
   display: -webkit-box;
@@ -8511,7 +8665,7 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 5px;
 }
 .testimonial.style-3 .infor .name-wrap .wg-rating {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 .testimonial.style-4 {
   padding: 0px;
@@ -9112,7 +9266,7 @@ a.mapboxgl-ctrl-logo {
   border-radius: 20px;
   background-color: var(--Bg-6);
   position: relative;
-  padding: 60px 55px;
+  padding: 48px 55px 57px 55px;
 }
 .box-text::after {
   content: "";
@@ -9132,6 +9286,7 @@ a.mapboxgl-ctrl-logo {
 .box-text p.title {
   line-height: 55px;
   color: var(--Secondary);
+  margin-bottom: 8px;
 }
 .box-text p.text {
   color: var(--White);
@@ -9223,6 +9378,9 @@ a.mapboxgl-ctrl-logo {
 .heading-section.mb-26 {
   margin-bottom: 26px;
 }
+.heading-section.mb-35 {
+  margin-bottom: 35px;
+}
 .heading-section .sub-title {
   color: var(--Text-4);
   font-family: "GlitterySnowfall", sans-serif;
@@ -9240,8 +9398,20 @@ a.mapboxgl-ctrl-logo {
   color: var(--Text-2);
   font-weight: 700;
 }
+.heading-section .title.mb-21 {
+  margin-bottom: 21px;
+}
+.heading-section .img-item .mb-25 {
+  margin-bottom: 25px;
+}
 .heading-section.has-text .title {
   margin-bottom: 15px;
+}
+.heading-section.has-text .title.mb-24 {
+  margin-bottom: 24px;
+}
+.heading-section.has-text .title.mb-18 {
+  margin-bottom: 18px;
 }
 .heading-section.has-text .text {
   color: var(--Text-2);
@@ -9678,6 +9848,9 @@ a.mapboxgl-ctrl-logo {
   position: relative;
   margin-top: 30px;
 }
+.has-img-item.mt-0 {
+  margin-top: 0px;
+}
 .has-img-item.tf-pt-0 .tf-container {
   padding-top: 0px;
 }
@@ -9975,18 +10148,44 @@ a.mapboxgl-ctrl-logo {
   font-size: 40px;
   color: var(--Secondary);
 }
-.s-testimonial.style-2 .image {
+.s-testimonial.style-2 {
+  justify-content: center;
+  padding-top: 49px;
+  padding-bottom: 124px;
+}
+.s-testimonial.style-2 .wrap {
+  margin-left: auto;
   position: relative;
+  justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-right: calc((100% - 1320px) / 2);
+  padding-right: calc((1320px - 100%) / 2);
+}
+.s-testimonial.style-2 .image {
+  padding-top: 114px;
+  height: 100%;
+  position: relative;
+}
+.s-testimonial.style-2 .image img {
+  position: absolute;
+  max-width: 1010px;
 }
 .s-testimonial.style-2 .image .sign {
   position: absolute;
-  top: 72%;
-  right: 200px;
+  bottom: -2%;
+  right: 400px;
+}
+.s-testimonial.style-2 .content-section {
+  padding-right: 15px;
 }
 .s-testimonial.style-2 .content-section .quote {
   line-height: 40px;
   color: var(--Text-2);
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .s-testimonial.style-2 .content-section .bot {
   display: -webkit-box;
@@ -10076,6 +10275,9 @@ a.mapboxgl-ctrl-logo {
 }
 .s-blog-post.pb-44 {
   padding-bottom: 44px;
+}
+.s-blog-post.pb-35 {
+  padding-bottom: 35px;
 }
 .s-blog-post.pt-121 {
   padding-top: 121px;
@@ -10244,6 +10446,10 @@ a.mapboxgl-ctrl-logo {
   background-color: var(--Bg-8);
   padding-bottom: 50px;
 }
+.s-partner.style-3 {
+  padding-top: 85px;
+  padding-bottom: 57px;
+}
 .s-partner.pb-100 {
   padding-bottom: 100px;
 }
@@ -10262,6 +10468,9 @@ a.mapboxgl-ctrl-logo {
 
 .s-benefit {
   margin-top: -115px;
+}
+.s-benefit.mt--217 {
+  margin-top: -217px;
 }
 .s-benefit .benefit-list {
   max-width: 1390px;
@@ -10474,6 +10683,7 @@ a.mapboxgl-ctrl-logo {
 }
 .s-quality-of-life.style-2 {
   position: relative;
+  padding: 108px 0px 112px;
 }
 .s-quality-of-life.style-2 .content-section {
   z-index: 2;
@@ -10618,8 +10828,8 @@ a.mapboxgl-ctrl-logo {
 .s-our-agriculture.style-2 {
   background-color: var(--Primary);
   position: relative;
-  padding-bottom: 150px;
-  padding-top: 80px;
+  padding-bottom: 250px;
+  padding-top: 44px;
   z-index: 1;
 }
 .s-our-agriculture.style-2 .s-img-item {
@@ -10639,8 +10849,8 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-2 .counter-wrap {
   position: relative;
-  margin-bottom: 70px;
-  padding-bottom: 45px;
+  margin-bottom: 80px;
+  padding-bottom: 39px;
 }
 .s-our-agriculture.style-2 .counter-wrap::after {
   content: "";
@@ -10655,18 +10865,17 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-2 .counter-wrap .wrap {
   height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
 }
 .s-our-agriculture.style-2 .counter-wrap .wrap p {
   color: var(--White);
+  line-height: 40px;
+  margin-top: 13px;
 }
 .s-our-agriculture.style-2 .counter-wrap .wrap p span {
   position: relative;
+}
+.s-our-agriculture.style-2 .counter-wrap .wrap p span a {
+  color: var(--White);
 }
 .s-our-agriculture.style-2 .counter-wrap .wrap p span::after {
   content: "";
@@ -10679,20 +10888,25 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-2 .counter-wrap .wg-counter {
   padding: 0px;
-  gap: 20px;
+  gap: 25px;
   max-width: unset;
 }
 .s-our-agriculture.style-2 .counter-wrap .wg-counter .icon {
   margin-bottom: 0px;
 }
+.s-our-agriculture.style-2 .counter-wrap .wg-counter .icon i {
+  font-size: 24px;
+}
 .s-our-agriculture.style-2 .counter-wrap .wg-counter .counter-item {
   justify-content: flex-start;
   align-items: start;
+  gap: 17px;
 }
 .s-our-agriculture.style-2 .counter-wrap .wg-counter .counter-item .title {
   color: var(--White);
 }
 .s-our-agriculture.style-2 .counter-wrap .wg-counter .counter-item .counter {
+  white-space: nowrap;
   margin-bottom: 0px;
 }
 .s-our-agriculture.style-2 .content-section {
@@ -10721,11 +10935,16 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-2 .content-section .exprerience {
   z-index: 3;
+  left: -37px;
 }
 .s-our-agriculture.style-2 .content-section .content {
   max-width: unset;
   width: unset;
   margin-left: unset;
+  padding-top: 31px;
+}
+.s-our-agriculture.style-2 .content-section .content .text {
+  margin-bottom: 42px;
 }
 .s-our-agriculture.style-2.type-2 {
   padding: 0px;
@@ -10733,6 +10952,12 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-2.type-2 .counter-wrap .text {
   color: var(--Text-2);
+}
+.s-our-agriculture.style-2.type-2 .counter-wrap .text a {
+  color: var(--Text-2);
+}
+.s-our-agriculture.style-2.type-2 .counter-wrap .text span::after {
+  background-color: var(--Text-2);
 }
 .s-our-agriculture.style-2.type-2 .counter-wrap .wg-counter .counter-item .title {
   color: var(--Text-2);
@@ -10742,9 +10967,18 @@ a.mapboxgl-ctrl-logo {
 }
 .s-our-agriculture.style-3 {
   background-color: var(--Bg-8);
-  padding: 100px 0px;
+  padding: 109px 0px 293px 0px;
   margin-top: -30px;
   position: relative;
+}
+.s-our-agriculture.style-3 .content-section {
+  margin-bottom: 0px;
+}
+.s-our-agriculture.style-3 .s-content-wrap .content {
+  max-width: 669px;
+}
+.s-our-agriculture.style-3 .s-content-wrap .image-wrap {
+  margin-left: -8px;
 }
 .s-our-agriculture.style-3 .s-content-wrap .image-wrap .image {
   max-width: 550px;
@@ -10953,7 +11187,7 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   gap: 30px;
-  margin-top: -217px;
+  margin-top: -275px;
   position: relative;
   z-index: 6;
 }
@@ -10962,7 +11196,7 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
   background-color: var(--Secondary);
   border-radius: 20px;
-  padding: 75px 60px;
+  padding: 77px 60px 80px 64px;
   position: relative;
 }
 .s-our-mission .content-section .slider-wrap::after {
@@ -10972,18 +11206,19 @@ a.mapboxgl-ctrl-logo {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   background-image: url("./../images/item/s-our-mission.png");
 }
 .s-our-mission .content-section .slider-wrap .content p {
   color: var(--Bg-6);
 }
 .s-our-mission .content-section .slider-wrap .content p.title {
-  font-size: 27px;
-  margin-bottom: 35px;
+  font-size: 26px;
+  margin-bottom: 27px;
 }
 .s-our-mission .content-section .slider-wrap .content p.text {
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   line-height: 40px;
 }
 .s-our-mission .content-section .slider-wrap .btn-slide-wrap {
@@ -10993,16 +11228,23 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   justify-content: flex-end;
+  margin-right: 22px;
   gap: 38px;
 }
 
+.s-our-expertise {
+  padding-top: 120px;
+}
 .s-our-expertise .heading-section .image {
   width: 100%;
   height: 591px;
   object-fit: cover;
 }
+.s-our-expertise .heading-section .img-item.item-2 {
+  margin-top: -36px;
+}
 .s-our-expertise .s-slider {
-  margin-top: -500px;
+  margin-top: -566px;
   position: relative;
 }
 .s-our-expertise .s-slider .btn-slider-provide {
@@ -11031,30 +11273,35 @@ a.mapboxgl-ctrl-logo {
   width: 36px;
 }
 .s-our-expertise .s-slider .btn-slider-provide.btn-next {
-  top: 50%;
+  top: 57%;
   transform: translateY(-50%);
-  right: 20px;
+  right: 185px;
 }
 .s-our-expertise .s-slider .btn-slider-provide.btn-prev {
-  top: 50%;
+  top: 57%;
   transform: translateY(-50%);
-  left: 20px;
+  left: 185px;
 }
 
 .s-quality-of-life-2 {
-  padding: 150px 0px;
+  padding: 108px 0px 115px 0px;
+}
+.s-quality-of-life-2 .clip-color-text {
+  margin-bottom: 18px;
 }
 .s-quality-of-life-2 .content-section {
+  margin-bottom: 76px;
   position: relative;
 }
 .s-quality-of-life-2 .content-section .sub {
+  letter-spacing: 0.2px;
   color: var(--Text-2);
 }
-.s-quality-of-life-2 .content-section .img-item.item-1 {
+.s-quality-of-life-2 .img-item.item-1 {
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(-30deg);
+  left: 44px;
+  top: 37%;
+  transform: translateY(-50%);
 }
 .s-quality-of-life-2 .box-icon {
   max-width: 300px;
@@ -11095,18 +11342,29 @@ a.mapboxgl-ctrl-logo {
   width: 11px;
   border-radius: 50%;
   right: -15px;
-  top: 30px;
   transform: translateX(50%);
   background-color: var(--Secondary);
   z-index: 2;
+  -webkit-animation: dotAnimationTopToBot 30s infinite linear;
+  -khtml-animation: dotAnimationTopToBot 30s infinite linear;
+  -moz-animation: dotAnimationTopToBot 30s infinite linear;
+  -ms-animation: dotAnimationTopToBot 30s infinite linear;
+  -o-animation: dotAnimationTopToBot 30s infinite linear;
+  animation: dotAnimationTopToBot 30s infinite linear;
 }
 .s-quality-of-life-2 .quality-list li.bottom::before {
   top: unset;
-  bottom: 30px;
+  -webkit-animation: dotAnimationBotToTop 30s infinite linear;
+  -khtml-animation: dotAnimationBotToTop 30s infinite linear;
+  -moz-animation: dotAnimationBotToTop 30s infinite linear;
+  -ms-animation: dotAnimationBotToTop 30s infinite linear;
+  -o-animation: dotAnimationBotToTop 30s infinite linear;
+  animation: dotAnimationBotToTop 30s infinite linear;
 }
 
 .s-why-choose {
   position: relative;
+  padding-bottom: 80px;
 }
 .s-why-choose .image-wrap {
   max-width: 497px;
@@ -11126,16 +11384,18 @@ a.mapboxgl-ctrl-logo {
   max-width: 291px;
   width: 100%;
   border-radius: 20px;
-  padding: 50px 38px;
+  padding: 50px 38px 39px 38px;
 }
 .s-why-choose .image-wrap .notice .icon {
   background-color: var(--Bg-6);
   margin-bottom: 25px;
   transform: rotate(45deg);
+  width: 65px;
+  height: 65px;
 }
 .s-why-choose .image-wrap .notice .icon i {
   color: var(--White);
-  font-size: 23px;
+  font-size: 35px;
 }
 .s-why-choose .image-wrap .notice .img-item.item-1 {
   position: absolute;
@@ -11152,12 +11412,16 @@ a.mapboxgl-ctrl-logo {
   right: 30px;
 }
 .s-why-choose .content-section {
-  max-width: 719px;
+  padding-top: 56px;
+  max-width: 720px;
   width: 100%;
   margin-left: auto;
 }
+.s-why-choose .content-section .heading-section {
+  margin-bottom: 35px;
+}
 .s-why-choose .content-section .heading-section .title {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 .s-why-choose .content-section .text {
   margin-bottom: 20px;
@@ -11168,7 +11432,8 @@ a.mapboxgl-ctrl-logo {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
+  gap: 60px;
 }
 .s-why-choose .content-section .benefit-list li {
   display: -webkit-box;
@@ -11190,7 +11455,7 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3px;
 }
 .s-why-choose .content-section .benefit-list li .content .title {
   color: var(--Text-2);
@@ -11202,7 +11467,7 @@ a.mapboxgl-ctrl-logo {
 
 .s-project-2 .s-content-wrap {
   background-color: var(--Primary);
-  padding: 100px 0px 400px;
+  padding: 143px 0px 398px;
   position: relative;
 }
 .s-project-2 .s-img-item {
@@ -11254,7 +11519,7 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 .s-project-2 .s-slider .wrap .menu-tab {
   margin-bottom: 0px;
@@ -11267,11 +11532,39 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   gap: 38px;
 }
+.s-project-2 .s-slider .wrap .btn-slide-wrap img {
+  max-width: 58px;
+}
 
 .s-shopping {
   background-color: var(--Bg-8);
-  padding: 100px 0px;
+  margin-top: -20px;
+  padding: 108px 0px 121px 0px;
   position: relative;
+}
+.s-shopping .btn-slide-wrap .btn-slider-shopping {
+  position: absolute;
+  right: 15px;
+  z-index: 2;
+}
+.s-shopping .btn-slide-wrap .btn-slider-shopping img {
+  width: 68px;
+}
+.s-shopping .btn-slide-wrap .btn-slider-shopping.btn-next {
+  top: 54%;
+}
+.s-shopping .btn-slide-wrap .btn-slider-shopping.btn-prev {
+  top: 42%;
+}
+.s-shopping .content-section {
+  padding-top: 30px;
+  position: relative;
+}
+.s-shopping .content-section .title {
+  margin-bottom: 27px;
+}
+.s-shopping .content-section .text {
+  margin-bottom: 42px;
 }
 .s-shopping .content-wrap {
   display: -webkit-box;
@@ -11279,7 +11572,6 @@ a.mapboxgl-ctrl-logo {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
   gap: 30px;
 }
 .s-shopping .content-wrap .heading-section {
@@ -11296,18 +11588,35 @@ a.mapboxgl-ctrl-logo {
 .s-shopping .s-img-item.item-1 {
   bottom: -30px;
   width: 100%;
+  z-index: 1;
 }
 .s-shopping .s-img-item.item-1 img {
   width: 100%;
 }
+.s-shopping .s-img-item.item-2 {
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
 
 .s-testimonial-3 {
   position: relative;
-  padding: 100px 0px;
+  padding: 95px 0px 128px 0px;
+}
+.s-testimonial-3 .heading-section {
+  margin-bottom: 57px;
+}
+.s-testimonial-3 .sub-title i {
+  position: absolute;
+  color: var(--Secondary);
+  font-size: 55px;
+  transform: rotate(25deg) translateX(39px);
+  top: -47px;
 }
 .s-testimonial-3 .testimonial-thumbs .slider-testimonial-3-thumb {
   max-width: 265px;
   width: 100%;
+  margin-bottom: 33px;
 }
 .s-testimonial-3 .testimonial-thumbs .slider-testimonial-3-thumb .image-avt {
   width: 69px;
@@ -11329,14 +11638,15 @@ a.mapboxgl-ctrl-logo {
 }
 .s-testimonial-3 .s-slider .btn-slide-testimonial-3 {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 3;
+  top: 44%;
+  transform: translateY(1px);
 }
 .s-testimonial-3 .s-slider .btn-slide-testimonial-3.btn-prev {
-  left: 30px;
+  left: 170px;
 }
 .s-testimonial-3 .s-slider .btn-slide-testimonial-3.btn-next {
-  right: 30px;
+  right: 170px;
 }
 .s-testimonial-3 .s-img-item {
   position: absolute;
@@ -11350,11 +11660,12 @@ a.mapboxgl-ctrl-logo {
 }
 .s-farm-event .s-content-wrap {
   background-color: var(--Primary);
-  padding: 100px 0px 400px;
+  padding: 109px 0px 386px;
   position: relative;
 }
 .s-farm-event .s-slider {
-  margin-top: -350px;
+  margin-top: -336px;
+  background-color: transparent;
 }
 .s-farm-event .content-section {
   position: relative;
@@ -11382,8 +11693,18 @@ a.mapboxgl-ctrl-logo {
   background-position: bottom;
   background-size: cover;
   position: relative;
-  padding: 120px 0px 95px;
+  padding: 120px 0px 103px;
   margin-bottom: -20px;
+}
+.s-happy-farm-2 .heading-section {
+  padding: 21px 0px 0px 24px;
+}
+.s-happy-farm-2 .heading-section .sub-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.s-happy-farm-2 .heading-section .text {
+  margin-bottom: 42px;
 }
 .s-happy-farm-2 .heading-section .top {
   position: relative;
@@ -11391,8 +11712,8 @@ a.mapboxgl-ctrl-logo {
 }
 .s-happy-farm-2 .heading-section .top .img-item.item-2 {
   position: absolute;
-  right: -40px;
-  top: -25px;
+  right: -50px;
+  top: -28px;
 }
 .s-happy-farm-2::before {
   content: "";
@@ -11413,9 +11734,18 @@ a.mapboxgl-ctrl-logo {
   position: relative;
   z-index: 1;
 }
+.s-welcome-to .text-wrap {
+  padding: 50px 0px 0px 16px;
+}
+.s-welcome-to .text-wrap .text-1 {
+  margin-bottom: 15px;
+}
 .s-welcome-to .s-content-wrap {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 293px;
+}
+.s-welcome-to .s-content-wrap .img-item {
+  margin-bottom: 29px;
 }
 .s-welcome-to .s-content-wrap .s-img-item.item-1 {
   position: absolute;
@@ -11427,8 +11757,8 @@ a.mapboxgl-ctrl-logo {
 }
 .s-welcome-to .s-content-wrap-2 {
   position: relative;
-  margin-top: -30px;
-  padding-bottom: 50px;
+  margin-top: -15px;
+  padding-bottom: 78px;
 }
 .s-welcome-to .s-content-wrap-2 .slider-gallery {
   margin-top: -240px;
@@ -12364,6 +12694,14 @@ a.mapboxgl-ctrl-logo {
 }
 
 /*-------------- Responsive ----------------- */
+@media (min-width: 576px) {
+  .s-testimonial.style-2 .wrap .image {
+    width: 52%;
+  }
+  .s-testimonial.style-2 .wrap .content-section {
+    width: 49%;
+  }
+}
 @media (max-width: 1600px) {
   .header .header-inner {
     gap: 20px;

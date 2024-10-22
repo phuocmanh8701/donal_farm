@@ -323,26 +323,74 @@
             let scrollTop = $(this).scrollTop();
             if (scrollTop < lastScrollTop) {
                 if (scrollTop > 0) {
-                    $('.fixed-header.style-absolute').addClass('visible');
+                    $(".fixed-header.style-absolute").addClass("visible");
                 }
             } else {
-                $('.fixed-header.style-absolute').removeClass('visible');
+                $(".fixed-header.style-absolute").removeClass("visible");
             }
             if (scrollTop < 200) {
-                $('.fixed-header.style-absolute').removeClass('visible');
+                $(".fixed-header.style-absolute").removeClass("visible");
             }
 
             lastScrollTop = scrollTop;
         });
+    };
+    var scollElement = function () {
+        $(document).ready(function () {
+            let lastScrollTop = 0;
+            const distance = 10;
 
-    }
+            $(window).on("scroll", function () {
+                const st = $(this).scrollTop();
+
+                if (st > lastScrollTop) {
+                    // Cuộn xuống
+                    $(".scroll-element").css(
+                        "transform",
+                        `translateY(${distance}px)`
+                    );
+                } else {
+                    // Cuộn lên
+                    $(".scroll-element").css(
+                        "transform",
+                        `translateY(-${distance}px)`
+                    );
+                }
+                lastScrollTop = st;
+            });
+        });
+    };
+    var scollElement2 = function () {
+        $(document).ready(function () {
+            let lastScrollTop = 0;
+            const distance = 10;
+
+            $(window).on("scroll", function () {
+                const st = $(this).scrollTop();
+
+                if (st > lastScrollTop) {
+                    // Cuộn xuống
+                    $(".scroll-element-2").css(
+                        "transform",
+                        `translateY(-${distance}px)`
+                    );
+                } else {
+                    // Cuộn lên
+                    $(".scroll-element-2").css(
+                        "transform",
+                        `translateY(${distance}px)`
+                    );
+                }
+                lastScrollTop = st;
+            });
+        });
+    };
     // Dom Ready
     $(function () {
         videoWrap();
         openNavMobile();
         textUp();
         openWelcome();
-        // headerScroll();
         btnQuantity();
         tabs();
         changeValue();
@@ -351,5 +399,7 @@
         colorList();
         rangeslider();
         visibleHeader();
+        scollElement();
+        scollElement2();
     });
 })(jQuery);
