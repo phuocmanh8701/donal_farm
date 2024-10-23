@@ -150,8 +150,12 @@
     }
     &.style-3 {
         background-color: var(--Bg-6);
+        padding: 19px 35px 18px 35px;
         &:hover {
             background-color: transparent;
+        }
+        &.pd-defalt {
+            padding: 6px 5px 6px 35px;
         }
     }
 }

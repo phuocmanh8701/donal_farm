@@ -385,6 +385,31 @@
             });
         });
     };
+    var scollElement3 = function () {
+        $(document).ready(function () {
+            let lastScrollTop = 0;
+            const distance = 10;
+
+            $(window).on("scroll", function () {
+                const st = $(this).scrollTop();
+
+                if (st > lastScrollTop) {
+                    // Cuộn xuống
+                    $(".scroll-element-3").css(
+                        "transform",
+                        `translateX(-${distance}px)`
+                    );
+                } else {
+                    // Cuộn lên
+                    $(".scroll-element-3").css(
+                        "transform",
+                        `translateX(${distance}px)`
+                    );
+                }
+                lastScrollTop = st;
+            });
+        });
+    };
     // Dom Ready
     $(function () {
         videoWrap();
@@ -401,5 +426,6 @@
         visibleHeader();
         scollElement();
         scollElement2();
+        scollElement3();
     });
 })(jQuery);

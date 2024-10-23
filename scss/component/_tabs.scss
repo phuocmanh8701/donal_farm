@@ -4,11 +4,14 @@
         gap: 41px;
         margin-bottom: 35px;
         white-space: nowrap;
+        &.mb-61 {
+            margin-bottom: 61px;
+        }
         .item {
             @include transition3;
 
             a {
-                padding-bottom: 10px;
+                padding-bottom: 15px;
                 position: relative;
                 font-size: 18px;
                 font-weight: 500;
@@ -20,7 +23,7 @@
                     bottom: 0px;
                     left: auto;
                     right: 0;
-                    height: 3px;
+                    height: 2px;
                     width: 0;
                     background-color: var(--Secondary);
                     @include transition3;
@@ -123,13 +126,14 @@
             gap: 10px;
             align-items: start;
             li {
+                width: 100%;
                 a {
                     font-family: $font-main5;
                     color: var(--White);
                     padding-bottom: 0px;
                     &:hover {
                         color: var(--Secondary);
-                        padding-left: 20px;
+                        padding-left: 24px;
                         &::before {
                             left: 0;
                             @include visible;
@@ -141,11 +145,12 @@
                     }
                     &::before {
                         position: absolute;
+                        font-size: 25px;
                         color: var(--Secondary);
                         content: "\e926";
                         font-family: $fontIcon;
                         top: 50%;
-                        left: -10px;
+                        left: -18px;
                         transform: translateY(-50%);
                         @include transition3;
                         @include hidden;
@@ -154,10 +159,10 @@
                 &.active {
                     a {
                         &::before {
-                            left: 0;
+                            left: -8px;
                             @include visible;
                         }
-                        padding-left: 20px;
+                        padding-left: 24px;
                         color: var(--Secondary);
                     }
                 }
@@ -166,7 +171,7 @@
                     border-bottom: 1px dashed var(--Border-5);
                 }
                 &:not(:first-child) {
-                    padding-top: 20px;
+                    padding-top: 10px;
                 }
             }
         }

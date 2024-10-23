@@ -356,8 +356,9 @@ fieldset {
         position: relative;
         label {
             position: absolute;
-            left: 20px;
-            top: 50%;
+            left: 22px;
+            top: 51%;
+            letter-spacing: 0.5px;
             transform: translateY(-50%);
             color: var(--Text-2);
             z-index: 1;
@@ -366,6 +367,7 @@ fieldset {
             position: relative;
             z-index: 0;
             color: transparent;
+            padding: 15px 19px 11px 16px;
             &:focus {
                 color: var(--Text-2);
                 z-index: 2;

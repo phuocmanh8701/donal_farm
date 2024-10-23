@@ -147,27 +147,6 @@
     overflow: hidden;
 }
 
-// zoom img
-.tf-img-hover {
-    .hover01 {
-        img {
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-            -webkit-transition: 0.3s ease-in-out;
-            transition: 0.3s ease-in-out;
-        }
-    }
-
-    &:hover {
-        .hover01 {
-            img {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-            }
-        }
-    }
-}
-
 @keyframes BackgroundAnimatedVertical {
     0% {
         background-position: 50% 0;
@@ -235,7 +214,8 @@
     }
 }
 .scroll-element,
-.scroll-element-2 {
+.scroll-element-2,
+.scroll-element-3 {
     transition: transform 0.3s ease;
 }
 @keyframes dotAnimationTopToBot {
@@ -258,5 +238,55 @@
     }
     100% {
         bottom: 0%;
+    }
+}
+@keyframes rotate-back-and-forth {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes tf-animation-pulse {
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+}
+.tf-animation-pulse {
+    animation-name: tf-animation-pulse;
+    animation-duration: var(--animation-duration, 1750ms);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.tf-rotate-back-and-forth {
+    -webkit-animation: rotate-back-and-forth 15s infinite linear;
+    -khtml-animation: rotate-back-and-forth 15s infinite linear;
+    -moz-animation: rotate-back-and-forth 15s infinite linear;
+    -ms-animation: rotate-back-and-forth 15s infinite linear;
+    -o-animation: rotate-back-and-forth 15s infinite linear;
+    animation: rotate-back-and-forth 15s infinite linear;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
     }
 }

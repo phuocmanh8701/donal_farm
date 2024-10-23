@@ -379,3 +379,14 @@ if (".slider-relate-product".length > 0) {
         },
     });
 }
+if (".slider-box-list".length > 0) {
+    var swiper = new Swiper(".slider-box-list", {
+        slidesPerView: 4,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-slide-box-list.btn-next", // Chọn phần tử chứa nút next
+            prevEl: ".btn-slide-box-list.btn-prev", // Chọn phần tử chứa nút prev
+        },
+    });
+}
