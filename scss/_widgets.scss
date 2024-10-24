@@ -2,9 +2,13 @@
     color: var(--Secondary);
 }
 i {
-    // @include transition3;
+    &.fs-16 {
+        font-size: 16px;
+    }
+    &.fs-12 {
+        font-size: 12px;
+    }
 }
-
 /*tf-control-sorting
 ------------------------------------------------------------------------*/
 .tf-control-sorting {
@@ -436,34 +440,42 @@ i {
     &.style-3 {
         background-color: var(--Text-4);
         max-width: 198px;
+        width: 100%;
         border-radius: 20px;
-        padding: 20px;
+        padding: 12px;
         background: url("./../images/item/counter.jpg") center center;
         .has-border {
             width: 100%;
             padding: 20px 0px;
-            // right: auto;
             border-radius: 20px;
             border: 1px dashed var(--Border-8);
         }
         .icon {
             background-color: var(--Primary);
+            width: 53px;
+            height: 53px;
+            margin-bottom: 1px;
             i {
                 font-size: 22px;
             }
         }
-        .counter-item {
-            .sub-odo {
-                font-size: 55px;
-                line-height: 55px;
-                font-weight: 700;
-                color: var(--Secondary);
-            }
+        .odometer {
+            left: -3px;
+        }
+        .counter {
+            margin-bottom: 3px;
+        }
+        .sub-odo {
+            font-size: 55px;
+            line-height: 55px;
+            font-weight: 700;
+            left: -8px;
+            color: var(--Secondary);
         }
         .title {
             color: var(--White);
             font-weight: 500;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
         }
     }
     &.style-4 {
@@ -551,7 +563,9 @@ i {
 }
 .wg-rating {
     @include flex(center, center);
+    gap: 1px;
     i {
+        font-size: 12px;
         color: var(--Secondary);
     }
 }
@@ -761,6 +775,9 @@ i {
         }
     }
     &.style-2 {
+        &.mw-unset {
+            max-width: unset;
+        }
         max-width: 270px;
         width: 100%;
         padding: 30px 25px;
@@ -932,8 +949,17 @@ i {
     &.style-2 {
         max-width: 410px;
         width: 100%;
+        border-right: unset !important;
+        &::after {
+            border-right: 1px dashed var(--Border-13);
+            right: -14px;
+        }
+        .icon {
+            margin-bottom: 28px;
+        }
         .caption {
             color: var(--Text-2);
+            margin-bottom: 17px;
         }
         .text {
             color: var(--Text);
@@ -1346,7 +1372,11 @@ i {
         height: 278px;
         bottom: 0;
         left: 0;
-        background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
+        background: linear-gradient(
+            to top,
+            rgba(13, 21, 15, 0.749),
+            transparent
+        );
         z-index: 1;
         @include transition3;
     }
@@ -1485,7 +1515,11 @@ i {
             }
         }
         &::after {
-            background: linear-gradient(to top, rgb(13, 64, 28, 0.89), transparent);
+            background: linear-gradient(
+                to top,
+                rgb(13, 64, 28, 0.89),
+                transparent
+            );
         }
     }
     &.style-3 {
@@ -1514,7 +1548,11 @@ i {
                 height: 278px;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
+                background: linear-gradient(
+                    to top,
+                    rgba(13, 21, 15, 0.749),
+                    transparent
+                );
                 z-index: 1;
                 @include transition3;
             }
@@ -1995,10 +2033,7 @@ i {
         padding: 10px 32px 8px 31px;
     }
 }
-.s-customer-say {
-    padding: 100px 0px;
-    background-color: var(--Bg-8);
-}
+
 .testimonial {
     padding: 50px 45px;
     background: var(--White);
@@ -2040,7 +2075,7 @@ i {
             }
         }
         .right {
-            transform: rotate(20deg);
+            transform: rotate(17deg);
             i {
                 color: var(--Secondary);
                 font-size: 35px;
@@ -2124,6 +2159,19 @@ i {
         padding: 0px;
         &:hover {
             box-shadow: unset;
+        }
+        .infor {
+            .name {
+                font-family: $font-main5;
+            }
+        }
+        .left {
+            gap: 22px;
+        }
+        .caption {
+            font-size: 26px;
+            line-height: 35px;
+            margin-bottom: 44px;
         }
         .author-wrap {
             margin-bottom: 0px;
@@ -2351,7 +2399,11 @@ i {
         &.w-76 {
             width: 76%;
         }
-        background-image: -webkit-linear-gradient(0deg, rgb(39, 141, 69) 0%, rgb(248, 195, 44) 100%);
+        background-image: -webkit-linear-gradient(
+            0deg,
+            rgb(39, 141, 69) 0%,
+            rgb(248, 195, 44) 100%
+        );
     }
 }
 .main-history {
@@ -2458,34 +2510,34 @@ i {
 }
 .wrap-quantity {
     @include d-flex();
-    gap: 21px;
-    margin-bottom: 30px;
+    gap: 19px;
+    margin-bottom: 33px;
     .wg-quantity {
         position: relative;
         input {
             width: 66px;
-            height: 50px;
+            height: 54px;
             background-color: var(--Bg-9);
             border: none;
             box-shadow: none;
             color: var(--Text-2);
 
             padding-left: 19px;
-            border-radius: 4px;
+            border-radius: 10px;
         }
         .btn-quantity {
-            font-size: 15px;
+            font-size: 18px;
             color: var(--Text-2);
             cursor: pointer;
             position: absolute;
         }
         .minus-btn {
-            bottom: 11px;
-            right: 8px;
+            bottom: 7px;
+            right: 10px;
         }
         .plus-btn {
-            top: 10px;
-            right: 8px;
+            top: 9px;
+            right: 11px;
         }
     }
     .btn-add-cart {
@@ -2503,12 +2555,44 @@ i {
             height: 44px;
             background-color: var(--White);
             border: 1px solid var(--Border);
+            position: relative;
             i {
                 color: var(--Primary);
             }
             &:hover {
                 background-color: var(--Secondary);
                 border-color: var(--Secondary);
+                span {
+                    transition-delay: 0.1s;
+                    top: -30px;
+                    @include visible;
+                }
+            }
+            span {
+                position: absolute;
+                white-space: nowrap;
+                top: -20px;
+                display: block;
+                background-color: var(--Black);
+                color: var(--White);
+                padding: 5px;
+                font-size: 12px;
+                z-index: 3;
+                border-radius: 8px;
+                pointer-events: none;
+                @include transition3;
+                @include hidden;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    transform: rotate(45deg) translateX(-50%);
+                    height: 10px;
+                    background-color: var(--Black);
+                    left: 50%;
+                    top: 20px;
+                    z-index: 1;
+                }
             }
         }
     }

@@ -257,7 +257,7 @@
     var btnLoadMore = function () {
         $(".btn-loadMore").click(function () {
             // Lấy container liên quan đến nút Load More được nhấn
-            var container = $(this).closest(".widget-content-inner");
+            var container = $(this).closest(".container-loadmore");
 
             // Tìm các item ẩn trong container đó
             var hiddenItems = container.find(".item.hidden");

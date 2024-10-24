@@ -64,3 +64,12 @@ if ($(".counter-scroll-4").length > 0) {
         }
     });
 }
+if ($(".counter-scroll-5").length > 0) {
+    $(window).on("scroll", function () {
+        if (isElementInViewport($(".odometer.style-3"))) {
+            setTimeout(function () {
+                $(".odometer.style-3").html(13);
+            }, 0);
+        }
+    });
+}

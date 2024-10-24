@@ -919,7 +919,25 @@
 .tf-topbar-shop {
     background-color: var(--Primary);
     position: relative;
-    z-index: 6;
+    z-index: 100;
+    padding: 7px 0px 12px;
+    .s-img-item {
+        position: absolute;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        &.item-1 {
+            bottom: -3px;
+            left: 0;
+            z-index: 1;
+            img {
+                height: 10px;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
     .topbar-inner {
         @include flex(center, space-between);
         position: relative;
@@ -940,6 +958,8 @@
             }
         }
         p {
+            letter-spacing: 0.1px;
+
             color: var(--White);
         }
     }
@@ -950,9 +970,19 @@
             li {
                 @include d-flex();
                 align-items: center;
-                gap: 10px;
+                gap: 14px;
                 &:not(:last-child) {
-                    padding-right: 26px;
+                    padding-right: 50px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 1px;
+                        height: 33px;
+                        right: 25px;
+                        top: -3px;
+                        background-color: var(--Border-5);
+                    }
                 }
                 .icon {
                     i {
@@ -995,24 +1025,52 @@
     }
 }
 .tf-header-shop {
+    padding-top: 25px;
+    position: relative;
+    z-index: 10;
+    .s-img-item {
+        position: absolute;
+        width: 100%;
+        width: 100%;
+        img {
+            height: 10px;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        &.item-1 {
+            bottom: -10px;
+            left: 0;
+        }
+    }
     .header-topbar {
-        @include flex(center, unset);
+        @include flex(center, space-between);
+        border-bottom: 1px dashed var(--Border);
+        padding-bottom: 22px;
+
         .logo-site {
             img {
                 max-width: 209px;
                 width: 100%;
             }
         }
-        .header-center {
+        .search-product {
             width: 100%;
+            flex-shrink: 0;
             max-width: 467px;
+            input {
+            }
         }
         .header-right {
-            @include flex(center, unset);
+            @include flex(center, flex-end);
+            // margin-right: -10px;
+            flex-grow: 1;
             .call-us {
+                margin-left: 60px;
                 @include d-flex();
                 align-items: center;
-                gap: 25px;
+                gap: 24px;
+                // flex-shrink: 0;
                 .content {
                     p {
                         font-size: 23px;
@@ -1030,6 +1088,9 @@
             .icon-wrap {
                 @include d-flex();
                 align-items: center;
+                gap: 13px;
+                margin-left: 84px;
+
                 .icon {
                     width: 50px;
                     height: 50px;
@@ -1067,10 +1128,11 @@
                         }
                     }
                 }
-                .your-cart {
-                    .total {
-                        color: var(--Text-2);
-                    }
+            }
+            .your-cart {
+                margin-left: 23px;
+                .total {
+                    color: var(--Text-2);
                 }
             }
         }
@@ -1078,13 +1140,20 @@
     .form-search {
         input {
             background-color: var(--Bg-17);
-            padding: 10px 19px;
+            padding: 12px 15px 9px 25px;
+            &::placeholder {
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 0.2px;
+            }
         }
         .btn-search {
             background-color: transparent;
+            right: 10px;
             i {
                 @include transition3;
                 color: var(--Text-2);
+                font-size: 16px;
             }
             &:hover {
                 i {
@@ -1094,5 +1163,20 @@
         }
     }
     .header-inner {
+        .main-nav {
+            .item {
+                > a {
+                    line-height: 81px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .header-right {
+            padding: unset;
+        }
+        .wg-category {
+        }
+        .header-left {
+        }
     }
 }

@@ -8,7 +8,9 @@
     background-size: cover;
     background-attachment: fixed;
     // overflow: hidden;
-
+    &.style-2 {
+        padding: 100px 0px 50px;
+    }
     &::after {
         content: "";
         position: absolute;
@@ -113,6 +115,9 @@
     }
     &.page-shop-detail {
         background-image: url("./../images/page-title/shop-detail.jpg");
+    }
+    &.page-testimonial {
+        background-image: url("./../images/page-title/testimonial.jpg");
     }
 }
 .main-content {
@@ -781,7 +786,7 @@
                 li {
                     a {
                         display: block;
-                        letter-spacing: 1px;
+                        letter-spacing: 0.7px;
                         padding: 10px 23px 8px 23px;
                         border-radius: 17.5px;
                         border: 1px solid var(--Border-4);
@@ -819,7 +824,7 @@
             .color-list {
                 @include d-flex();
                 align-items: center;
-                gap: 12px;
+                gap: 15px;
                 li {
                     width: 24px;
                     height: 24px;
@@ -871,6 +876,15 @@
                 .text {
                     margin-bottom: 23px;
                 }
+            }
+            &.sb-color {
+                padding: 38px 35px 35px 35px;
+            }
+            &.sb-filter-price {
+                padding: 38px 35px 31px 35px;
+            }
+            &.sb-popular-product {
+                padding: 36px 35px 40px 35px;
             }
         }
         &:not(:last-child) {
@@ -967,7 +981,11 @@
                 bottom: 0;
                 left: 0;
                 z-index: 0;
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.502), transparent);
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.502),
+                    transparent
+                );
             }
             .image {
                 border-radius: 20px;

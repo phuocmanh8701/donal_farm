@@ -476,6 +476,9 @@
                     padding-bottom: 42px;
                     border-bottom: 1px solid var(--Bg-9);
                 }
+                &.text-3 {
+                    margin-bottom: 41px;
+                }
             }
             .offer-list {
                 @include d-flex();
@@ -488,18 +491,34 @@
                 font-size: 26px;
                 line-height: 50px;
                 color: var(--Text-2);
-                margin-bottom: 40px;
+
+                margin-bottom: 34px;
                 &.s2 {
                 }
             }
             .solution {
-                margin-bottom: 30px;
+                margin-bottom: 33px;
             }
             .benefit {
                 @include flex(center, space-between);
-                margin-bottom: 40px;
-                padding-bottom: 50px;
+                margin-bottom: 32px;
+                padding-bottom: 49px;
                 border-bottom: 1px solid var(--Bg-9);
+            }
+            .box-icon {
+                padding: 31px 15px 32px 35px;
+                gap: 21px;
+                .caption {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: normal;
+                }
+                i {
+                    font-size: 45px;
+                    &.fs-40 {
+                        font-size: 40px;
+                    }
+                }
             }
             .tf-accordion {
                 max-width: unset;
@@ -518,6 +537,12 @@
         &.style-2 {
             padding: 113px 0px 68px;
         }
+    }
+    &.page-testimonial {
+        padding: 113px 0px 106px;
+    }
+    &.page-shop-product {
+        padding-top: 119px;
     }
 }
 
@@ -676,6 +701,8 @@
 }
 
 .s-product-detail {
+    padding-top: 99px;
+    padding-bottom: 100px;
     .tf-product-media-main {
         margin-bottom: 17px;
         border-radius: 20px;
@@ -714,36 +741,47 @@
     }
 
     .content-inner {
+        margin-left: -30px;
+        margin-top: 35px;
         .title {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
+        .wg-rating {
+            gap: 1px;
 
+            i {
+                font-size: 12px;
+            }
+        }
         .rating-wrap {
             @include d-flex();
-            gap: 15px;
+            gap: 18px;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .price-wrap {
-            margin-bottom: 25px;
+            margin-bottom: 27px;
+            gap: 16px;
         }
 
         .sub {
-            margin-bottom: 30px;
+            margin-bottom: 28px;
         }
 
         .notice-list {
-            margin-bottom: 30px;
+            margin-bottom: 32px;
 
             li {
                 @include d-flex();
                 align-items: center;
-                gap: 15px;
-
+                gap: 12px;
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
                 svg {
-                    width: 22px;
-                    height: 22px;
+                    // width: 22px;
+                    // height: 22px;
                 }
 
                 p {
@@ -755,12 +793,15 @@
         }
 
         .more-infor {
-            margin-bottom: 20px;
+            margin-bottom: 28px;
 
             li {
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
                 p {
                     font-family: $font-main5;
-
+                    letter-spacing: 0.3px;
                     a {
                         color: var(--Text);
 
@@ -775,10 +816,17 @@
         .bot {
             @include d-flex();
             align-items: center;
-            gap: 20px;
+            gap: 18px;
 
             .text {
                 color: var(--Text-2);
+            }
+            a {
+                width: 41px;
+                height: 41px;
+            }
+            .list {
+                gap: 10px;
             }
         }
     }
@@ -1187,10 +1235,11 @@
                         content: "";
                         position: absolute;
                         right: 0;
-                        top: 0;
-                        height: 100%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 153px;
                         width: 1px;
-                        border-right: 1px dashed var(--Secondary);
+                        border-right: 1px dashed var(--Border-3);
                     }
                 }
                 &:first-child {
@@ -1352,35 +1401,50 @@
 
 .s-testimonial {
     @include d-flex();
+    padding-bottom: 150px;
+    .testimonial {
+        background-color: transparent;
+    }
     .content-wrap {
         @include d-flex();
+        .image {
+            margin-left: -15px;
+            img {
+                height: 682px;
+                object-fit: cover;
+            }
+        }
     }
     .image {
         position: relative;
         margin-top: -45px;
-        max-width: 1010px;
-        width: 100%;
-        // flex-shrink: 0;
+        width: 55%;
         .img-item {
             position: absolute;
         }
     }
 
     .content-section {
-        padding-top: 100px;
-        // width: 50%;
-
+        padding-top: 94px;
+        // padding-right: 200px;
+        width: 45%;
+        margin-left: -175px;
+        background-color: transparent;
         .heading-section {
+            margin-bottom: 42px;
             position: relative;
-
+            .title {
+                margin-bottom: 22px;
+            }
             .img-item {
                 &.item-2 {
                     position: absolute;
-                    right: 0;
-                    bottom: 0;
+                    transform: rotate(20deg);
+                    right: 22px;
+                    bottom: -32px;
 
                     i {
-                        font-size: 40px;
+                        font-size: 65px;
                         color: var(--Secondary);
                     }
                 }
@@ -1480,6 +1544,7 @@
     }
 
     .s-img-item {
+        pointer-events: none;
         &.item-2 {
             position: absolute;
             right: 0;
@@ -3069,7 +3134,11 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to right, rgb(6, 32, 15, 0.85) 20%, transparent);
+        background: linear-gradient(
+            to right,
+            rgb(6, 32, 15, 0.85) 20%,
+            transparent
+        );
     }
     .s-img-item {
         &.item-2 {
@@ -3562,9 +3631,10 @@
 .s-box-wrap {
     background-color: var(--Bg-8);
     position: relative;
-    padding: 50px 0px;
+    padding: 77px 0px 98px 0px;
     .wrap {
         @include flex(center, center);
+        gap: 27px;
         .box-icon {
             &:not(:last-child) {
                 border-right: 1px dashed var(--Border-13);
@@ -3588,8 +3658,12 @@
     }
 }
 .s-relate-product {
+    padding-top: 100px;
     position: relative;
     z-index: 2;
+    .title {
+        margin-bottom: 67px;
+    }
     .btn-slide-product {
         position: absolute;
         top: 50%;
@@ -3880,4 +3954,80 @@
 .s-provide {
     padding-top: 121px;
     padding-bottom: 46px;
+}
+.s-review {
+    position: relative;
+    padding-bottom: 67px;
+    .wg-counter {
+        position: absolute;
+        top: -23px;
+        left: -38px;
+    }
+    .image-wrap {
+        position: relative;
+        max-width: 478px;
+        width: 100%;
+        margin-right: auto;
+        .image {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+    .content-section {
+        padding-top: 77px;
+        .img-item {
+            margin-bottom: 19px;
+        }
+        .text {
+            margin-bottom: 42px;
+        }
+    }
+    .img-item {
+        &.item-1 {
+            position: absolute;
+            top: -63px;
+            right: -37px;
+        }
+    }
+}
+.s-customer-say {
+    padding: 137px 0px 132px;
+    background-color: var(--Bg-8);
+    .heading-section {
+        margin-bottom: 75px;
+    }
+    .testimonial {
+        padding: 50px 50px 42px 43px;
+        .caption {
+            line-height: 35px;
+            margin-bottom: 19px;
+        }
+        .text {
+            letter-spacing: 0.2px;
+        }
+        .author-wrap {
+            margin-bottom: 33px;
+            .name {
+                font-family: $font-main5;
+            }
+            .left {
+                gap: 23px;
+                align-items: unset;
+            }
+            .infor {
+                margin-top: 11px;
+            }
+            .right {
+                i {
+                    font-size: 42px;
+                }
+            }
+        }
+        .name-wrap {
+            margin-bottom: 7px;
+        }
+    }
+}
+.s-tab {
+    padding-top: 64px;
 }

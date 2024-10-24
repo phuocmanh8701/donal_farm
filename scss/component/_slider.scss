@@ -67,6 +67,7 @@
         img {
             width: 100%;
             height: 673px;
+            object-fit: cover;
         }
     }
     .content-wrap {
@@ -354,14 +355,14 @@
     position: relative;
     .btn-s-testimonial {
         position: absolute;
-        z-index: 5;
+        z-index: 7;
         &.btn-next {
-            bottom: 30px;
-            right: 315px;
+            left: 82%;
+            bottom: 26px;
         }
         &.btn-prev {
-            bottom: 30px;
-            right: 410px;
+            left: 70%;
+            bottom: 26px;
         }
     }
 }
@@ -510,24 +511,49 @@
 .slider-relate-product {
     position: relative;
     .card-product {
-        padding: 35px 20px;
-        .image {
-            img {
-                max-width: unset;
-                width: unset;
-                @include transition6;
+        &.style-2 {
+            padding: 30px 25px 34px 25px;
+            .trendy-item {
+                p {
+                    padding: 2px 18px;
+                }
             }
-        }
-        &:hover {
-            box-shadow: unset;
-            border: 1px solid var(--Border-11);
-            img {
-                transform: scale(1.2);
+            .name-product {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .price-wrap {
+                span {
+                    font-size: 18px;
+                }
+            }
+            .image {
+                img {
+                    max-width: unset;
+                    width: unset;
+                    @include transition6;
+                }
+            }
+            .wg-rating {
+                top: 0px;
+                i {
+                    font-size: 12px;
+                }
+                gap: 1px;
+            }
+            .pricing-star {
+                margin-bottom: 34px;
+            }
+            &:hover {
+                box-shadow: unset;
+                border: 1px solid var(--Border-11);
+                img {
+                    transform: scale(1.2);
+                }
             }
         }
     }
 }
 
-.slider-box-list{
-    
+.slider-box-list {
 }
