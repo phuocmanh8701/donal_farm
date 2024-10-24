@@ -2519,6 +2519,9 @@ a.text-white {
 .wg-tabs .menu-tab.mb-61 {
   margin-bottom: 61px;
 }
+.wg-tabs .menu-tab.mb-65 {
+  margin-bottom: 62px;
+}
 .wg-tabs .menu-tab .item {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -5179,11 +5182,11 @@ fieldset {
   color: var(--Text-2);
 }
 .tf-sidebar .sidebar-item .sb-content .project-detail-list li:not(:last-child) {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   border-bottom: 1px dashed var(--Border-6);
 }
 .tf-sidebar .sidebar-item .sb-content .project-detail-list li:not(:first-child) {
-  padding-top: 15px;
+  padding-top: 14px;
 }
 .tf-sidebar .sidebar-item .sb-content .color-list {
   display: -webkit-box;
@@ -5241,6 +5244,15 @@ fieldset {
   height: 28px;
   border-radius: 50%;
   border: 1px solid var(--Border);
+}
+.tf-sidebar .sidebar-item .sb-content.sb-project-detail {
+  padding: 32px 35px 31px 33px;
+}
+.tf-sidebar .sidebar-item .sb-content.sb-brochure-download {
+  padding: 32px 34px 38px 34px;
+}
+.tf-sidebar .sidebar-item .sb-content.sb-brochure-download .text {
+  margin-bottom: 23px;
 }
 .tf-sidebar .sidebar-item:not(:last-child) {
   margin-bottom: 40px;
@@ -8129,8 +8141,11 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
 }
 .box-portfolio.style-3 .image .content {
-  bottom: 35px !important;
+  bottom: 28px !important;
   text-align: center;
+}
+.box-portfolio.style-3 .image .content .sub {
+  margin-bottom: 5px;
 }
 .box-portfolio.style-3 .image .content .title {
   margin-bottom: 0px;
@@ -8142,7 +8157,7 @@ a.mapboxgl-ctrl-logo {
   content: none;
 }
 .box-portfolio.style-3 .content-2 {
-  padding: 25px;
+  padding: 25px 25px 40px 25px;
   text-align: center;
   background-color: var(--Bg-8);
   -webkit-transition: all 0.3s ease;
@@ -8152,7 +8167,7 @@ a.mapboxgl-ctrl-logo {
   transition: all 0.3s ease;
 }
 .box-portfolio.style-3 .content-2 .text {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -8208,19 +8223,21 @@ a.mapboxgl-ctrl-logo {
   max-width: 481px;
   width: 100%;
   background-color: var(--Primary);
-  padding: 75px 40px 0px 45px;
+  padding: 77px 40px 0px 48px;
 }
 .box-portfolio-style-2 .content .sub {
   color: var(--Secondary);
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 1.3px;
 }
 .box-portfolio-style-2 .content .title {
   color: var(--White);
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+  margin-bottom: 30px;
+  padding-bottom: 19px;
   display: block;
   position: relative;
+  line-height: 30px;
 }
 .box-portfolio-style-2 .content .title::after {
   content: "";
@@ -8233,6 +8250,7 @@ a.mapboxgl-ctrl-logo {
 }
 .box-portfolio-style-2 .content .text {
   color: var(--Text-3);
+  margin-bottom: 41px;
 }
 .box-portfolio-style-2 .content .bot {
   display: -webkit-box;
@@ -8353,6 +8371,12 @@ a.mapboxgl-ctrl-logo {
 }
 .box-infor .content .text {
   margin-bottom: 30px;
+}
+.box-infor.style-1 .content {
+  padding: 36px 27px 21px 27px;
+}
+.box-infor.style-1 .content .title {
+  margin-bottom: 19px;
 }
 .box-infor.style-2 .image {
   border-radius: 20px 20px 0px 0px;
@@ -8753,7 +8777,7 @@ a.mapboxgl-ctrl-logo {
 .wg-pricing {
   background-color: var(--Primary);
   border-radius: 20px;
-  padding: 40px;
+  padding: 40px 40px 40px 42px;
   position: relative;
 }
 .wg-pricing .best-choice {
@@ -8776,19 +8800,20 @@ a.mapboxgl-ctrl-logo {
   border-right: 9px solid var(--Color-7); /* Màu tam giác */
 }
 .wg-pricing .type-plan {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
 }
 .wg-pricing .type-plan i {
+  font-size: 18px;
   color: var(--White);
 }
 .wg-pricing .type-plan span {
   color: var(--White);
 }
 .wg-pricing .price {
-  margin-bottom: 20px;
+  margin-bottom: -2px;
 }
 .wg-pricing .price span {
   color: var(--Secondary);
@@ -8796,7 +8821,7 @@ a.mapboxgl-ctrl-logo {
   line-height: 100px;
 }
 .wg-pricing .price span.dollar {
-  font-size: 50px;
+  font-size: 55px;
   position: relative;
   top: -35px;
 }
@@ -8808,13 +8833,13 @@ a.mapboxgl-ctrl-logo {
   padding: 20px 25px;
   background-color: var(--Bg-12);
   border-radius: 20px;
-  margin: 0px -23px 35px;
+  margin: 0px -26px 36px -23px;
 }
 .wg-pricing .text p {
   color: var(--Text-6);
 }
 .wg-pricing .benifit-list {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 .wg-pricing .benifit-list li {
   display: -webkit-box;
@@ -8826,7 +8851,7 @@ a.mapboxgl-ctrl-logo {
   gap: 12px;
 }
 .wg-pricing .benifit-list li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .wg-pricing .benifit-list li i {
   color: var(--Secondary);
@@ -9704,7 +9729,7 @@ a.mapboxgl-ctrl-logo {
 }
 .main-content.page-our-service .s-testimonial-2 {
   position: relative;
-  padding: 100px 0px 300px;
+  padding: 120px 0px 417px;
 }
 .main-content.page-our-service .s-testimonial-2 .s-img-item.item-1 {
   position: absolute;
@@ -9740,8 +9765,11 @@ a.mapboxgl-ctrl-logo {
 .main-content.page-our-service .s-partner {
   padding-top: 100px;
 }
+.main-content.page-portfolio-details {
+  padding: 0px 0px 109px;
+}
 .main-content.page-portfolio-details .slider-portfolio {
-  margin-bottom: 70px;
+  margin-bottom: 63px;
   padding-top: 25px;
 }
 .main-content.page-portfolio-details .content {
@@ -9751,7 +9779,7 @@ a.mapboxgl-ctrl-logo {
 }
 .main-content.page-portfolio-details .content .title-2 {
   color: var(--Text-2);
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .main-content.page-portfolio-details .content .bot {
   display: -webkit-box;
@@ -9761,6 +9789,7 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 59px;
 }
 .main-content.page-portfolio-details .content .bot .btn-project {
   display: -webkit-box;
@@ -9782,6 +9811,7 @@ a.mapboxgl-ctrl-logo {
 .main-content.page-portfolio-details .content .bot .btn-project p {
   font-weight: 600;
   font-size: 14px;
+  letter-spacing: 1.4px;
   color: var(--Text-2);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -9791,14 +9821,20 @@ a.mapboxgl-ctrl-logo {
 }
 .main-content.page-portfolio-details .wrap {
   border-bottom: 1px solid var(--Bg-9);
-  padding-bottom: 46px;
-  margin-bottom: 45px;
+  padding-bottom: 41px;
+  margin-bottom: 48px;
+}
+.main-content.page-portfolio-details .wrap.s2 {
+  padding-bottom: 49px;
+}
+.main-content.page-portfolio-details .wrap.s3 {
+  margin-bottom: 50px;
 }
 .main-content.page-portfolio-details .s1 .title {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
   border-bottom: 1px solid var(--Bg-9);
-  padding-bottom: 30px;
+  padding-bottom: 22px;
 }
 .main-content.page-portfolio-details .s1 .title::after {
   content: "";
@@ -9810,10 +9846,10 @@ a.mapboxgl-ctrl-logo {
   background-color: var(--Secondary);
 }
 .main-content.page-portfolio-details .s1 .text-1 {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 .main-content.page-portfolio-details .s2 .text-3 {
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 .main-content.page-portfolio-details .s2 .tips {
   display: -webkit-box;
@@ -9825,7 +9861,7 @@ a.mapboxgl-ctrl-logo {
   justify-content: space-between;
 }
 .main-content.page-portfolio-details .s3 .text-3 {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .main-content.page-portfolio-details .s3 .benefit {
   margin-bottom: 20px;
@@ -9837,9 +9873,10 @@ a.mapboxgl-ctrl-logo {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 .main-content.page-portfolio-details .s3 .benefit ul li .icon i {
+  font-size: 18px;
   color: var(--Text-4);
 }
 .main-content.page-portfolio-details .s3 .benefit ul li p {
@@ -9849,14 +9886,23 @@ a.mapboxgl-ctrl-logo {
   line-height: 42px;
   color: var(--Text-2);
 }
+.main-content.page-portfolio-details .tf-sidebar {
+  margin-top: 12px;
+}
+.main-content.page-service-detail {
+  padding: 123px 0px 106px;
+}
+.main-content.page-service-detail .slider-service-detail {
+  margin-bottom: 40px;
+}
 .main-content.page-service-detail .content {
   max-width: 830px;
   width: 100%;
   margin-right: auto;
 }
 .main-content.page-service-detail .content .title {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 21px;
+  margin-bottom: 32px;
   border-bottom: 1px solid var(--Border);
   position: relative;
 }
@@ -9872,8 +9918,8 @@ a.mapboxgl-ctrl-logo {
 .main-content.page-service-detail .content .quote {
   background-color: var(--Secondary);
   border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 35px 40px 35px 42px;
+  margin-bottom: 38px;
 }
 .main-content.page-service-detail .content .quote p {
   font-size: 26px;
@@ -9881,11 +9927,11 @@ a.mapboxgl-ctrl-logo {
   color: var(--Bg-6);
 }
 .main-content.page-service-detail .content .text {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 .main-content.page-service-detail .content .text.text-2 {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 33px;
+  padding-bottom: 42px;
   border-bottom: 1px solid var(--Bg-9);
 }
 .main-content.page-service-detail .content .offer-list {
@@ -9894,7 +9940,8 @@ a.mapboxgl-ctrl-logo {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  gap: 52px;
 }
 .main-content.page-service-detail .content .title-2 {
   font-family: "WorkSans", sans-serif;
@@ -9928,6 +9975,12 @@ a.mapboxgl-ctrl-logo {
 }
 .main-content.page-our-events {
   padding: 115px 0px 106px;
+}
+.main-content.page-portfolio-1 {
+  padding: 120px 0px 68px;
+}
+.main-content.page-portfolio-1.style-2 {
+  padding: 113px 0px 68px;
 }
 
 .tf-spacing-1 {
@@ -11077,10 +11130,16 @@ a.mapboxgl-ctrl-logo {
 .s-contact-us.style-2.bg-white {
   background-color: var(--White);
 }
+.s-contact-us.style-3 {
+  margin-top: -293px;
+}
 
 .s-partner {
   background-color: var(--Bg-8);
   padding-bottom: 50px;
+}
+.s-partner.style-4 {
+  padding-bottom: 71px;
 }
 .s-partner.style-3 {
   padding-top: 85px;
@@ -12523,8 +12582,9 @@ a.mapboxgl-ctrl-logo {
   font-size: 25px;
   line-height: 50px;
   color: var(--Text-2);
-  padding-bottom: 20px;
-  margin-bottom: 35px;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
   position: relative;
 }
 .offer-wrap .caption::after {
@@ -12547,6 +12607,7 @@ a.mapboxgl-ctrl-logo {
 }
 .offer-wrap .list i {
   color: var(--Text-4);
+  font-size: 18px;
 }
 .offer-wrap .list p {
   font-size: 18px;
@@ -12558,7 +12619,7 @@ a.mapboxgl-ctrl-logo {
 .wg-tips {
   max-width: 400px;
   width: 100%;
-  padding: 30px;
+  padding: 17px 30px 26px 27px;
   background-color: var(--Bg-8);
   border-radius: 20px;
 }
@@ -12566,18 +12627,20 @@ a.mapboxgl-ctrl-logo {
   font-size: 20px;
   line-height: 50px;
   color: var(--Text-2);
-  margin-bottom: 10px;
 }
 .wg-tips .sub {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .wg-tips .list li {
   position: relative;
 }
+.wg-tips .list li:not(:last-child) {
+  margin-bottom: 4px;
+}
 .wg-tips .list li::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 4px;
   top: 50%;
   transform: translateY(-50%);
   width: 6px;
@@ -12588,7 +12651,7 @@ a.mapboxgl-ctrl-logo {
 .wg-tips .list li p {
   color: var(--Text-2);
   font-weight: 600;
-  padding-left: 15px;
+  padding-left: 19px;
 }
 
 .s-other-commitment {
@@ -12839,7 +12902,7 @@ a.mapboxgl-ctrl-logo {
 
 .s-pricing {
   background-color: var(--Bg-8);
-  padding: 100px 0px 0px;
+  padding: 153px 0px 0px;
   margin-bottom: 170px;
 }
 .s-pricing .s-img-item.item-2 {
@@ -12863,13 +12926,43 @@ a.mapboxgl-ctrl-logo {
 .grid-portfolio.item {
   padding: 30px 0px 0px;
 }
+.grid-portfolio .box-portfolio:hover .sub {
+  margin-bottom: 14px;
+}
+.grid-portfolio .box-portfolio:hover .content {
+  bottom: 77px;
+}
+.grid-portfolio .box-portfolio:hover .text {
+  margin-bottom: 32px;
+}
+.grid-portfolio .box-portfolio:hover .title {
+  margin-bottom: 30px;
+  padding-bottom: 19px;
+}
+.grid-portfolio .box-portfolio .content {
+  bottom: -152px;
+}
+.grid-portfolio .box-portfolio .title {
+  line-height: 30px;
+  padding-bottom: 19px;
+}
+.grid-portfolio .box-portfolio .sub {
+  margin-bottom: 14px;
+}
+.grid-portfolio .box-portfolio .bot .icon {
+  width: 58px;
+  height: 58px;
+}
+.grid-portfolio .box-portfolio .bot .icon i {
+  font-size: 28px;
+}
 
 .btn-loadMore.mt-50 {
   margin-top: 50px;
 }
 
 .more-portfolio.item {
-  padding: 30px 0px 0px;
+  margin: 30px 0px 0px;
 }
 
 .s-box-wrap {
@@ -13175,6 +13268,15 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 72px;
 }
 
+.s-commitment-2 {
+  padding-bottom: 99px;
+  position: relative;
+}
+.s-commitment-2 .s-img-item.item-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .s-commitment-2 .image-wrap {
   position: relative;
 }
@@ -13191,6 +13293,39 @@ a.mapboxgl-ctrl-logo {
   max-width: 690px;
   width: 100%;
   margin-left: auto;
+  padding-top: 36px;
+}
+.s-commitment-2 .content-section .text {
+  margin-bottom: 28px;
+}
+.s-commitment-2 .benefit-list {
+  margin-bottom: 43px;
+}
+.s-commitment-2 .benefit-list li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.s-commitment-2 .benefit-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.s-commitment-2 .benefit-list i {
+  font-size: 18px;
+  color: var(--Text-4);
+}
+.s-commitment-2 .benefit-list p {
+  padding-left: 14px;
+  color: var(--Text-2);
+  font-size: 18px;
+  font-family: "WorkSans", sans-serif;
+}
+
+.s-provide {
+  padding-top: 121px;
+  padding-bottom: 46px;
 }
 
 /*-------------- Responsive ----------------- */

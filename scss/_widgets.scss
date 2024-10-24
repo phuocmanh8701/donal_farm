@@ -1346,11 +1346,7 @@ i {
         height: 278px;
         bottom: 0;
         left: 0;
-        background: linear-gradient(
-            to top,
-            rgba(13, 21, 15, 0.749),
-            transparent
-        );
+        background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
         z-index: 1;
         @include transition3;
     }
@@ -1489,11 +1485,7 @@ i {
             }
         }
         &::after {
-            background: linear-gradient(
-                to top,
-                rgb(13, 64, 28, 0.89),
-                transparent
-            );
+            background: linear-gradient(to top, rgb(13, 64, 28, 0.89), transparent);
         }
     }
     &.style-3 {
@@ -1522,11 +1514,7 @@ i {
                 height: 278px;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient(
-                    to top,
-                    rgba(13, 21, 15, 0.749),
-                    transparent
-                );
+                background: linear-gradient(to top, rgba(13, 21, 15, 0.749), transparent);
                 z-index: 1;
                 @include transition3;
             }
@@ -1539,8 +1527,11 @@ i {
                 width: 100%;
             }
             .content {
-                bottom: 35px !important;
+                bottom: 28px !important;
                 text-align: center;
+                .sub {
+                    margin-bottom: 5px;
+                }
                 .title {
                     margin-bottom: 0px;
                     padding-bottom: 0px;
@@ -1554,13 +1545,13 @@ i {
             }
         }
         .content-2 {
-            padding: 25px;
+            padding: 25px 25px 40px 25px;
             text-align: center;
             background-color: var(--Bg-8);
             @include transition3;
 
             .text {
-                margin-bottom: 20px;
+                margin-bottom: 28px;
                 @include transition3;
             }
         }
@@ -1620,18 +1611,20 @@ i {
         width: 100%;
         // height: 100%;
         background-color: var(--Primary);
-        padding: 75px 40px 0px 45px;
+        padding: 77px 40px 0px 48px;
         .sub {
             color: var(--Secondary);
             font-size: 25px;
-            margin-bottom: 20px;
+            margin-bottom: 14px;
+            letter-spacing: 1.3px;
         }
         .title {
             color: var(--White);
-            margin-bottom: 25px;
-            padding-bottom: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 19px;
             display: block;
             position: relative;
+            line-height: 30px;
             &::after {
                 content: "";
                 position: absolute;
@@ -1645,6 +1638,7 @@ i {
 
         .text {
             color: var(--Text-3);
+            margin-bottom: 41px;
         }
         .bot {
             @include d-flex();
@@ -1759,6 +1753,14 @@ i {
         }
         .text {
             margin-bottom: 30px;
+        }
+    }
+    &.style-1 {
+        .content {
+            padding: 36px 27px 21px 27px;
+            .title {
+                margin-bottom: 19px;
+            }
         }
     }
     &.style-2 {
@@ -2136,7 +2138,7 @@ i {
 .wg-pricing {
     background-color: var(--Primary);
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 40px 40px 42px;
     position: relative;
     .best-choice {
         top: -9px;
@@ -2158,11 +2160,12 @@ i {
         }
     }
     .type-plan {
-        margin-bottom: 20px;
+        margin-bottom: 32px;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 11px;
         i {
+            font-size: 18px;
             color: var(--White);
         }
         span {
@@ -2170,14 +2173,14 @@ i {
         }
     }
     .price {
-        margin-bottom: 20px;
+        margin-bottom: -2px;
         span {
             color: var(--Secondary);
             font-size: 100px;
             line-height: 100px;
 
             &.dollar {
-                font-size: 50px;
+                font-size: 55px;
                 position: relative;
                 top: -35px;
             }
@@ -2191,19 +2194,19 @@ i {
         padding: 20px 25px;
         background-color: var(--Bg-12);
         border-radius: 20px;
-        margin: 0px -23px 35px;
+        margin: 0px -26px 36px -23px;
         p {
             color: var(--Text-6);
         }
     }
     .benifit-list {
-        margin-bottom: 30px;
+        margin-bottom: 34px;
         li {
             @include d-flex();
             align-items: center;
             gap: 12px;
             &:not(:last-child) {
-                margin-bottom: 10px;
+                margin-bottom: 9px;
             }
             i {
                 color: var(--Secondary);
@@ -2348,11 +2351,7 @@ i {
         &.w-76 {
             width: 76%;
         }
-        background-image: -webkit-linear-gradient(
-            0deg,
-            rgb(39, 141, 69) 0%,
-            rgb(248, 195, 44) 100%
-        );
+        background-image: -webkit-linear-gradient(0deg, rgb(39, 141, 69) 0%, rgb(248, 195, 44) 100%);
     }
 }
 .main-history {
