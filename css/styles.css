@@ -13878,6 +13878,9 @@ i.fs-12 {
   }
 }
 @media (max-width: 1300px) {
+  .s-project .slider-s-project {
+    margin-top: -300px !important;
+  }
   .s-why-us .box-video {
     top: 10px !important;
     left: 10px !important;
@@ -13975,6 +13978,7 @@ i.fs-12 {
 @media (max-width: 991px) {
   .s-our-commitment {
     padding-top: 120px;
+    padding-bottom: 35px !important;
   }
   .s-our-commitment .main-section {
     flex-wrap: wrap-reverse;
